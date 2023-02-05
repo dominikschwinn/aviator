@@ -389,6 +389,32 @@ class Airports(object):
         # self.df = df
 
 
+    def export_dataframe_2_csv(self,
+                             df="None",
+                             file_="None",
+                             verbose=True,
+                             ):
+        """
+        saves dataframe to csv-file
+
+        Parameters
+        ----------
+        df : TYPE, optional
+            DESCRIPTION. The default is df                             file_=file_.
+        verbose : TYPE, optional
+            DESCRIPTION. The default is True.
+         : TYPE
+            DESCRIPTION.
+
+        Returns
+        -------
+        None.
+
+        """
+        df.to_csv(file_)
+        if verbose:
+            print("DataFrame \"{}\" successfully exported to {}".format(df,file_))
+
 if __name__ == "__main__":
     a = Airports()
     a.create_empty_airport_database_columns()
@@ -401,6 +427,7 @@ if __name__ == "__main__":
     a.create_airport_dataframe()
     print(" airport_DF ".center(80,'*'))
     print(a.airport_DF)
+    a.export_dataframe_2_csv(df=a.airport_DF,file_='../data/iata_airport_list.csv')
     a.t_end = a.set_end_time()
     a.calculate_runtime(a.t_start, a.t_end)
     
