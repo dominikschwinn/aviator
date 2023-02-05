@@ -1,528 +1,528 @@
-,IATA,ICAO,Airport,Location,Country,UTC,Latitudes,Longitudes
-0,AAA,NTGA,Anaa Airport,"Anaa, Tuamotus",French Polynesia,UTC−10:00,-17.348888888888887,-145.51222222222222
-1,AAB,YARY,Arrabury Airport,"Arrabury, Queensland",Australia,UTC+10:00,-26.69,141.04666666666665
-2,AAC,HEAR,El Arish International Airport,El Arish,Egypt,UTC+02:00,31.073333333333334,33.83583333333333
-3,AAD,,Adado Airport,"Adado, Galguduud",Somalia,UTC+03:00,6.095833333333333,46.6375
-4,AAE,DABB,Rabah Bitat Airport,Annaba,Algeria,UTC+01:00,36.82916666666667,7.813888888888889
-5,AAF,KAAF,Apalachicola Regional Airport,"Apalachicola, Florida",United States,UTC−05:00,29.7275,-85.0275
-6,AAG,SSYA,Arapoti Airport,"Arapoti, Paraná",Brazil,UTC−03:00,,
-7,AAH,EDKA,Merzbrück Airport,"Aachen, North Rhine-Westphalia",Germany,UTC+01:00,,
-8,AAI,SWRA,Arraias Airport,"Arraias, Tocantins",Brazil,UTC−03:00,-13.023888888888889,-46.885555555555555
-9,AAJ,SMCA,Cayana Airstrip,Awaradam,Suriname,UTC−03:00,3.8986111111111112,-55.57777777777778
-10,AAK,NGUK,Aranuka Airport,Aranuka,Kiribati,UTC+12:00,0.18527777777777776,173.6363888888889
-11,AAL,EKYT,Aalborg Airport,Aalborg,Denmark,UTC+01:00,57.09277777777778,9.849166666666667
-12,AAM,FAMD,Mala Mala Airport,Mala Mala,South Africa,UTC+02:00,-24.818055555555556,31.544722222222223
-13,AAN,OMAL,Al Ain International Airport,Al Ain,United Arab Emirates,UTC+04:00,24.261666666666667,55.60916666666667
-14,AAO,SVAN,Anaco Airport,Anaco,Venezuela,UTC−04:00,9.430277777777777,-64.47083333333333
-15,AAP,WALS,Aji Pangeran Tumenggung Pranoto International Airport,"Samarinda, East Kalimantan",Indonesia,UTC+08:00,-0.37361111111111106,117.25555555555556
-16,AAQ,URKA,Anapa Airport,"Anapa, Krasnodar Krai",Russia,UTC+03:00,45.00208333333333,37.34730555555556
-17,AAR,EKAH,Aarhus Airport,Aarhus,Denmark,UTC+01:00,56.30416666666667,10.619166666666667
-18,AAS,,Apalapsili Airport,Apalapsili,Indonesia,UTC+09:00,-3.8847222222222224,139.31055555555557
-19,AAT,ZWAT,Altay Airport,"Altay, Xinjiang",China,UTC+08:00,,
-20,AAU,NSAU,Asau Airport,"Asau, Savai'i Island",Samoa,UTC+13:00,-13.505,-172.6277777777778
-21,AAV,RPMA,Allah Valley Airport,Surallah,Philippines,UTC+08:00,6.366666666666666,124.75083333333333
-22,AAX,SBAX,Araxá Airport,"Araxá, Minas Gerais",Brazil,UTC−03:00,-19.560555555555556,-46.96555555555556
-23,AAY,OYGD,Al Ghaydah Airport,Al Ghaydah,Yemen,UTC+03:00,16.193361111111113,52.17419444444444
-24,AAZ,MGQZ,Quetzaltenango Airport,Quetzaltenango,Guatemala,UTC−06:00,14.865277777777777,-91.50277777777778
-25,ABA,UNAA,Abakan International Airport,"Abakan, Republic of Khakassia",Russia,UTC+07:00,53.74333333333333,91.38583333333334
-26,ABB,DNAS,Asaba International Airport,Asaba,Nigeria,UTC+01:00,6.204166666666667,6.665277777777778
-27,ABC,LEAB,Albacete Airport,"Albacete, Castilla-La Mancha",Spain,UTC+01:00,38.94833333333333,-1.8633333333333335
-28,ABD,OIAA,Abadan International Airport,Abadan,Iran,UTC+03:30,30.36527777777778,48.23305555555556
-29,ABE,KABE,Lehigh Valley International Airport,"Allentown, Pennsylvania",United States,UTC−05:00,40.65233333333333,-75.44047222222223
-30,ABF,NGAB,Abaiang Atoll Airport,Abaiang,Kiribati,UTC+12:00,1.7963888888888888,173.0402777777778
-31,ABG,YABI,Abingdon Airport,"Abingdon Downs, Queensland",Australia,UTC+10:00,-17.6075,143.1836111111111
-32,ABH,YAPH,Alpha Airport,"Alpha, Queensland",Australia,UTC+10:00,-23.646666666666665,146.58333333333334
-33,ABI,KABI,Abilene Regional Airport,"Abilene, Texas",United States,UTC−06:00,32.41325,-99.68311111111112
-34,ABJ,DIAP,Port Bouet Airport,Abidjan,Côte d'Ivoire,UTC+00:00,5.261416666666666,-3.925777777777778
-35,ABK,HAKD,Kabri Dar Airport,Kebri Dahar,Ethiopia,UTC+03:00,6.732805555555555,44.24155555555556
-36,ABL,PAFM,Ambler Airport,"Ambler, Alaska",United States,UTC−09:00,,
-37,ABM,YNPE,Northern Peninsula Airport,"Bamaga, Queensland",Australia,UTC+10:00,-10.950833333333332,142.45944444444444
-38,ABN,SMBN,Albina Airstrip,Albina,Suriname,UTC−03:00,5.513888888888889,-54.05
-39,ABO,DIAO,Aboisso Airport,Aboisso,Côte d'Ivoire,UTC+00:00,,
-40,ABP,,Atkamba Airport,Atkamba,Papua New Guinea,UTC+10:00,-6.066666666666666,141.1
-41,ABQ,KABQ,Albuquerque International Sunport,"Albuquerque, New Mexico",United States,UTC−07:00,,
-42,ABR,KABR,Aberdeen Regional Airport,"Aberdeen, South Dakota",United States,UTC−06:00,,
-43,ABS,HEBL,Abu Simbel Airport,Abu Simbel,Egypt,UTC+02:00,22.37591666666667,31.61163888888889
-44,ABT,OEBA,Al-Baha Domestic Airport,Al Bahah,Saudi Arabia,UTC+03:00,20.296111111111113,41.634166666666665
-45,ABU,WATA,Haliwen Airport,Atambua,Indonesia,UTC+08:00,,
-46,ABV,DNAA,Nnamdi Azikiwe International Airport,Abuja,Nigeria,UTC+01:00,,
-47,ABW,,Abau Airport,Abau,Papua New Guinea,UTC+10:00,-10.166666666666666,148.7
-48,ABX,YMAY,Albury Airport,"Albury, New South Wales",Australia,UTC+10:00,-36.068333333333335,146.95833333333331
-49,ABY,KABY,Southwest Georgia Regional Airport,"Albany, Georgia",United States,UTC−05:00,31.535555555555558,-84.19444444444444
-50,ABZ,EGPD,Aberdeen Airport,"Aberdeen, Scotland",United Kingdom,UTC+00:00,57.2025,-2.1980555555555554
-51,ACA,MMAA,General Juan N. Álvarez International Airport,"Acapulco, Guerrero",Mexico,UTC−06:00,16.756027777777778,-99.75161111111112
-52,ACB,KACB,Antrim County Airport,"Bellaire, Michigan",United States,UTC−05:00,44.98861111111111,-85.19833333333334
-53,ACC,DGAA,Kotoka International Airport,Accra,Ghana,UTC+00:00,5.604666666666667,-0.1673888888888889
-54,ACD,SKAD,Alcides Fernández Airport,Acandí,Colombia,UTC−05:00,8.5,-77.27444444444444
-55,ACE,GCRR,Lanzarote Airport,"Lanzarote, Canary Islands",Spain,UTC+00:00,,
-56,ACH,LSZR,St. Gallen–Altenrhein Airport,Altenrhein,Switzerland,UTC+01:00,,
-57,ACI,EGJA,Alderney Airport,"Alderney, Channel Islands",United Kingdom,UTC+00:00,49.70666666666667,-2.2144444444444447
-58,ACJ,VCCA,Anuradhapura Airport,Anuradhapura,Sri Lanka,UTC+05:30,8.301666666666668,80.42861111111111
-59,ACK,KACK,Nantucket Memorial Airport,"Nantucket, Massachusetts",United States,UTC−05:00,41.25288888888889,-70.059
-60,ACL,,Aguaclara Airport,Aguaclara,Colombia,UTC−05:00,4.746944444444445,-72.99055555555556
-61,ACM,,Arica Airport,Arica,Colombia,UTC−05:00,-18.34861111111111,-70.33888888888889
-62,ACN,MMCC,Ciudad Acuña International Airport,"Ciudad Acuña, Coahuila",Mexico,UTC−06:00,29.333888888888886,-101.10083333333333
-63,ACP,OITM,Sahand Airport,Maragheh,Iran,UTC+03:30,,
-64,ACR,SKAC,Araracuara Airport,Araracuara,Colombia,UTC−05:00,-0.6008333333333333,-72.39805555555556
-65,ACS,UNKS,Achinsk Airport,"Achinsk, Krasnoyarsk Krai",Russia,UTC+07:00,,
-66,ACT,KACT,Waco Regional Airport,"Waco, Texas",United States,UTC−06:00,31.61138888888889,-97.23055555555555
-67,ACU,,Achutupo Airport,Achutupo,Panama,UTC−05:00,9.190277777777778,-77.99444444444444
-68,ACV,KACV,Arcata-Eureka Airport,"Eureka / Arcata, California",United States,UTC−08:00,,
-69,ACX,ZUYI,Xingyi Wanfenglin Airport,"Xingyi, Guizhou",China,UTC+08:00,25.08833333333333,104.95861111111111
-70,ACY,KACY,Atlantic City International Airport,"Atlantic City, New Jersey",United States,UTC−05:00,39.4575,-74.57722222222222
-71,ACZ,OIZB,Zabol Airport,Zabol,Iran,UTC+03:30,,
-72,ADA,LTAF,Adana Şakirpaşa Airport,Adana,Turkey,UTC+03:00,36.981944444444444,35.280277777777776
-73,ADB,LTBJ,Adnan Menderes Airport,İzmir,Turkey,UTC+03:00,,
-74,ADC,AYAN,Andakombe Airport,Andakombe,Papua New Guinea,UTC+10:00,-7.137138888888889,145.74471944444443
-75,ADD,HAAB,Bole International Airport,Addis Ababa,Ethiopia,UTC+03:00,8.977777777777778,38.79944444444444
-76,ADE,OYAA,Aden International Airport,Aden,Yemen,UTC+03:00,12.829444444444444,45.028888888888886
-77,ADF,LTCP,Adıyaman Airport,Adıyaman,Turkey,UTC+03:00,37.73166666666667,38.46888888888889
-78,ADG,KADG,Lenawee County Airport,"Adrian, Michigan",United States,UTC−05:00,,
-79,ADH,UEEA,Aldan Airport,"Aldan, Yakutia",Russia,UTC+09:00,58.60305555555556,125.40722222222223
-80,ADI,FYAR,Arandis Airport,Arandis,Namibia,UTC+01:00,-22.46222222222222,14.98
-81,ADJ,OJAM,Amman Civil Airport,Amman,Jordan,UTC+02:00,31.972499999999997,35.99138888888889
-82,ADK,PADK,Adak Airport,"Adak Island, Alaska",United States,UTC−10:00,51.878055555555555,-176.6461111111111
-83,ADL,YPAD,Adelaide Airport,"Adelaide, South Australia",Australia,UTC+09:30,-34.94499999999999,138.53055555555557
-84,ADM,KADM,Ardmore Municipal Airport,"Ardmore, Oklahoma",United States,UTC−06:00,34.30416666666667,-97.02055555555556
-85,ADN,SKAN,Andes Airport,Andes,Colombia,UTC−05:00,5.69764,-75.88037999999999
-86,ADO,YAMK,Andamooka Airport,"Andamooka, South Australia",Australia,UTC+09:30,-30.438333333333333,137.13666666666666
-87,ADP,VCCG,Ampara Airport,Ampara,Sri Lanka,UTC+05:30,7.336944444444444,81.63027777777778
-88,ADQ,PADQ,Kodiak Airport,"Kodiak, Alaska",United States,UTC−09:00,57.749722222222225,-152.49388888888888
-89,ADR,KPHH,Robert F. Swinnie Airport,"Andrews, South Carolina",United States,UTC−05:00,,
-90,ADS,KADS,Addison Airport,"Dallas, Texas",United States,UTC−06:00,32.968611111111116,-96.83638888888889
-91,ADT,KADH,Ada Municipal Airport,"Ada, Oklahoma",United States,UTC−06:00,,
-92,ADU,OITL,Ardabil Airport,Ardabil,Iran,UTC+03:30,38.32555555555556,48.424166666666665
-93,ADV,,Ed Daein Airport,Ed Daein,Sudan,UTC+03:00,11.403611111111111,26.11916666666667
-94,ADW,KADW,Andrews Field,"Camp Springs, Maryland",United States,UTC−05:00,,
-95,ADX,EGQL,Leuchars Station,"St Andrews, Scotland",United Kingdom,UTC+00:00,56.37305555555555,-2.868611111111111
-96,ADY,FAAL,Alldays Airport,Alldays,South Africa,UTC+02:00,-22.678333333333335,29.055
-97,ADZ,SKSP,Gustavo Rojas Pinilla International Airport,San Andres Island,Colombia,UTC−05:00,,
-98,AEA,NGTB,Abemama Atoll Airport,Abemama Atoll,Kiribati,UTC+12:00,,
-99,AEB,ZGBS,Baise Bama Airport,"Baise, Guangxi",China,UTC+08:00,23.71944444444444,106.95916666666668
-100,AEE,,Adareil Airport,Adareil,South Sudan,UTC+03:00,10.053611111111111,32.95944444444445
-101,AEG,WIME,Aek Godang Airport,Padang Sidempuan,Indonesia,UTC+07:00,1.4001027777777777,99.43045277777779
-102,AEH,FTTC,Abéché Airport,Abéché,Chad,UTC+01:00,13.846944444444444,20.844166666666666
-103,AEK,AYAX,Aseki Airport,Aseki,Papua New Guinea,UTC+10:00,-7.3508048611111105,146.19386672222223
-104,AEL,KAEL,Albert Lea Municipal Airport,"Albert Lea, Minnesota",United States,UTC−06:00,,
-105,AEM,UHTG,Amgu Airport,"Amgu, Primorsky Krai",Russia,UTC+10:00,45.841260000000005,137.673568
-106,AEO,GQNA,Aioun el Atrouss Airport,Aioun el Atrouss,Mauritania,UTC+00:00,,
-107,AEP,SABE,Jorge Newbery Airpark,Buenos Aires,Argentina,UTC−03:00,,
-108,AEQ,,Ar Horqin Airport,Ar Horqin Banner,China,UTC+08:00,43.87042,120.15958
-109,AER,URSS,Sochi International Airport,"Sochi, Krasnodar Krai",Russia,UTC+03:00,43.45,39.95666666666667
-110,AES,ENAL,"Ålesund Airport, Vigra",Ålesund,Norway,UTC+01:00,62.5625,6.119722222222221
-111,AET,PFAL,Allakaket Airport,"Allakaket, Alaska",United States,UTC−09:00,,
-112,AEU,OIBA,Abu Musa Airport,Abu Musa Island,Iran,UTC+03:30,25.875555555555557,55.032777777777774
-113,AEX,KAEX,Alexandria International Airport,"Alexandria, Louisiana",United States,UTC−06:00,,
-114,AEY,BIAR,Akureyri Airport,Akureyri,Iceland,UTC+00:00,65.66111111111111,-18.072222222222223
-115,AFA,SAMR,San Rafael Airport,"San Rafael, Mendoza",Argentina,UTC−03:00,,
-116,AFD,FAPA,Port Alfred Airport,Port Alfred,South Africa,UTC+02:00,-33.55416666666667,26.879722222222224
-117,AFF,KAFF,United States Air Force Academy Airfield,"Colorado Springs, Colorado",United States,UTC−07:00,38.973391416666665,-104.82003272222222
-118,AFI,SKAM,Amalfi Airport,Amalfi,Colombia,UTC−05:00,,
-119,AFK,,Kondavattavan Tank Seaplane Base,Ampara,Sri Lanka,UTC+05:30,,
-120,AFL,SBAT,Alta Floresta Airport,"Alta Floresta, Mato Grosso",Brazil,UTC−04:00,-9.866388888888888,-56.105000000000004
-121,AFN,KAFN,Jaffrey Airport–Silver Ranch,"Jaffrey, New Hampshire",United States,UTC−05:00,,
-122,AFO,KAFO,Afton Municipal Airport,"Afton, Wyoming",United States,UTC−07:00,42.70888888888889,-110.94222222222223
-123,AFR,AYAF,Afore Airstrip,Afore,Papua New Guinea,UTC+10:00,-9.142222222222221,148.39083333333332
-124,AFS,UTSN,Zarafshan Airport,Zarafshan,Uzbekistan,UTC+05:00,41.61361111111111,64.23277777777778
-125,AFT,AGAF,Afutara Airport,"Afutara, Malaita",Solomon Islands,UTC+11:00,-9.19111111111111,160.94916666666668
-126,AFW,KAFW,Fort Worth Alliance Airport,"Fort Worth, Texas",United States,UTC−06:00,32.99027777777778,-97.31944444444444
-127,AFY,LTAH,Afyon Airport,Afyon,Turkey,UTC+03:00,,
-128,AFZ,OIMS,Sabzevar Airport,Sabzevar,Iran,UTC+03:30,,
-129,AGA,GMAD,Agadir–Al Massira Airport,Agadir,Morocco,UTC+00:00,30.325,-9.413055555555555
-130,AGB,EDMA,Augsburg Airport,"Augsburg, Bavaria",Germany,UTC+01:00,48.42527777777777,10.931666666666667
-131,AGC,KAGC,Allegheny County Airport,"Pittsburgh, Pennsylvania",United States,UTC−05:00,40.35416666666667,-79.93
-132,AGD,WASG,Anggi Airport,Anggi,Indonesia,UTC+09:00,-1.3833333333333333,133.86666666666667
-133,AGE,EDWG,Wangerooge Airfield,"Wangerooge, Lower Saxony",Germany,UTC+01:00,53.78333333333333,7.916666666666667
-134,AGF,LFBA,Agen La Garenne Airport,"Agen, Aquitaine",France,UTC+01:00,44.17472222222222,0.5905555555555556
-135,AGG,,Angoram Airport,Angoram,Papua New Guinea,UTC+10:00,,
-136,AGH,ESTA,Ängelholm–Helsingborg Airport,Ängelholm,Sweden,UTC+01:00,56.29611111111111,12.847222222222223
-137,AGI,SMWA,Wageningen Airstrip,Wageningen,Suriname,UTC−03:00,5.841666666666667,-56.670833333333334
-138,AGJ,RORA,Aguni Airport,"Aguni, Okinawa",Japan,UTC+09:00,26.592777777777776,127.24027777777778
-139,AGK,,Kagua Airport,Kagua,Papua New Guinea,UTC+10:00,,
-140,AGL,AYWG,Wanigela Airport,Wanigela,Papua New Guinea,UTC+10:00,-9.3375,149.15555555555557
-141,AGN,PAGN,Angoon Seaplane Base,"Angoon, Alaska",United States,UTC−09:00,57.50361111111111,-134.585
-142,AGO,KAGO,Magnolia Municipal Airport,"Magnolia, Arkansas",United States,UTC−06:00,33.2275,-93.21694444444445
-143,AGP,LEMG,Málaga Airport,"Málaga, Andalusia",Spain,UTC+01:00,36.675,-4.4991666666666665
-144,AGQ,LGAG,Agrinion Airport,Agrinion,Greece,UTC+02:00,,
-145,AGR,VIAG,Agra Airport,"Agra, Uttar Pradesh",India,UTC+05:30,27.1618309,77.9707261
-146,AGS,KAGS,Augusta Regional Airport,"Augusta, Georgia",United States,UTC−05:00,33.37,-81.96444444444445
-147,AGT,SGES,Guaraní International Airport,Ciudad del Este,Paraguay,UTC−04:00,-25.455555555555556,-54.843611111111116
-148,AGU,MMAS,Lic. Jesús Terán Peredo International Airport,"Aguascalientes, Aguascalientes",Mexico,UTC−06:00,21.705555555555556,-102.31777777777778
-149,AGV,SVAC,Oswaldo Guevara Mujica Airport,Acarigua,Venezuela,UTC−04:00,9.553333333333335,-69.2375
-150,AGW,,Agnew Airport,"Agnew, Queensland",Australia,UTC+10:00,-12.145555555555555,142.14916666666667
-151,AGX,VOAT,Agatti Aerodrome,"Agatti Island, Lakshadweep",India,UTC+05:30,10.828055555555554,72.17888888888889
-152,AGZ,FAAG,Aggeneys Airport,Aggeneys,South Africa,UTC+02:00,-29.281666666666666,18.81361111111111
-153,AHB,OEAB,Abha Regional Airport,Abha,Saudi Arabia,UTC+03:00,,
-154,AHC,KAHC,Amedee Army Airfield,"Herlong, California",United States,UTC−08:00,40.26583333333333,-120.15055555555556
-155,AHD,,Ardmore Downtown Executive Airport,"Ardmore, Oklahoma",United States,UTC−06:00,,
-156,AHE,NTHE,Ahe Airport,"Ahe, Tuamotus",French Polynesia,UTC−10:00,-14.428055555555554,-146.25694444444446
-157,AHF,,Arapahoe Municipal Airport,"Arapahoe, Nebraska",United States,UTC−06:00,40.339444444444446,-99.9063888888889
-158,AHH,KAHH,Amery Municipal Airport,"Amery, Wisconsin",United States,UTC−06:00,45.28111111111111,-92.37527777777777
-159,AHI,WAPA,Amahai Airport,Amahai,Indonesia,UTC+09:00,-3.3333333333333335,128.91666666666666
-160,AHJ,ZUHY,Hongyuan Airport,"Hongyuan, Sichuan",China,UTC+08:00,32.52916666666667,102.35694444444444
-161,AHL,SYAH,Aishalton Airport,Aishalton,Guyana,UTC−04:00,2.4722222222222223,-59.32222222222222
-162,AHM,,Ashland Municipal Airport,"Ashland, Oregon",United States,UTC−08:00,42.19027777777777,-122.66055555555556
-163,AHN,KAHN,Athens Ben Epps Airport,"Athens, Georgia",United States,UTC−05:00,,
-164,AHO,LIEA,Alghero-Fertilia Airport,"Alghero, Sardinia",Italy,UTC+01:00,,
-165,AHS,MHAH,Ahuas Airport,Ahuas,Honduras,UTC−06:00,15.472222222222223,-84.35277777777777
-166,AHU,GMTA,Cherif Al Idrissi Airport,Al Hoceima,Morocco,UTC+00:00,35.176944444444445,-3.8394444444444447
-167,AHW,,Saih Rawl Airport,Saih Rawl,Oman,UTC+04:00,,
-168,AHY,,Ambatolahy Airport,Ambatolahy,Madagascar,UTC+03:00,,
-169,AHZ,LFHU,Alpe d'Huez Airport,"Alpe d'Huez, Rhône-Alpes",France,UTC+01:00,45.08777777777778,6.085
-170,AIA,KAIA,Alliance Municipal Airport,"Alliance, Nebraska",United States,UTC−07:00,42.05333333333333,-102.80388888888889
-171,AIC,,Ailinglaplap Airok Airport,"Airok, Ailinglaplap Atoll",Marshall Islands,UTC+12:00,7.279166666666667,168.82555555555555
-172,AID,KAID,Anderson Municipal Airport,"Anderson, Indiana",United States,UTC−05:00,40.10861111111111,-85.61305555555555
-173,AIE,AYAO,Aiome Airport,Aiome,Papua New Guinea,UTC+10:00,-5.1425,144.73133333333334
-174,AIF,SNAX,Assis Airport,"Assis, São Paulo",Brazil,UTC−03:00,-22.64,-50.45305555555556
-175,AIG,FEFY,Yalinga Airport,Yalinga,Central African Republic,UTC+01:00,6.520833333333333,23.259722222222223
-176,AIH,AYAK,Aiambak Airport,Aiambak,Papua New Guinea,UTC+10:00,-7.3425,141.2665
-177,AII,HDAS,Ali-Sabieh Airport,Ali Sabieh,Djibouti,UTC+03:00,11.15,42.71666666666667
-178,AIK,KAIK,Aiken Municipal Airport,"Aiken, South Carolina",United States,UTC−05:00,,
-179,AIL,,Ailigandí Airport,Ailigandí,Panama,UTC−05:00,9.222222222222223,-78.02361111111111
-180,AIM,,Ailuk Airport,Ailuk Atoll,Marshall Islands,UTC+12:00,10.216944444444444,169.98333333333332
-181,AIN,PAWI,Wainwright Airport,"Fort Wainwright, Alaska",United States,UTC−09:00,,
-182,AIO,KAIO,Atlantic Municipal Airport,"Atlantic, Iowa",United States,UTC−06:00,,
-183,AIP,VIAX,Adampur Airport,"Jalandhar, Punjab",India,UTC+05:30,31.43305555555556,75.76055555555556
-184,AIR,SSOU,Aripuanã Airport,"Aripuanã, Mato Grosso",Brazil,UTC−04:00,-10.182777777777778,-59.458333333333336
-185,AIS,NGTR,Arorae Island Airport,Arorae Island,Kiribati,UTC+12:00,-2.616261111111111,176.80210000000002
-186,AIT,NCAI,Aitutaki Airport,Aitutaki,Cook Islands,UTC−10:00,,
-187,AIU,NCAT,Enua Airport,Atiu Island,Cook Islands,UTC−10:00,-19.967777777777776,-158.12
-188,AIV,KAIV,George Downer Airport,"Aliceville, Alabama",United States,UTC−06:00,33.10638888888889,-88.19777777777779
-189,AIW,,Ai-Ais Airport,Ai-Ais,Namibia,UTC+02:00,,
-190,AIZ,KAIZ,Lee C. Fine Memorial Airport,"Lake Ozark, Missouri",United States,UTC−06:00,38.09603333333334,-92.54948611111111
-191,AJA,LFKJ,Ajaccio Napoleon Bonaparte Airport,"Ajaccio, Corsica",France,UTC+01:00,41.92388888888889,8.8025
-192,AJF,OESK,Al-Jawf Domestic Airport,"Sakakah, Al Jawf",Saudi Arabia,UTC+03:00,29.785,40.1
-193,AJI,LTCO,Ağrı Airport,Ağrı,Turkey,UTC+03:00,39.654444444444444,43.02722222222222
-194,AJJ,GQNJ,Akjoujt Airport,Akjoujt,Mauritania,UTC+00:00,19.727777777777778,-14.377777777777778
-195,AJK,OIHR,Arak Airport,Arak,Iran,UTC+03:30,34.13805555555555,49.84722222222222
-196,AJL,"VELP<sup id=""cite_ref-2"" class=""reference""><a href=""#cite_note-2"">[2]</a></sup>",Lengpui Airport,"Aizawl, Mizoram",India,UTC+05:30,23.838441666666665,92.62035833333333
-197,AJN,FMCV,Ouani Airport,Anjouan,Comoros,UTC+03:00,,
-198,AJR,ESNX,Arvidsjaur Airport,Arvidsjaur,Sweden,UTC+01:00,65.59027777777777,19.281944444444445
-199,AJS,MX86,Punta Abreojos Airstrip,"Punta Abreojos, Baja California Sur",Mexico,UTC−07:00,26.72722222222222,-113.55972222222222
-200,AJU,SBAR,Santa Maria Airport,"Aracaju, Sergipe",Brazil,UTC−03:00,,
-201,AJY,DRZA,Mano Dayak International Airport,Agadez,Niger,UTC+01:00,16.96599722222222,8.000113888888889
-202,AKA,ZLAK,Ankang Wulipu Airport,"Ankang, Shaanxi",China,UTC+08:00,32.70805555555556,108.93111111111112
-203,AKB,PAAK,Atka Airport,"Atka, Alaska",United States,UTC−10:00,52.220555555555556,-174.2061111111111
-204,AKC,KAKR,Akron Fulton International Airport,"Akron, Ohio",United States,UTC−05:00,,
-205,AKD,VAAK,Akola Airport,"Akola, Maharashtra",India,UTC+05:30,20.698888888888888,77.0586111111111
-206,AKE,FOGA,Akieni Airport,Akiéni,Gabon,UTC+01:00,-1.1397222222222223,13.903333333333334
-207,AKF,HLKF,Kufra Airport,Kufra,Libya,UTC+02:00,24.17777777777778,23.31388888888889
-208,AKG,AYGU,Anguganak Airport,Anguganak,Papua New Guinea,UTC+10:00,,
-209,AKH,OEPS,Prince Sultan Air Base,Al-Kharj,Saudi Arabia,UTC+03:00,24.05527777777778,47.56361111111111
-210,AKI,PFAK,Akiak Airport,"Akiak, Alaska",United States,UTC−09:00,,
-211,AKJ,RJEC,Asahikawa Airport,"Asahikawa, Hokkaido",Japan,UTC+09:00,43.670833333333334,142.4475
-212,AKK,PAKH,Akhiok Airport,"Akhiok, Alaska",United States,UTC−09:00,56.93861111111111,-154.1825
-213,AKL,NZAA,Auckland Airport,Auckland,New Zealand,UTC+12:00,-37.00805555555556,174.79166666666666
-214,AKM,,Zakouma Airport,Zakouma National Park,Chad,UTC+01:00,10.890833333333333,19.8175
-215,AKN,PAKN,King Salmon Airport,"King Salmon, Alaska",United States,UTC−09:00,58.67638888888889,-156.6486111111111
-216,AKO,KAKO,Colorado Plains Regional Airport,"Akron, Colorado",United States,UTC−07:00,40.175555555555555,-103.22194444444445
-217,AKP,PAKP,Anaktuvuk Pass Airport,"Anaktuvuk Pass, Alaska",United States,UTC−09:00,68.13361111111112,-151.7433333333333
-218,AKQ,WIAG,Gunung Batin Airport,Astraksetra,Indonesia,UTC+07:00,-4.616666666666667,105.23333333333333
-219,AKR,DNAK,Akure Airport,Akure,Nigeria,UTC+01:00,,
-220,AKS,AGGA,Auki Gwaunaru'u Airport,"Auki, Malaita",Solomon Islands,UTC+11:00,,
-221,AKT,LCRA,RAF Akrotiri,Akrotiri,United Kingdom,UTC+02:00,34.59055555555556,32.98777777777778
-222,AKU,ZWAK,Aksu Airport,"Aksu, Xinjiang",China,UTC+08:00,41.2625,80.29166666666667
-223,AKV,CYKO,Akulivik Airport,"Akulivik, Quebec",Canada,UTC−05:00,60.81861111111112,-78.14861111111112
-224,AKW,OIAG,Aghajari Airport,Aghajari,Iran,UTC+03:30,30.744444444444447,49.676944444444445
-225,AKX,UATT,Aktobe Airport,Aktobe,Kazakhstan,UTC+05:00,,
-226,AKY,VYSW,Sittwe Airport,Sittwe,Myanmar,UTC+06:30,,
-227,ALA,UAAA,Almaty International Airport,Almaty,Kazakhstan,UTC+06:00,43.35527777777778,77.04472222222222
-228,ALB,KALB,Albany International Airport,"Albany, New York",United States,UTC−05:00,,
-229,ALC,LEAL,Alicante–Elche Airport,"Alicante, Valencia",Spain,UTC+01:00,38.282222222222224,-0.5580555555555556
-230,ALD,SPAR,Alerta Airport,Alerta,Peru,UTC−05:00,,
-231,ALE,,Alpine–Casparis Municipal Airport,"Alpine, Texas",United States,UTC−06:00,30.38673,-103.6805
-232,ALF,ENAT,Alta Airport,Alta,Norway,UTC+01:00,69.97611111111111,23.371666666666666
-233,ALG,DAAG,Houari Boumediene Airport,Algiers,Algeria,UTC+01:00,36.69101388888888,3.2154083333333334
-234,ALH,YABA,Albany Airport,"Albany, Western Australia",Australia,UTC+08:00,,
-235,ALI,KALI,Alice International Airport,"Alice, Texas",United States,UTC−06:00,27.740833333333335,-98.02694444444444
-236,ALJ,FAAB,Alexander Bay Airport,Alexander Bay,South Africa,UTC+02:00,-28.573333333333334,16.534444444444446
-237,ALK,,Asella Airport,Asella,Ethiopia,UTC+03:00,,
-238,ALL,LIMG,Albenga Airport,"Albenga, Liguria",Italy,UTC+01:00,,
-239,ALM,KALM,Alamogordo–White Sands Regional Airport,"Alamogordo, New Mexico",United States,UTC−07:00,32.84,-105.99055555555556
-240,ALN,KALN,St. Louis Regional Airport,"Alton, Illinois",United States,UTC−06:00,38.890277777777776,-90.0461111111111
-241,ALO,KALO,Waterloo Regional Airport,"Waterloo, Iowa",United States,UTC−06:00,,
-242,ALP,OSAP,Aleppo International Airport,Aleppo,Syria,UTC+02:00,,
-243,ALQ,SSLT,Alegrete Airport,"Alegrete, Rio Grande do Sul",Brazil,UTC−03:00,-29.8125,-55.89222222222222
-244,ALR,NZLX,Alexandra Aerodrome,Alexandra,New Zealand,UTC+12:00,,
-245,ALS,KALS,San Luis Valley Regional Airport,"Alamosa, Colorado",United States,UTC−07:00,37.434999999999995,-105.86638888888888
-246,ALT,,Alenquer Airport,"Alenquer, Pará",Brazil,UTC−03:00,-1.9169444444444443,-54.72277777777778
-247,ALU,HCMA,Alula Airport,Alula,Somalia,UTC+03:00,11.958333333333332,50.74861111111111
-248,ALW,KALW,Walla Walla Regional Airport,"Walla Walla, Washington",United States,UTC−08:00,46.09,-118.29
-249,ALX,KALX,Thomas C. Russell Field,"Alexander City, Alabama",United States,UTC−06:00,32.914722222222224,-85.96305555555556
-250,ALY,HEAX,El Nouzha Airport,Alexandria,Egypt,UTC+02:00,,
-251,ALZ,,Alitak Seaplane Base,"Lazy Bay, Alaska",United States,UTC−09:00,56.89944444444444,-154.24777777777777
-252,AMA,KAMA,Rick Husband Amarillo International Airport,"Amarillo, Texas",United States,UTC−06:00,35.21944444444445,-101.70583333333333
-253,AMB,FMNE,Ambilobe Airport,Ambilobe,Madagascar,UTC+03:00,-13.188333333333334,48.98777777777778
-254,AMC,FTTN,Am Timan Airport,Am Timan,Chad,UTC+01:00,11.035472222222221,20.274944444444444
-255,AMD,VAAH,Sardar Vallabhbhai Patel International Airport,"Ahmedabad, Gujarat",India,UTC+05:30,23.077222222222222,72.63472222222222
-256,AME,,Alto Molocue Airport,Alto Molocue,Mozambique,UTC+02:00,,
-257,AMF,AYAA,Ama Airport,Ama,Papua New Guinea,UTC+10:00,,
-258,AMG,,Amboin Airport,Amboin,Papua New Guinea,UTC+10:00,,
-259,AMH,HAAM,Arba Minch Airport,Arba Minch,Ethiopia,UTC+03:00,6.039722222222222,37.59027777777778
-260,AMI,WADA,"<a href=""/wiki/Selaparang_Airport"" title=""Selaparang Airport"">Selaparang Airport","<a href=""/wiki/Mataram_(city)"" title=""Mataram (city)"">Mataram",Indonesia,,,
-261,AMJ,SNAR,Almenara Airport,"Almenara, Minas Gerais",Brazil,UTC−03:00,,
-262,AMK,,Animas Air Park,"Durango, Colorado",United States,UTC−07:00,37.20305555555556,-107.86916666666666
-263,AML,,Puerto Armuelles Airport,Puerto Armuelles,Panama,UTC−05:00,,
-264,AMM,OJAI,Queen Alia International Airport,Amman,Jordan,UTC+02:00,,
-265,AMN,KAMN,Gratiot Community Airport,"Alma, Michigan",United States,UTC−05:00,,
-266,AMO,FTTU,Mao Airport,Mao,Chad,UTC+01:00,14.146444444444445,15.315138888888889
-267,AMP,FMSY,Ampanihy Airport,Ampanihy,Madagascar,UTC+03:00,-24.6995,44.7333
-268,AMQ,WAPP,Pattimura Airport,Ambon,Indonesia,UTC+09:00,,
-269,AMS,EHAM,Amsterdam Airport Schiphol,Amsterdam,Netherlands,UTC+01:00,52.3,4.765
-270,AMT,YAMT,Amata Airport,"Amata, South Australia",Australia,UTC+09:30,-26.096666666666668,131.20333333333335
-271,AMU,AYAM,Amanab Airport,Amanab,Papua New Guinea,UTC+10:00,,
-272,AMV,ULDD,Amderma Airport,"Amderma, Nenets Autonomous Okrug",Russia,UTC+03:00,69.76333333333334,61.56333333333333
-273,AMW,KAMW,Ames Municipal Airport,"Ames, Iowa",United States,UTC−06:00,,
-274,AMX,,Ammaroo Airport,"Ammaroo, Northern Territory",Australia,UTC+09:30,,
-275,AMY,,Ambatomainty Airport,Ambatomainty,Madagascar,UTC+03:00,-17.685555555555556,45.625277777777775
-276,AMZ,NZAR,Ardmore Airport,Ardmore,New Zealand,UTC+12:00,,
-277,ANA,DNAB,Angama Mara Airport,"Angama Mara, Narok County",Kenya,UTC+03:00,,
-278,ANB,KANB,Anniston Regional Airport,"Anniston, Alabama",United States,UTC−06:00,33.588055555555556,-85.85805555555555
-279,ANC,PANC,Ted Stevens Anchorage International Airport,"Anchorage, Alaska",United States,UTC−09:00,61.174166666666665,-149.9983333333333
-280,AND,KAND,Anderson Regional Airport,"Anderson, South Carolina",United States,UTC−05:00,34.49472222222222,-82.70944444444444
-281,ANE,LFJR,Angers – Loire Airport,"Angers, Pays de la Loire",France,UTC+01:00,47.56027777777778,-0.31222222222222223
-282,ANF,SCFA,Cerro Moreno International Airport,Antofagasta,Chile,UTC−04:00,-23.444444444444446,-70.44500000000001
-283,ANG,LFBU,Angoulême – Cognac International Airport,"Angoulême, Poitou-Charentes",France,UTC+01:00,45.72888888888889,0.21888888888888888
-284,ANI,PANI,Aniak Airport,"Aniak, Alaska",United States,UTC−09:00,61.58166666666667,-159.54305555555555
-285,ANJ,FCBZ,Zanaga Airport,Zanaga,Republic of the Congo,UTC+01:00,-2.8472222222222223,13.820833333333333
-286,ANK,LTAD,Etimesgut Air Base,Ankara,Turkey,UTC+03:00,39.94983055555555,32.68862222222222
-287,ANL,,Andulo Airport,Andulo,Angola,UTC+01:00,-11.470833333333333,16.711111111111112
-288,ANM,FMNH,Antsirabato Airport,Antalaha,Madagascar,UTC+03:00,,
-289,ANN,PANT,Annette Island Airport,"Annette Island, Alaska",United States,UTC−08:00,55.0425,-131.57222222222222
-290,ANO,FQAG,Angoche Airport,Angoche,Mozambique,UTC+02:00,-16.181944444444447,39.94472222222222
-291,ANP,KANP,Lee Airport,"Annapolis, Maryland",United States,UTC−05:00,38.94277777777778,-76.56833333333333
-292,ANQ,KANQ,Tri-State Steuben County Airport,"Angola, Indiana",United States,UTC−05:00,41.63972222222222,-85.08361111111111
-293,ANR,EBAW,Antwerp International Airport,Antwerp,Belgium,UTC+01:00,51.18944444444444,4.460277777777778
-294,ANS,SPHY,Andahuaylas Airport,Andahuaylas,Peru,UTC−05:00,-13.708333333333332,-73.35138888888888
-295,ANU,TAPA,V. C. Bird International Airport,Antigua,Antigua and Barbuda,UTC−04:00,17.136666666666667,-61.793055555555554
-296,ANV,PANV,Anvik Airport,"Anvik, Alaska",United States,UTC−09:00,,
-297,ANW,KANW,Ainsworth Regional Airport,"Ainsworth, Nebraska",United States,UTC−06:00,42.57916666666667,-99.99305555555556
-298,ANX,ENAN,"Andøya Airport, Andenes",Andenes,Norway,UTC+01:00,69.2925,16.144166666666667
-299,ANY,KANY,Anthony Municipal Airport,"Anthony, Kansas",United States,UTC−06:00,,
-300,ANZ,,Angus Downs Airport,"Angus Downs, Northern Territory",Australia,UTC+09:30,,
-301,AOA,,Aroa Airport,Aroa,Papua New Guinea,UTC+10:00,,
-302,AOB,,Annanberg Airport,Annanberg,Papua New Guinea,UTC+10:00,,
-303,AOC,EDAC,Leipzig–Altenburg Airport,"Altenburg, Thuringia",Germany,UTC+01:00,,
-304,AOD,,Abou-Deïa Airport,Abou-Deïa,Chad,UTC+01:00,11.466666666666667,19.283333333333335
-305,AOE,LTBY,Anadolu Airport,Eskişehir,Turkey,UTC+03:00,,
-306,AOG,ZYAS,Anshan Teng'ao Airport,"Anshan, Liaoning",China,UTC+08:00,41.10472222222222,122.85583333333332
-307,AOH,KAOH,Lima Allen County Airport,"Lima, Ohio",United States,UTC−05:00,,
-308,AOI,LIPY,Ancona Falconara Airport,"Ancona, Marche",Italy,UTC+01:00,,
-309,AOJ,RJSA,Aomori Airport,"Aomori, Honshu",Japan,UTC+09:00,40.733333333333334,140.68861111111113
-310,AOK,LGKP,Karpathos Island National Airport,Karpathos,Greece,UTC+02:00,35.42055555555555,27.146666666666665
-311,AOL,SARL,Paso de los Libres Airport,"Paso de los Libres, Corrientes",Argentina,UTC−03:00,-29.689722222222223,-57.15138888888889
-312,AOM,,Adam Airport,Adam,Oman,UTC+04:00,22.493055555555557,57.38194444444444
-313,AON,,Arona Airport,Arona,Papua New Guinea,UTC+10:00,,
-314,AOO,KAOO,Altoona–Blair County Airport,"Altoona, Pennsylvania",United States,UTC−05:00,40.296388888888885,-78.32
-315,AOP,,Alférez FAP Alfredo Vladimir Sara Bauer Airport,Andoas,Peru,UTC−05:00,-2.7958333333333334,-76.46666666666667
-316,AOR,WMKA,Sultan Abdul Halim Airport,"Alor Setar, Kedah",Malaysia,UTC+08:00,6.194444444444445,100.40083333333334
-317,AOS,,Amook Bay Seaplane Base,"Amook Bay, Alaska",United States,UTC−09:00,57.47138888888889,-153.8152777777778
-318,AOT,LIMW,Aosta Valley Airport,"Aosta, Aosta Valley",Italy,UTC+01:00,,
-319,AOU,VLAP,Attapeu International Airport,Attapeu,Laos,UTC+07:00,14.793055555555556,107.04527777777777
-320,APA,KAPA,Centennial Airport,"Denver, Colorado",United States,UTC−07:00,39.57,-104.84944444444444
-321,APB,SLAP,Apolo Airport,Apolo,Bolivia,UTC−04:00,-14.73611111111111,-68.41111111111111
-322,APC,KAPC,Napa County Airport,"Napa, California",United States,UTC−08:00,38.21319444444445,-122.28069444444445
-323,APF,KAPF,Naples Municipal Airport,"Naples, Florida",United States,UTC−05:00,,
-324,APG,KAPG,Phillips Army Airfield,"Aberdeen Proving Ground, Maryland",United States,UTC−05:00,,
-325,APH,KAPH,A.P. Hill Army Airfield,"Fort A.P. Hill, Virginia",United States,UTC−05:00,38.068889,-77.318333
-326,API,SKAP,Captain Luis F. Gómez Niño Air Base,Apiay,Colombia,UTC−05:00,,
-327,APK,NTGD,Apataki Airport,"Apataki, Tuamotus",French Polynesia,UTC−10:00,-15.573611111111111,-146.415
-328,APL,FQNP,Nampula Airport,Nampula,Mozambique,UTC+02:00,,
-329,APN,KAPN,Alpena County Regional Airport,"Alpena, Michigan",United States,UTC−05:00,45.07805555555556,-83.56027777777777
-330,APO,SKLC,Antonio Roldán Betancourt Airport,Apartadó,Colombia,UTC−05:00,7.8125,-76.71666666666667
-331,APP,,Asapa Airport,Asapa,Papua New Guinea,UTC+10:00,,
-332,APQ,SNAL,Arapiraca Airport,"Arapiraca, Alagoas",Brazil,UTC−03:00,,
-333,APR,AYPE,April River Airport,April River,Papua New Guinea,UTC+10:00,,
-334,APS,SWNS,Anápolis Airport,"Anápolis, Goiás",Brazil,UTC−03:00,,
-335,APT,KAPT,Marion County Airport,"Jasper, Tennessee",United States,UTC−06:00,,
-336,APU,SSAP,Apucarana Airport,"Apucarana, Paraná",Brazil,UTC−03:00,-23.612222222222222,-51.385
-337,APV,KAPV,Apple Valley Airport,"Apple Valley, California",United States,UTC−08:00,,
-338,APW,NSFA,Faleolo International Airport,"Apia, Upolu Island",Samoa,UTC+13:00,,
-339,APX,SSOG,Arapongas Airport,"Arapongas, Paraná",Brazil,UTC−03:00,-23.355833333333333,-51.490833333333335
-340,APY,SNAI,Alto Parnaíba Airport,"Alto Parnaíba, Maranhão",Brazil,UTC−03:00,,
-341,APZ,SAHZ,Zapala Airport,"Zapala, Neuquén",Argentina,UTC−03:00,-38.97638888888889,-70.10972222222222
-342,AQA,SBAQ,Araraquara Airport,"Araraquara, São Paulo",Brazil,UTC−03:00,-21.804444444444446,-48.140277777777776
-343,AQB,MGQC,Quiché Airport,Quiché,Guatemala,UTC−06:00,15.0125,-91.15138888888889
-344,AQG,ZSAQ,Anqing Tianzhushan Airport,"Anqing, Anhui",China,UTC+08:00,30.58222222222222,117.05027777777778
-345,AQI,OEPA,Al Qaisumah/Hafr Al Batin Airport,Qaisumah,Saudi Arabia,UTC+03:00,28.33522222222222,46.124944444444445
-346,AQJ,OJAQ,King Hussein International Airport,Aqaba,Jordan,UTC+02:00,,
-347,AQM,,Ariquemes Airport,"Ariquemes, Rondônia",Brazil,UTC−04:00,-9.880555555555556,-63.04722222222222
-348,AQP,SPQU,Rodríguez Ballón International Airport,Arequipa,Peru,UTC−05:00,-16.340277777777775,-71.56666666666666
-349,AQS,,Saqani Airport,Saqani,Fiji,UTC+12:00,,
-350,AQY,,Girdwood Airport,"Girdwood, Alaska",United States,UTC−09:00,60.96611111111111,-149.12583333333333
-351,ARA,KARA,Acadiana Regional Airport,"New Iberia, Louisiana",United States,UTC−06:00,30.03777777777778,-91.88388888888889
-352,ARB,KARB,Ann Arbor Municipal Airport,"Ann Arbor, Michigan",United States,UTC−05:00,42.223055555555554,-83.74555555555555
-353,ARC,PARC,Arctic Village Airport,"Arctic Village, Alaska",United States,UTC−09:00,,
-354,ARD,WATM,Alor Island Airport,Alor Island,Indonesia,UTC+08:00,-8.131666666666668,124.5975
-355,ARE,TJAB,Antonio (Nery) Juarbe Pol Airport,"Arecibo, Puerto Rico",United States,UTC−04:00,18.45111111111111,-66.67555555555556
-356,ARF,,Acaricuara Airport,Acaricuara,Colombia,UTC−05:00,,
-357,ARG,KARG,Walnut Ridge Regional Airport,"Walnut Ridge, Arkansas",United States,UTC−06:00,36.124722222222225,-90.92500000000001
-358,ARH,ULAA,Talagi Airport,"Arkhangelsk, Arkhangelsk Oblast",Russia,UTC+03:00,64.6,40.71666666666667
-359,ARI,SCAR,Chacalluta International Airport,Arica,Chile,UTC−04:00,-18.34861111111111,-70.33888888888889
-360,ARJ,WAJA,Arso Airport,Arso,Indonesia,UTC+09:00,-2.9333329,140.7833405
-361,ARK,HTAR,Arusha Airport,Arusha,Tanzania,UTC+03:00,-3.3666666666666667,36.621944444444445
-362,ARL,DFER,Arly Airport,Arly,Burkina Faso,UTC+00:00,11.597323888888889,1.4814208333333334
-363,ARM,YARM,Armidale Airport,"Armidale, New South Wales",Australia,UTC+10:00,-30.528333333333332,151.61666666666667
-364,ARN,ESSA,Stockholm Arlanda Airport,Stockholm,Sweden,UTC+01:00,59.651944444444446,17.91861111111111
-365,ARO,,Arboletes Airport,Arboletes,Colombia,UTC−05:00,,
-366,ARP,,Aragip Airport,Aragip,Papua New Guinea,UTC+10:00,,
-367,ARQ,"SKAT<sup id=""cite_ref-3"" class=""reference""><a href=""#cite_note-3"">[3]</a></sup>",El Troncal Airport,Arauquita,Colombia,UTC−05:00,7.021111111111111,-71.3888888888889
-368,ARR,SAVR,Alto Río Senguer Airport,"Alto Río Senguer, Chubut",Argentina,UTC−03:00,-45.013444444444445,-70.8128611111111
-369,ARS,SWEC,Aragarças Airport,"Aragarças, Goiás",Brazil,UTC−03:00,,
-370,ART,KART,Watertown International Airport,"Watertown, New York",United States,UTC−05:00,43.99194444444444,-76.02055555555556
-371,ARU,SBAU,Araçatuba Airport,"Araçatuba, São Paulo",Brazil,UTC−03:00,-21.144166666666667,-50.42638888888889
-372,ARV,KARV,Lakeland Airport,"Minocqua, Woodruff, Wisconsin",United States,UTC−06:00,45.92777777777778,-89.73083333333334
-373,ARW,LRAR,Arad International Airport,Arad,Romania,UTC+02:00,46.17666666666666,21.261944444444445
-374,ARX,SBAC,Aracati Airport,"Aracati, Canoa Quebrada",Brazil,UTC−03:00,-4.568611111111111,-37.80472222222222
-375,ARY,YARA,Ararat Airport,"Ararat, Victoria",Australia,UTC+10:00,-37.309999999999995,142.98833333333332
-376,ARZ,FNZE,N'zeto Airport,N'zeto,Angola,UTC+01:00,-7.256944444444445,12.863888888888889
-377,ASA,HHSB,Assab International Airport,Assab,Eritrea,UTC+03:00,13.071666666666667,42.644999999999996
-378,ASB,UTAA,Ashgabat International Airport,Ashgabat,Turkmenistan,UTC+05:00,37.98694444444445,58.36083333333333
-379,ASC,SLAS,Ascención de Guarayos Airport,Ascención de Guarayos,Bolivia,UTC−04:00,-15.931944444444444,-63.15611111111111
-380,ASD,MYAF,Andros Town International Airport,"Andros Town, Andros Island",Bahamas,UTC−05:00,24.698333333333334,-77.79555555555555
-381,ASE,KASE,Aspen–Pitkin County Airport,"Aspen, Colorado",United States,UTC−07:00,,
-382,ASF,URWA,Narimanovo Airport,"Astrakhan, Astrakhan Oblast",Russia,UTC+04:00,,
-383,ASG,NZAS,Ashburton Aerodrome,Ashburton,New Zealand,UTC+12:00,,
-384,ASH,KASH,Nashua Airport,"Nashua, New Hampshire",United States,UTC−05:00,42.781666666666666,-71.51472222222222
-385,ASI,FHAW,RAF Ascension Island,"Ascension Island, British Overseas Territory, Ascension and Tristan da Cunha"">Saint Helena",Ascension and Tristan da Cunha</a>,UTC+00:00,-7.969444444444445,-14.393888888888888
-386,ASJ,RJKA,Amami Airport,"Amami, Satsunan Islands",Japan,UTC+09:00,28.430833333333336,129.71249999999998
-387,ASK,DIYO,Yamoussoukro Airport,Yamoussoukro,Côte d'Ivoire,UTC+00:00,6.90317,-5.36558
-388,ASL,KASL,Harrison County Airport,"Marshall, Texas",United States,UTC−06:00,,
-389,ASM,HHAS,Asmara International Airport,Asmara,Eritrea,UTC+03:00,15.291852777777777,38.910666666666664
-390,ASN,KASN,Talladega Municipal Airport,"Talladega, Alabama",United States,UTC−06:00,33.56944444444445,-86.05111111111111
-391,ASO,HASO,Asosa Airport,Asosa,Ethiopia,UTC+03:00,10.018333333333334,34.586111111111116
-392,ASP,YBAS,Alice Springs Airport,"Alice Springs, Northern Territory",Australia,UTC+09:30,-23.806944444444444,133.90222222222224
-393,ASQ,,Austin Airport,"Austin, Nevada",United States,UTC−08:00,,
-394,ASR,LTAU,Erkilet International Airport,Kayseri,Turkey,UTC+03:00,38.77027777777778,35.49527777777778
-395,AST,KAST,Astoria Regional Airport,"Astoria, Oregon",United States,UTC−08:00,46.158055555555556,-123.8786111111111
-396,ASU,SGAS,Silvio Pettirossi International Airport,Asunción,Paraguay,UTC−04:00,-25.239722222222223,-57.51916666666666
-397,ASV,HKAM,Amboseli Airport,Amboseli,Kenya,UTC+03:00,-2.6422222222222222,37.25
-398,ASW,HESN,Aswan International Airport,Aswan,Egypt,UTC+02:00,23.964166666666667,32.819722222222225
-399,ASX,KASX,John F. Kennedy Memorial Airport,"Ashland, Wisconsin",United States,UTC−06:00,46.54861111111111,-90.91888888888889
-400,ASY,KASY,Ashley Municipal Airport,"Ashley, North Dakota",United States,UTC−06:00,46.02472222222222,-99.35166666666666
-401,ASZ,,Asirim Airport,Asirim,Papua New Guinea,UTC+10:00,,
-402,ATA,SPHZ,Comandante FAP Germán Arias Graziani Airport,Huaraz,Peru,UTC−05:00,-9.347222222222223,-77.59861111111111
-403,ATB,HSAT,Atbara Airport,Atbara,Sudan,UTC+03:00,17.709722222222222,34.05694444444444
-404,ATC,MYCA,Arthur's Town Airport,"Arthur's Town, Cat Island",Bahamas,UTC−05:00,24.629444444444445,-75.6738888888889
-405,ATD,AGAT,Uru Harbour Airport,"Atoifi, Malaita",Solomon Islands,UTC+11:00,-8.873333333333333,161.0113888888889
-406,ATE,,Antlers Municipal Airport,"Antlers, Oklahoma",United States,UTC−06:00,,
-407,ATF,SEAM,Chachoan Airport,Ambato,Ecuador,UTC−05:00,,
-408,ATG,,PAF Base Minhas,Attock,Pakistan,UTC+05:00,33.86888888888889,72.40083333333334
-409,ATH,LGAV,Athens International Airport,Athens,Greece,UTC+02:00,37.936388888888885,23.947222222222223
-410,ATI,SUAG,Artigas International Airport,Artigas,Uruguay,UTC−03:00,,
-411,ATJ,FMME,Antsirabe Airport,Antsirabe,Madagascar,UTC+03:00,,
-412,ATK,PATQ,Atqasuk Edward Burnell Sr. Memorial Airport,"Atqasuk, Alaska",United States,UTC−09:00,70.46722222222222,-157.43555555555557
-413,ATL,KATL,Hartsfield–Jackson Atlanta International Airport,"Atlanta, Georgia",United States,UTC−05:00,33.63666666666666,-84.42805555555556
-414,ATM,SBHT,Altamira Airport,"Altamira, Pará",Brazil,UTC−03:00,-3.2508333333333335,-52.25222222222222
-415,ATN,AYNX,Namatanai Airport,Namatanai,Papua New Guinea,UTC+10:00,,
-416,ATO,KUNI,Ohio University Airport,"Athens, Albany, Ohio",United States,UTC−05:00,,
-417,ATP,AYAI,Aitape Airstrip,Aitape,Papua New Guinea,UTC+10:00,,
-418,ATQ,VIAR,Sri Guru Ram Dass Jee International Airport,"Amritsar, Punjab",India,UTC+05:30,31.70777777777778,74.79916666666666
-419,ATR,GQPA,Atar International Airport,Atar,Mauritania,UTC+00:00,,
-420,ATS,KATS,Artesia Municipal Airport,"Artesia, New Mexico",United States,UTC−07:00,32.8525,-104.46777777777778
-421,ATT,,Atmautluak Airport,"Atmautluak, Alaska",United States,UTC−09:00,,
-422,ATU,PAAT,Casco Cove Coast Guard Station,"Attu Island, Alaska",United States,UTC−10:00,52.8325,173.17555555555555
-423,ATV,FTTI,Ati Airport,Ati,Chad,UTC+01:00,13.239722222222222,18.313583333333334
-424,ATW,KATW,Appleton International Airport,"Appleton, Wisconsin",United States,UTC−06:00,44.25805555555556,-88.51916666666666
-425,ATX,,Atbasar Airport,Atbasar,Kazakhstan,UTC+06:00,51.85166666666667,68.36333333333333
-426,ATY,KATY,Watertown Regional Airport,"Watertown, South Dakota",United States,UTC−06:00,44.913888888888884,-97.15472222222223
-427,ATZ,HEAT,Assiut Airport,Assiut,Egypt,UTC+02:00,27.04638888888889,31.011944444444445
-428,AUA,TNCA,Queen Beatrix International Airport,Aruba,Kingdom of the Netherlands,UTC−04:00,12.501388888888888,-70.01527777777778
-429,AUC,SKUC,Santiago Pérez Quiroz Airport,Arauca,Colombia,UTC−05:00,,
-430,AUD,YAGD,Augustus Downs Airport,"Augustus Downs Station, Queensland",Australia,UTC+10:00,,
-431,AUE,,Abu Rudeis Airport,Abou Redis,Egypt,UTC+02:00,28.9,33.2
-432,AUF,LFLA,Auxerre – Branches Aerodrome,"Auxerre, Burgundy",France,UTC+01:00,47.84638888888889,3.4966666666666666
-433,AUG,KAUG,Augusta State Airport,"Augusta, Maine",United States,UTC−05:00,44.32055555555556,-69.79722222222222
-434,AUH,OMAA,Abu Dhabi International Airport,Abu Dhabi,United Arab Emirates,UTC+04:00,24.43305555555556,54.651111111111106
-435,AUI,AYND,Aua Island Airport,Aua Island,Papua New Guinea,UTC+10:00,,
-436,AUJ,AYAT,Ambunti Airport,Ambunti,Papua New Guinea,UTC+10:00,,
-437,AUK,,Alakanuk Airport,"Alakanuk, Alaska",United States,UTC−09:00,62.683055555555555,-164.72219444444445
-438,AUL,,Aur Airport,Aur Atoll,Marshall Islands,UTC+12:00,8.302777777777779,171.16166666666666
-439,AUM,KAUM,Austin Municipal Airport,"Austin, Minnesota",United States,UTC−06:00,43.6625,-92.93277777777779
-440,AUN,KAUN,Auburn Municipal Airport,"Auburn, California",United States,UTC−08:00,,
-441,AUO,KAUO,Auburn University Regional Airport,"Auburn, Alabama",United States,UTC−06:00,32.615,-85.43388888888889
-442,AUP,AYAG,Agaun Airport,Agaun,Papua New Guinea,UTC+10:00,-9.930833333333334,149.38566666666668
-443,AUQ,NTMN,Atuona Airport,"Atuona, Marquesas Islands",French Polynesia,UTC−09:30,-9.76861111111111,-139.01097222222222
-444,AUR,LFLW,Aurillac – Tronquières Airport,"Aurillac, Auvergne",France,UTC+01:00,44.8975,2.4166666666666665
-445,AUS,KAUS,Austin–Bergstrom International Airport,"Austin, Texas",United States,UTC−06:00,30.194444444444446,-97.67
-446,AUT,WPAT,Atauro Airport,Atauro Island,East Timor,UTC+09:00,,
-447,AUU,YAUR,Aurukun Airport,"Aurukun, Queensland",Australia,UTC+10:00,-13.356333333333334,141.72091666666668
-448,AUV,AYUM,Aumo Airport,Aumo,Papua New Guinea,UTC+10:00,,
-449,AUW,KAUW,Wausau Downtown Airport,"Wausau, Wisconsin",United States,UTC−06:00,,
-450,AUX,SWGN,Araguaína Airport,"Araguaína, Tocantins",Brazil,UTC−03:00,-7.2283333333333335,-48.240833333333335
-451,AUY,NVVA,Anatom Airport,"Anatom Island, Tafea",Vanuatu,UTC+11:00,-20.249166666666667,169.7713888888889
-452,AUZ,KARR,Aurora Municipal Airport,"Aurora, Illinois",United States,UTC−06:00,41.77194444444444,-88.47555555555556
-453,AVA,ZUAS,Anshun Huangguoshu Airport,"Anshun, Guizhou",China,UTC+08:00,26.260555555555555,105.87305555555555
-454,AVB,LIPA,Aviano Air Base,"Aviano, Pordenone",Italy,UTC+01:00,46.03138888888889,12.596944444444444
-455,AVG,YAUV,Auvergne Airport,"Auvergne Station, Northern Territory",Australia,UTC+09:30,45.78583333333333,3.1625
-456,AVI,MUCA,Máximo Gómez Airport,Ciego de Ávila,Cuba,UTC−05:00,22.026944444444442,-78.78944444444444
-457,AVK,ZMAH,Arvaikheer Airport,Arvaikheer,Mongolia,UTC+08:00,,
-458,AVL,KAVL,Asheville Regional Airport,"Asheville, North Carolina",United States,UTC−05:00,35.43611111111111,-82.54166666666667
-459,AVN,LFMV,Avignon – Provence Airport,"Avignon, Provence-Alpes-Côte d'Azur",France,UTC+01:00,43.906666666666666,4.901944444444445
-460,AVO,KAVO,Avon Park Executive Airport,"Avon Park, Florida",United States,UTC−05:00,27.591388888888886,-81.52888888888889
-461,AVP,KAVP,Wilkes-Barre/Scranton International Airport,"Wilkes-Barre, Scranton, Pennsylvania",United States,UTC−05:00,,
-462,AVU,AGGJ,Avu Avu Airport,"Avu Avu, Guadalcanal",Solomon Islands,UTC+11:00,,
-463,AVV,YMAV,Avalon Airport,"Avalon, Victoria",Australia,UTC+10:00,-38.04055555555556,144.47083333333333
-464,AVW,KAVQ,Marana Regional Airport,"Tucson, Arizona",United States,UTC−07:00,32.409555555555556,-111.2183888888889
-465,AVX,KAVX,Catalina Airport,"Avalon, California",United States,UTC−08:00,33.405,-118.41583333333334
-466,AWA,HALA,Awasa Airport,Awasa,Ethiopia,UTC+03:00,7.095,38.39833333333333
-467,AWB,AYAW,Awaba Airport,Awaba,Papua New Guinea,UTC+10:00,-8.014333333333333,142.751
-468,AWD,NVVB,Aniwa Airport,"Aniwa Island, Tafea",Vanuatu,UTC+11:00,-19.234444444444446,169.60055555555556
-469,AWE,,Alowe Airport,Alowe,Gabon,UTC+01:00,,
-470,AWK,PWAK,Wake Island Airfield,Wake Island,United States Minor Outlying Islands,UTC+12:00,19.2825,166.63666666666666
-471,AWM,KAWM,West Memphis Municipal Airport,"West Memphis, Arkansas",United States,UTC−06:00,35.135,-90.23444444444445
-472,AWN,,Alton Downs Airport,"Alton Downs, South Australia",Australia,UTC+09:30,,
-473,AWP,,Austral Downs Airport,"Austral Downs, Northern Territory",Australia,UTC+09:30,,
-474,AWR,,Awar Airport,Awar,Papua New Guinea,UTC+10:00,,
-475,AWZ,OIAW,Ahvaz International Airport,Ahvaz,Iran,UTC+03:30,31.3375,48.761944444444445
-476,AXA,TQPF,Clayton J. Lloyd International Airport,The Valley,British Overseas Territory,UTC−04:00,18.204722222222223,-63.055
-477,AXB,,Maxson Airfield (FAA: 89N),"Alexandria Bay, New York",United States,UTC−05:00,,
-478,AXC,YAMC,Aramac Airport,"Aramac, Queensland",Australia,UTC+10:00,-22.95788888888889,145.2496111111111
-479,AXD,LGAL,Alexandroupoli Airport,Alexandroupoli,Greece,UTC+02:00,40.855869444444444,25.956263888888888
-480,AXE,,Xanxere Airport,"Xanxerê, Santa Catarina",Brazil,UTC−03:00,,
-481,AXF,,Alxa Left Banner Bayanhot Airport,"Alxa Left Banner, Inner Mongolia",China,UTC+08:00,38.74831,105.58858
-482,AXG,KAXA,Algona Municipal Airport,"Algona, Iowa",United States,UTC−06:00,,
-483,AXJ,RJDA,Amakusa Airfield,"Amakusa, Amakusa Islands",Japan,UTC+09:00,32.48222222222223,130.1588888888889
-484,AXK,OYAT,Ataq Airport,Ataq,Yemen,UTC+03:00,14.551111111111112,46.82611111111112
-485,AXL,,Alexandria Airport,"Alexandria Station, Northern Territory",Australia,UTC+09:30,,
-486,AXM,SKAR,El Edén International Airport,Armenia,Colombia,UTC−05:00,,
-487,AXN,KAXN,Alexandria Municipal Airport,"Alexandria, Minnesota",United States,UTC−06:00,,
-488,AXP,MYAP,Spring Point Airport,"Spring Point, Acklins Island",Bahamas,UTC−05:00,22.441944444444445,-73.97083333333333
-489,AXR,NTGU,Arutua Airport,"Arutua, Tuamotus",French Polynesia,UTC−10:00,-15.246388888888887,-146.62027777777777
-490,AXS,KAXS,Altus/Quartz Mountain Regional Airport,"Altus, Oklahoma",United States,UTC−06:00,34.69880555555555,-99.33847222222222
-491,AXT,RJSK,Akita Airport,"Akita, Honshu",Japan,UTC+09:00,39.61555555555556,140.2186111111111
-492,AXU,HAAX,Axum Airport,Axum,Ethiopia,UTC+03:00,14.136944444444444,38.77611111111111
-493,AXV,KAXV,Neil Armstrong Airport,"Wapakoneta, Ohio",United States,UTC−05:00,40.493611111111115,-84.29805555555555
-494,AXX,KAXX,Angel Fire Airport,"Angel Fire, New Mexico",United States,UTC−07:00,36.42200027777778,-105.289905
-495,AYA,,Ayapel Airport,Ayapel,Colombia,UTC−05:00,,
-496,AYC,,Ayacucho Airport,Ayacucho,Colombia,UTC−05:00,-13.154166666666667,-74.20416666666667
-497,AYD,,Alroy Downs Airport,"Alroy Downs, Northern Territory",Australia,UTC+09:30,,
-498,AYG,SKYA,Yaguara Airport,Yaguara,Colombia,UTC−05:00,,
-499,AYI,,Yari Airport,Yari,Colombia,UTC−05:00,,
-500,AYK,UAUR,Arkalyk Airport,Arkalyk,Kazakhstan,UTC+06:00,,
-501,AYL,,Anthony Lagoon Airport,"Anthony Lagoon, Northern Territory",Australia,UTC+09:30,,
-502,AYM,,Yas Island Seaplane Base,"Yas Island, Abu Dhabi",United Arab Emirates,UTC+04:00,,
-503,AYN,ZHAY,Anyang Airport,"Anyang, Henan",China,UTC+08:00,36.13388888888889,114.34388888888888
-504,AYO,SGAY,Juan de Ayolas Airport,Ayolas,Paraguay,UTC−04:00,-27.370555555555555,-56.85388888888889
-505,AYP,SPHO,Coronel FAP Alfredo Mendívil Duarte Airport,Ayacucho,Peru,UTC−05:00,-13.154166666666667,-74.20416666666667
-506,AYQ,YAYE,Ayers Rock Airport,"Yulara, Northern Territory",Australia,UTC+09:30,-25.18611111111111,130.97555555555556
-507,AYR,YAYR,Ayr Airport,"Ayr, Queensland",Australia,UTC+10:00,,
-508,AYS,KAYS,Waycross–Ware County Airport,"Waycross, Georgia",United States,UTC−05:00,31.249166666666667,-82.39555555555556
-509,AYT,LTAI,Antalya Airport,Antalya,Turkey,UTC+03:00,36.900277777777774,30.79277777777778
-510,AYU,AYAY,Aiyura Airport,Aiyura,Papua New Guinea,UTC+10:00,-6.337777777777777,145.9038888888889
-511,AYW,WASA,Ayawasi Airport,"Ayawasi, West Papua",Indonesia,UTC+08:00,-1.2,132.5
-512,AYX,SPAY,Tnte. Gral. Gerardo Pérez Pinedo Airport,"Atalaya Province, Department of Ucayali",Peru,UTC−05:00,,
-513,AYY,,Arugam Bay Seaplane Base,Pottuvil,Sri Lanka,UTC+05:30,,
-514,AZA,KIWA,Phoenix–Mesa Gateway Airport,"Phoenix, Arizona",United States,UTC−07:00,,
-515,AZB,,Amazon Bay Airport,Amazon Bay,Papua New Guinea,UTC+10:00,,
-516,AZD,OIYY,Shahid Sadooghi Airport,Yazd,Iran,UTC+03:30,,
-517,AZG,,Pablo L. Sidar Airport,"Apatzingán, Michoacán",Mexico,UTC−06:00,,
-518,AZI,OMAD,Al Bateen Executive Airport,Abu Dhabi,United Arab Emirates,UTC+04:00,24.428333333333335,54.45805555555556
-519,AZL,"SWTU<sup id=""cite_ref-4"" class=""reference""><a href=""#cite_note-4"">[4]</a></sup>",Fazenda Tucunaré Airport,"Sapezal, Mato Grosso",Brazil,UTC−04:00,,
-520,AZN,UTFA,Andizhan Airport,Andizhan,Uzbekistan,UTC+05:00,40.72777777777778,72.29388888888889
-521,AZO,KAZO,Kalamazoo/Battle Creek International Airport,"Kalamazoo, Michigan",United States,UTC−05:00,42.235,-85.55194444444444
-522,AZP,MMJC,Jorge Jiménez Cantú National Airport,"Ciudad López Mateos, State of Mexico",Mexico,UTC−06:00,,
-523,AZR,DAUA,Touat-Cheikh Sidi Mohamed Belkebir Airport,Adrar,Algeria,UTC+01:00,27.83888888888889,-0.1861111111111111
-524,AZS,MDCY,Samaná El Catey International Airport,El Catey,Dominican Republic,UTC−04:00,19.27,-69.7375
-525,AZT,,Zapatoca Airport,Zapatoca,Colombia,UTC−05:00,,
-526,AZZ,FNAM,Ambriz Airport,Ambriz,Angola,UTC+01:00,-7.8625,13.115277777777777
+,IATA,ICAO,Airport,Location,Country,UTC,Latitudes,Longitudes,Elevation
+0,AAA,NTGA,Anaa Airport,"Anaa, Tuamotus",French Polynesia,UTC−10:00,-17.348888888888887,-145.51222222222222,10
+1,AAB,YARY,Arrabury Airport,"Arrabury, Queensland",Australia,UTC+10:00,-26.69,141.04666666666665,334
+2,AAC,HEAR,El Arish International Airport,El Arish,Egypt,UTC+02:00,31.073333333333334,33.83583333333333,121
+3,AAD,,Adado Airport,"Adado, Galguduud",Somalia,UTC+03:00,6.095833333333333,46.6375,"1,001"
+4,AAE,DABB,Rabah Bitat Airport,Annaba,Algeria,UTC+01:00,36.82916666666667,7.813888888888889,5 m
+5,AAF,KAAF,Apalachicola Regional Airport,"Apalachicola, Florida",United States,UTC−05:00,29.7275,-85.0275,20
+6,AAG,SSYA,Arapoti Airport,"Arapoti, Paraná",Brazil,UTC−03:00,,,805 m
+7,AAH,EDKA,Merzbrück Airport,"Aachen, North Rhine-Westphalia",Germany,UTC+01:00,,,623
+8,AAI,SWRA,Arraias Airport,"Arraias, Tocantins",Brazil,UTC−03:00,-13.023888888888889,-46.885555555555555,586 m
+9,AAJ,SMCA,Cayana Airstrip,Awaradam,Suriname,UTC−03:00,3.8986111111111112,-55.57777777777778,360
+10,AAK,NGUK,Aranuka Airport,Aranuka,Kiribati,UTC+12:00,0.18527777777777776,173.6363888888889,6
+11,AAL,EKYT,Aalborg Airport,Aalborg,Denmark,UTC+01:00,57.09277777777778,9.849166666666667,10
+12,AAM,FAMD,Mala Mala Airport,Mala Mala,South Africa,UTC+02:00,-24.818055555555556,31.544722222222223,"1,124"
+13,AAN,OMAL,Al Ain International Airport,Al Ain,United Arab Emirates,UTC+04:00,24.261666666666667,55.60916666666667,866
+14,AAO,SVAN,Anaco Airport,Anaco,Venezuela,UTC−04:00,9.430277777777777,-64.47083333333333,721
+15,AAP,WALS,Aji Pangeran Tumenggung Pranoto International Airport,"Samarinda, East Kalimantan",Indonesia,UTC+08:00,-0.37361111111111106,117.25555555555556,25 m
+16,AAQ,URKA,Anapa Airport,"Anapa, Krasnodar Krai",Russia,UTC+03:00,45.00208333333333,37.34730555555556,174
+17,AAR,EKAH,Aarhus Airport,Aarhus,Denmark,UTC+01:00,56.30416666666667,10.619166666666667,82
+18,AAS,,Apalapsili Airport,Apalapsili,Indonesia,UTC+09:00,-3.8847222222222224,139.31055555555557,"3,000"
+19,AAT,ZWAT,Altay Airport,"Altay, Xinjiang",China,UTC+08:00,,,750 m
+20,AAU,NSAU,Asau Airport,"Asau, Savai'i Island",Samoa,UTC+13:00,-13.505,-172.6277777777778,
+21,AAV,RPMA,Allah Valley Airport,Surallah,Philippines,UTC+08:00,6.366666666666666,124.75083333333333,201 m
+22,AAX,SBAX,Araxá Airport,"Araxá, Minas Gerais",Brazil,UTC−03:00,-19.560555555555556,-46.96555555555556,999 m
+23,AAY,OYGD,Al Ghaydah Airport,Al Ghaydah,Yemen,UTC+03:00,16.193361111111113,52.17419444444444,134
+24,AAZ,MGQZ,Quetzaltenango Airport,Quetzaltenango,Guatemala,UTC−06:00,14.865277777777777,-91.50277777777778,"7,779"
+25,ABA,UNAA,Abakan International Airport,"Abakan, Republic of Khakassia",Russia,UTC+07:00,53.74333333333333,91.38583333333334,253 m
+26,ABB,DNAS,Asaba International Airport,Asaba,Nigeria,UTC+01:00,6.204166666666667,6.665277777777778,305
+27,ABC,LEAB,Albacete Airport,"Albacete, Castilla-La Mancha",Spain,UTC+01:00,38.94833333333333,-1.8633333333333335,"2,301"
+28,ABD,OIAA,Abadan International Airport,Abadan,Iran,UTC+03:30,30.36527777777778,48.23305555555556,7
+29,ABE,KABE,Lehigh Valley International Airport,"Allentown, Pennsylvania",United States,UTC−05:00,40.65233333333333,-75.44047222222223,393
+30,ABF,NGAB,Abaiang Atoll Airport,Abaiang,Kiribati,UTC+12:00,1.7963888888888888,173.0402777777778,10
+31,ABG,YABI,Abingdon Airport,"Abingdon Downs, Queensland",Australia,UTC+10:00,-17.6075,143.1836111111111,600
+32,ABH,YAPH,Alpha Airport,"Alpha, Queensland",Australia,UTC+10:00,-23.646666666666665,146.58333333333334,"1,255"
+33,ABI,KABI,Abilene Regional Airport,"Abilene, Texas",United States,UTC−06:00,32.41325,-99.68311111111112,"1,790.6"
+34,ABJ,DIAP,Port Bouet Airport,Abidjan,Côte d'Ivoire,UTC+00:00,5.261416666666666,-3.925777777777778,29 m
+35,ABK,HAKD,Kabri Dar Airport,Kebri Dahar,Ethiopia,UTC+03:00,6.732805555555555,44.24155555555556,
+36,ABL,PAFM,Ambler Airport,"Ambler, Alaska",United States,UTC−09:00,,,334
+37,ABM,YNPE,Northern Peninsula Airport,"Bamaga, Queensland",Australia,UTC+10:00,-10.950833333333332,142.45944444444444,34
+38,ABN,SMBN,Albina Airstrip,Albina,Suriname,UTC−03:00,5.513888888888889,-54.05,21
+39,ABO,DIAO,Aboisso Airport,Aboisso,Côte d'Ivoire,UTC+00:00,,,95
+40,ABP,,Atkamba Airport,Atkamba,Papua New Guinea,UTC+10:00,-6.066666666666666,141.1,150
+41,ABQ,KABQ,Albuquerque International Sunport,"Albuquerque, New Mexico",United States,UTC−07:00,,,"5,355"
+42,ABR,KABR,Aberdeen Regional Airport,"Aberdeen, South Dakota",United States,UTC−06:00,,,"1,302"
+43,ABS,HEBL,Abu Simbel Airport,Abu Simbel,Egypt,UTC+02:00,22.37591666666667,31.61163888888889,616
+44,ABT,OEBA,Al-Baha Domestic Airport,Al Bahah,Saudi Arabia,UTC+03:00,20.296111111111113,41.634166666666665,"5,486"
+45,ABU,WATA,Haliwen Airport,Atambua,Indonesia,UTC+08:00,,,"1,434"
+46,ABV,DNAA,Nnamdi Azikiwe International Airport,Abuja,Nigeria,UTC+01:00,,,"1,123"
+47,ABW,,Abau Airport,Abau,Papua New Guinea,UTC+10:00,-10.166666666666666,148.7,10
+48,ABX,YMAY,Albury Airport,"Albury, New South Wales",Australia,UTC+10:00,-36.068333333333335,146.95833333333331,539
+49,ABY,KABY,Southwest Georgia Regional Airport,"Albany, Georgia",United States,UTC−05:00,31.535555555555558,-84.19444444444444,196
+50,ABZ,EGPD,Aberdeen Airport,"Aberdeen, Scotland",United Kingdom,UTC+00:00,57.2025,-2.1980555555555554,215
+51,ACA,MMAA,General Juan N. Álvarez International Airport,"Acapulco, Guerrero",Mexico,UTC−06:00,16.756027777777778,-99.75161111111112,13
+52,ACB,KACB,Antrim County Airport,"Bellaire, Michigan",United States,UTC−05:00,44.98861111111111,-85.19833333333334,623
+53,ACC,DGAA,Kotoka International Airport,Accra,Ghana,UTC+00:00,5.604666666666667,-0.1673888888888889,205
+54,ACD,SKAD,Alcides Fernández Airport,Acandí,Colombia,UTC−05:00,8.5,-77.27444444444444,50
+55,ACE,GCRR,Lanzarote Airport,"Lanzarote, Canary Islands",Spain,UTC+00:00,,,14 m
+56,ACH,LSZR,St. Gallen–Altenrhein Airport,Altenrhein,Switzerland,UTC+01:00,,,"1,306"
+57,ACI,EGJA,Alderney Airport,"Alderney, Channel Islands",United Kingdom,UTC+00:00,49.70666666666667,-2.2144444444444447,290
+58,ACJ,VCCA,Anuradhapura Airport,Anuradhapura,Sri Lanka,UTC+05:30,8.301666666666668,80.42861111111111,99 m
+59,ACK,KACK,Nantucket Memorial Airport,"Nantucket, Massachusetts",United States,UTC−05:00,41.25288888888889,-70.059,48
+60,ACL,,Aguaclara Airport,Aguaclara,Colombia,UTC−05:00,4.746944444444445,-72.99055555555556,"1,033"
+61,ACM,,Arica Airport,Arica,Colombia,UTC−05:00,-18.34861111111111,-70.33888888888889,51 m
+62,ACN,MMCC,Ciudad Acuña International Airport,"Ciudad Acuña, Coahuila",Mexico,UTC−06:00,29.333888888888886,-101.10083333333333,"1,410"
+63,ACP,OITM,Sahand Airport,Maragheh,Iran,UTC+03:30,,,"4,396"
+64,ACR,SKAC,Araracuara Airport,Araracuara,Colombia,UTC−05:00,-0.6008333333333333,-72.39805555555556,"1,246"
+65,ACS,UNKS,Achinsk Airport,"Achinsk, Krasnoyarsk Krai",Russia,UTC+07:00,,,"1,033"
+66,ACT,KACT,Waco Regional Airport,"Waco, Texas",United States,UTC−06:00,31.61138888888889,-97.23055555555555,516
+67,ACU,,Achutupo Airport,Achutupo,Panama,UTC−05:00,9.190277777777778,-77.99444444444444,16
+68,ACV,KACV,Arcata-Eureka Airport,"Eureka / Arcata, California",United States,UTC−08:00,,,222
+69,ACX,ZUYI,Xingyi Wanfenglin Airport,"Xingyi, Guizhou",China,UTC+08:00,25.08833333333333,104.95861111111111,
+70,ACY,KACY,Atlantic City International Airport,"Atlantic City, New Jersey",United States,UTC−05:00,39.4575,-74.57722222222222,75
+71,ACZ,OIZB,Zabol Airport,Zabol,Iran,UTC+03:30,,,"1,628"
+72,ADA,LTAF,Adana Şakirpaşa Airport,Adana,Turkey,UTC+03:00,36.981944444444444,35.280277777777776,65
+73,ADB,LTBJ,Adnan Menderes Airport,İzmir,Turkey,UTC+03:00,,,412
+74,ADC,AYAN,Andakombe Airport,Andakombe,Papua New Guinea,UTC+10:00,-7.137138888888889,145.74471944444443,10
+75,ADD,HAAB,Bole International Airport,Addis Ababa,Ethiopia,UTC+03:00,8.977777777777778,38.79944444444444,"2,334 m"
+76,ADE,OYAA,Aden International Airport,Aden,Yemen,UTC+03:00,12.829444444444444,45.028888888888886,7
+77,ADF,LTCP,Adıyaman Airport,Adıyaman,Turkey,UTC+03:00,37.73166666666667,38.46888888888889,"2,216"
+78,ADG,KADG,Lenawee County Airport,"Adrian, Michigan",United States,UTC−05:00,,,798
+79,ADH,UEEA,Aldan Airport,"Aldan, Yakutia",Russia,UTC+09:00,58.60305555555556,125.40722222222223,683 m
+80,ADI,FYAR,Arandis Airport,Arandis,Namibia,UTC+01:00,-22.46222222222222,14.98,"1,905"
+81,ADJ,OJAM,Amman Civil Airport,Amman,Jordan,UTC+02:00,31.972499999999997,35.99138888888889,"2,555"
+82,ADK,PADK,Adak Airport,"Adak Island, Alaska",United States,UTC−10:00,51.878055555555555,-176.6461111111111,18
+83,ADL,YPAD,Adelaide Airport,"Adelaide, South Australia",Australia,UTC+09:30,-34.94499999999999,138.53055555555557,20
+84,ADM,KADM,Ardmore Municipal Airport,"Ardmore, Oklahoma",United States,UTC−06:00,34.30416666666667,-97.02055555555556,777
+85,ADN,SKAN,Andes Airport,Andes,Colombia,UTC−05:00,5.69764,-75.88037999999999,"3,900"
+86,ADO,YAMK,Andamooka Airport,"Andamooka, South Australia",Australia,UTC+09:30,-30.438333333333333,137.13666666666666,250
+87,ADP,VCCG,Ampara Airport,Ampara,Sri Lanka,UTC+05:30,7.336944444444444,81.63027777777778,46 m
+88,ADQ,PADQ,Kodiak Airport,"Kodiak, Alaska",United States,UTC−09:00,57.749722222222225,-152.49388888888888,80
+89,ADR,KPHH,Robert F. Swinnie Airport,"Andrews, South Carolina",United States,UTC−05:00,,,26
+90,ADS,KADS,Addison Airport,"Dallas, Texas",United States,UTC−06:00,32.968611111111116,-96.83638888888889,644
+91,ADT,KADH,Ada Municipal Airport,"Ada, Oklahoma",United States,UTC−06:00,,,"1,016"
+92,ADU,OITL,Ardabil Airport,Ardabil,Iran,UTC+03:30,38.32555555555556,48.424166666666665,"4,315"
+93,ADV,,Ed Daein Airport,Ed Daein,Sudan,UTC+03:00,11.403611111111111,26.11916666666667,"1,627"
+94,ADW,KADW,Andrews Field,"Camp Springs, Maryland",United States,UTC−05:00,,,85.3 metres (280
+95,ADX,EGQL,Leuchars Station,"St Andrews, Scotland",United Kingdom,UTC+00:00,56.37305555555555,-2.868611111111111,12 metres (39
+96,ADY,FAAL,Alldays Airport,Alldays,South Africa,UTC+02:00,-22.678333333333335,29.055,"2,600"
+97,ADZ,SKSP,Gustavo Rojas Pinilla International Airport,San Andres Island,Colombia,UTC−05:00,,,19
+98,AEA,NGTB,Abemama Atoll Airport,Abemama Atoll,Kiribati,UTC+12:00,,,8
+99,AEB,ZGBS,Baise Bama Airport,"Baise, Guangxi",China,UTC+08:00,23.71944444444444,106.95916666666668,45 m
+100,AEE,,Adareil Airport,Adareil,South Sudan,UTC+03:00,10.053611111111111,32.95944444444445,
+101,AEG,WIME,Aek Godang Airport,Padang Sidempuan,Indonesia,UTC+07:00,1.4001027777777777,99.43045277777779,922
+102,AEH,FTTC,Abéché Airport,Abéché,Chad,UTC+01:00,13.846944444444444,20.844166666666666,"1,788"
+103,AEK,AYAX,Aseki Airport,Aseki,Papua New Guinea,UTC+10:00,-7.3508048611111105,146.19386672222223,
+104,AEL,KAEL,Albert Lea Municipal Airport,"Albert Lea, Minnesota",United States,UTC−06:00,,,"1,261"
+105,AEM,UHTG,Amgu Airport,"Amgu, Primorsky Krai",Russia,UTC+10:00,45.841260000000005,137.673568,10
+106,AEO,GQNA,Aioun el Atrouss Airport,Aioun el Atrouss,Mauritania,UTC+00:00,,,965
+107,AEP,SABE,Jorge Newbery Airpark,Buenos Aires,Argentina,UTC−03:00,,,5 m
+108,AEQ,,Ar Horqin Airport,Ar Horqin Banner,China,UTC+08:00,43.87042,120.15958,
+109,AER,URSS,Sochi International Airport,"Sochi, Krasnodar Krai",Russia,UTC+03:00,43.45,39.95666666666667,27 m
+110,AES,ENAL,"Ålesund Airport, Vigra",Ålesund,Norway,UTC+01:00,62.5625,6.119722222222221,21 m
+111,AET,PFAL,Allakaket Airport,"Allakaket, Alaska",United States,UTC−09:00,,,441
+112,AEU,OIBA,Abu Musa Airport,Abu Musa Island,Iran,UTC+03:30,25.875555555555557,55.032777777777774,23
+113,AEX,KAEX,Alexandria International Airport,"Alexandria, Louisiana",United States,UTC−06:00,,,
+114,AEY,BIAR,Akureyri Airport,Akureyri,Iceland,UTC+00:00,65.66111111111111,-18.072222222222223,6
+115,AFA,SAMR,San Rafael Airport,"San Rafael, Mendoza",Argentina,UTC−03:00,,,
+116,AFD,FAPA,Port Alfred Airport,Port Alfred,South Africa,UTC+02:00,-33.55416666666667,26.879722222222224,272
+117,AFF,KAFF,United States Air Force Academy Airfield,"Colorado Springs, Colorado",United States,UTC−07:00,38.973391416666665,-104.82003272222222,"6,576 feet (2,004 m) <a href=""/wiki/Above_mean_sea_level"" class=""mw-redirect"" title=""Above mean sea level"">AMSL</a>"
+118,AFI,SKAM,Amalfi Airport,Amalfi,Colombia,UTC−05:00,,,131
+119,AFK,,Kondavattavan Tank Seaplane Base,Ampara,Sri Lanka,UTC+05:30,,,
+120,AFL,SBAT,Alta Floresta Airport,"Alta Floresta, Mato Grosso",Brazil,UTC−04:00,-9.866388888888888,-56.105000000000004,289 m
+121,AFN,KAFN,Jaffrey Airport–Silver Ranch,"Jaffrey, New Hampshire",United States,UTC−05:00,,,"1,040"
+122,AFO,KAFO,Afton Municipal Airport,"Afton, Wyoming",United States,UTC−07:00,42.70888888888889,-110.94222222222223,"6,221"
+123,AFR,AYAF,Afore Airstrip,Afore,Papua New Guinea,UTC+10:00,-9.142222222222221,148.39083333333332,
+124,AFS,UTSN,Zarafshan Airport,Zarafshan,Uzbekistan,UTC+05:00,41.61361111111111,64.23277777777778,
+125,AFT,AGAF,Afutara Airport,"Afutara, Malaita",Solomon Islands,UTC+11:00,-9.19111111111111,160.94916666666668,
+126,AFW,KAFW,Fort Worth Alliance Airport,"Fort Worth, Texas",United States,UTC−06:00,32.99027777777778,-97.31944444444444,723
+127,AFY,LTAH,Afyon Airport,Afyon,Turkey,UTC+03:00,,,"3,310"
+128,AFZ,OIMS,Sabzevar Airport,Sabzevar,Iran,UTC+03:30,,,"3,010"
+129,AGA,GMAD,Agadir–Al Massira Airport,Agadir,Morocco,UTC+00:00,30.325,-9.413055555555555,226
+130,AGB,EDMA,Augsburg Airport,"Augsburg, Bavaria",Germany,UTC+01:00,48.42527777777777,10.931666666666667,"1,515"
+131,AGC,KAGC,Allegheny County Airport,"Pittsburgh, Pennsylvania",United States,UTC−05:00,40.35416666666667,-79.93,"1,252"
+132,AGD,WASG,Anggi Airport,Anggi,Indonesia,UTC+09:00,-1.3833333333333333,133.86666666666667,"7,054"
+133,AGE,EDWG,Wangerooge Airfield,"Wangerooge, Lower Saxony",Germany,UTC+01:00,53.78333333333333,7.916666666666667,6
+134,AGF,LFBA,Agen La Garenne Airport,"Agen, Aquitaine",France,UTC+01:00,44.17472222222222,0.5905555555555556,204
+135,AGG,,Angoram Airport,Angoram,Papua New Guinea,UTC+10:00,,,
+136,AGH,ESTA,Ängelholm–Helsingborg Airport,Ängelholm,Sweden,UTC+01:00,56.29611111111111,12.847222222222223,68
+137,AGI,SMWA,Wageningen Airstrip,Wageningen,Suriname,UTC−03:00,5.841666666666667,-56.670833333333334,6
+138,AGJ,RORA,Aguni Airport,"Aguni, Okinawa",Japan,UTC+09:00,26.592777777777776,127.24027777777778,38
+139,AGK,,Kagua Airport,Kagua,Papua New Guinea,UTC+10:00,,,
+140,AGL,AYWG,Wanigela Airport,Wanigela,Papua New Guinea,UTC+10:00,-9.3375,149.15555555555557,
+141,AGN,PAGN,Angoon Seaplane Base,"Angoon, Alaska",United States,UTC−09:00,57.50361111111111,-134.585,0
+142,AGO,KAGO,Magnolia Municipal Airport,"Magnolia, Arkansas",United States,UTC−06:00,33.2275,-93.21694444444445,319
+143,AGP,LEMG,Málaga Airport,"Málaga, Andalusia",Spain,UTC+01:00,36.675,-4.4991666666666665,16 m
+144,AGQ,LGAG,Agrinion Airport,Agrinion,Greece,UTC+02:00,,,154
+145,AGR,VIAG,Agra Airport,"Agra, Uttar Pradesh",India,UTC+05:30,27.1618309,77.9707261,551
+146,AGS,KAGS,Augusta Regional Airport,"Augusta, Georgia",United States,UTC−05:00,33.37,-81.96444444444445,144
+147,AGT,SGES,Guaraní International Airport,Ciudad del Este,Paraguay,UTC−04:00,-25.455555555555556,-54.843611111111116,258 m
+148,AGU,MMAS,Lic. Jesús Terán Peredo International Airport,"Aguascalientes, Aguascalientes",Mexico,UTC−06:00,21.705555555555556,-102.31777777777778,"6,112"
+149,AGV,SVAC,Oswaldo Guevara Mujica Airport,Acarigua,Venezuela,UTC−04:00,9.553333333333335,-69.2375,226 m
+150,AGW,,Agnew Airport,"Agnew, Queensland",Australia,UTC+10:00,-12.145555555555555,142.14916666666667,160
+151,AGX,VOAT,Agatti Aerodrome,"Agatti Island, Lakshadweep",India,UTC+05:30,10.828055555555554,72.17888888888889,4 m
+152,AGZ,FAAG,Aggeneys Airport,Aggeneys,South Africa,UTC+02:00,-29.281666666666666,18.81361111111111,"2,648"
+153,AHB,OEAB,Abha Regional Airport,Abha,Saudi Arabia,UTC+03:00,,,"6,858"
+154,AHC,KAHC,Amedee Army Airfield,"Herlong, California",United States,UTC−08:00,40.26583333333333,-120.15055555555556,"4,012"
+155,AHD,,Ardmore Downtown Executive Airport,"Ardmore, Oklahoma",United States,UTC−06:00,,,844
+156,AHE,NTHE,Ahe Airport,"Ahe, Tuamotus",French Polynesia,UTC−10:00,-14.428055555555554,-146.25694444444446,3 m
+157,AHF,,Arapahoe Municipal Airport,"Arapahoe, Nebraska",United States,UTC−06:00,40.339444444444446,-99.9063888888889,"2,270"
+158,AHH,KAHH,Amery Municipal Airport,"Amery, Wisconsin",United States,UTC−06:00,45.28111111111111,-92.37527777777777,"1,088"
+159,AHI,WAPA,Amahai Airport,Amahai,Indonesia,UTC+09:00,-3.3333333333333335,128.91666666666666,30
+160,AHJ,ZUHY,Hongyuan Airport,"Hongyuan, Sichuan",China,UTC+08:00,32.52916666666667,102.35694444444444,"3,535 m"
+161,AHL,SYAH,Aishalton Airport,Aishalton,Guyana,UTC−04:00,2.4722222222222223,-59.32222222222222,591
+162,AHM,,Ashland Municipal Airport,"Ashland, Oregon",United States,UTC−08:00,42.19027777777777,-122.66055555555556,"1,885"
+163,AHN,KAHN,Athens Ben Epps Airport,"Athens, Georgia",United States,UTC−05:00,,,813
+164,AHO,LIEA,Alghero-Fertilia Airport,"Alghero, Sardinia",Italy,UTC+01:00,,,87
+165,AHS,MHAH,Ahuas Airport,Ahuas,Honduras,UTC−06:00,15.472222222222223,-84.35277777777777,98
+166,AHU,GMTA,Cherif Al Idrissi Airport,Al Hoceima,Morocco,UTC+00:00,35.176944444444445,-3.8394444444444447,95
+167,AHW,,Saih Rawl Airport,Saih Rawl,Oman,UTC+04:00,,,
+168,AHY,,Ambatolahy Airport,Ambatolahy,Madagascar,UTC+03:00,,,
+169,AHZ,LFHU,Alpe d'Huez Airport,"Alpe d'Huez, Rhône-Alpes",France,UTC+01:00,45.08777777777778,6.085,"1,840 m"
+170,AIA,KAIA,Alliance Municipal Airport,"Alliance, Nebraska",United States,UTC−07:00,42.05333333333333,-102.80388888888889,"3,931"
+171,AIC,,Ailinglaplap Airok Airport,"Airok, Ailinglaplap Atoll",Marshall Islands,UTC+12:00,7.279166666666667,168.82555555555555,
+172,AID,KAID,Anderson Municipal Airport,"Anderson, Indiana",United States,UTC−05:00,40.10861111111111,-85.61305555555555,919
+173,AIE,AYAO,Aiome Airport,Aiome,Papua New Guinea,UTC+10:00,-5.1425,144.73133333333334,350
+174,AIF,SNAX,Assis Airport,"Assis, São Paulo",Brazil,UTC−03:00,-22.64,-50.45305555555556,564 m
+175,AIG,FEFY,Yalinga Airport,Yalinga,Central African Republic,UTC+01:00,6.520833333333333,23.259722222222223,"1,975"
+176,AIH,AYAK,Aiambak Airport,Aiambak,Papua New Guinea,UTC+10:00,-7.3425,141.2665,90
+177,AII,HDAS,Ali-Sabieh Airport,Ali Sabieh,Djibouti,UTC+03:00,11.15,42.71666666666667,
+178,AIK,KAIK,Aiken Municipal Airport,"Aiken, South Carolina",United States,UTC−05:00,,,528
+179,AIL,,Ailigandí Airport,Ailigandí,Panama,UTC−05:00,9.222222222222223,-78.02361111111111,55
+180,AIM,,Ailuk Airport,Ailuk Atoll,Marshall Islands,UTC+12:00,10.216944444444444,169.98333333333332,
+181,AIN,PAWI,Wainwright Airport,"Fort Wainwright, Alaska",United States,UTC−09:00,,,
+182,AIO,KAIO,Atlantic Municipal Airport,"Atlantic, Iowa",United States,UTC−06:00,,,"1,165"
+183,AIP,VIAX,Adampur Airport,"Jalandhar, Punjab",India,UTC+05:30,31.43305555555556,75.76055555555556,776
+184,AIR,SSOU,Aripuanã Airport,"Aripuanã, Mato Grosso",Brazil,UTC−04:00,-10.182777777777778,-59.458333333333336,230 m
+185,AIS,NGTR,Arorae Island Airport,Arorae Island,Kiribati,UTC+12:00,-2.616261111111111,176.80210000000002,6
+186,AIT,NCAI,Aitutaki Airport,Aitutaki,Cook Islands,UTC−10:00,,,14
+187,AIU,NCAT,Enua Airport,Atiu Island,Cook Islands,UTC−10:00,-19.967777777777776,-158.12,
+188,AIV,KAIV,George Downer Airport,"Aliceville, Alabama",United States,UTC−06:00,33.10638888888889,-88.19777777777779,150
+189,AIW,,Ai-Ais Airport,Ai-Ais,Namibia,UTC+02:00,,,
+190,AIZ,KAIZ,Lee C. Fine Memorial Airport,"Lake Ozark, Missouri",United States,UTC−06:00,38.09603333333334,-92.54948611111111,869
+191,AJA,LFKJ,Ajaccio Napoleon Bonaparte Airport,"Ajaccio, Corsica",France,UTC+01:00,41.92388888888889,8.8025,17
+192,AJF,OESK,Al-Jawf Domestic Airport,"Sakakah, Al Jawf",Saudi Arabia,UTC+03:00,29.785,40.1,"2,261"
+193,AJI,LTCO,Ağrı Airport,Ağrı,Turkey,UTC+03:00,39.654444444444444,43.02722222222222,"5,462"
+194,AJJ,GQNJ,Akjoujt Airport,Akjoujt,Mauritania,UTC+00:00,19.727777777777778,-14.377777777777778,403
+195,AJK,OIHR,Arak Airport,Arak,Iran,UTC+03:30,34.13805555555555,49.84722222222222,"5,453"
+196,AJL,"VELP<sup id=""cite_ref-2"" class=""reference""><a href=""#cite_note-2"">[2]</a></sup>",Lengpui Airport,"Aizawl, Mizoram",India,UTC+05:30,23.838441666666665,92.62035833333333,405 m
+197,AJN,FMCV,Ouani Airport,Anjouan,Comoros,UTC+03:00,,,62
+198,AJR,ESNX,Arvidsjaur Airport,Arvidsjaur,Sweden,UTC+01:00,65.59027777777777,19.281944444444445,"1,245"
+199,AJS,MX86,Punta Abreojos Airstrip,"Punta Abreojos, Baja California Sur",Mexico,UTC−07:00,26.72722222222222,-113.55972222222222,26
+200,AJU,SBAR,Santa Maria Airport,"Aracaju, Sergipe",Brazil,UTC−03:00,,,
+201,AJY,DRZA,Mano Dayak International Airport,Agadez,Niger,UTC+01:00,16.96599722222222,8.000113888888889,"1,660"
+202,AKA,ZLAK,Ankang Wulipu Airport,"Ankang, Shaanxi",China,UTC+08:00,32.70805555555556,108.93111111111112,262 m
+203,AKB,PAAK,Atka Airport,"Atka, Alaska",United States,UTC−10:00,52.220555555555556,-174.2061111111111,57
+204,AKC,KAKR,Akron Fulton International Airport,"Akron, Ohio",United States,UTC−05:00,,,"1,067"
+205,AKD,VAAK,Akola Airport,"Akola, Maharashtra",India,UTC+05:30,20.698888888888888,77.0586111111111,999
+206,AKE,FOGA,Akieni Airport,Akiéni,Gabon,UTC+01:00,-1.1397222222222223,13.903333333333334,"1,476"
+207,AKF,HLKF,Kufra Airport,Kufra,Libya,UTC+02:00,24.17777777777778,23.31388888888889,"1,367"
+208,AKG,AYGU,Anguganak Airport,Anguganak,Papua New Guinea,UTC+10:00,,,
+209,AKH,OEPS,Prince Sultan Air Base,Al-Kharj,Saudi Arabia,UTC+03:00,24.05527777777778,47.56361111111111,"503.2 metres (1,651"
+210,AKI,PFAK,Akiak Airport,"Akiak, Alaska",United States,UTC−09:00,,,30
+211,AKJ,RJEC,Asahikawa Airport,"Asahikawa, Hokkaido",Japan,UTC+09:00,43.670833333333334,142.4475,690
+212,AKK,PAKH,Akhiok Airport,"Akhiok, Alaska",United States,UTC−09:00,56.93861111111111,-154.1825,44
+213,AKL,NZAA,Auckland Airport,Auckland,New Zealand,UTC+12:00,-37.00805555555556,174.79166666666666,7 m
+214,AKM,,Zakouma Airport,Zakouma National Park,Chad,UTC+01:00,10.890833333333333,19.8175,415 m
+215,AKN,PAKN,King Salmon Airport,"King Salmon, Alaska",United States,UTC−09:00,58.67638888888889,-156.6486111111111,73
+216,AKO,KAKO,Colorado Plains Regional Airport,"Akron, Colorado",United States,UTC−07:00,40.175555555555555,-103.22194444444445,"4,714"
+217,AKP,PAKP,Anaktuvuk Pass Airport,"Anaktuvuk Pass, Alaska",United States,UTC−09:00,68.13361111111112,-151.7433333333333,"2,102"
+218,AKQ,WIAG,Gunung Batin Airport,Astraksetra,Indonesia,UTC+07:00,-4.616666666666667,105.23333333333333,87
+219,AKR,DNAK,Akure Airport,Akure,Nigeria,UTC+01:00,,,"1,108"
+220,AKS,AGGA,Auki Gwaunaru'u Airport,"Auki, Malaita",Solomon Islands,UTC+11:00,,,
+221,AKT,LCRA,RAF Akrotiri,Akrotiri,United Kingdom,UTC+02:00,34.59055555555556,32.98777777777778,"75.4 feet (23 m) <a href=""/wiki/Above_mean_sea_level"" class=""mw-redirect"" title=""Above mean sea level"">AMSL</a>"
+222,AKU,ZWAK,Aksu Airport,"Aksu, Xinjiang",China,UTC+08:00,41.2625,80.29166666666667,"3,816"
+223,AKV,CYKO,Akulivik Airport,"Akulivik, Quebec",Canada,UTC−05:00,60.81861111111112,-78.14861111111112,76
+224,AKW,OIAG,Aghajari Airport,Aghajari,Iran,UTC+03:30,30.744444444444447,49.676944444444445,52
+225,AKX,UATT,Aktobe Airport,Aktobe,Kazakhstan,UTC+05:00,,,225 m
+226,AKY,VYSW,Sittwe Airport,Sittwe,Myanmar,UTC+06:30,,,39
+227,ALA,UAAA,Almaty International Airport,Almaty,Kazakhstan,UTC+06:00,43.35527777777778,77.04472222222222,681 m
+228,ALB,KALB,Albany International Airport,"Albany, New York",United States,UTC−05:00,,,285
+229,ALC,LEAL,Alicante–Elche Airport,"Alicante, Valencia",Spain,UTC+01:00,38.282222222222224,-0.5580555555555556,43 m
+230,ALD,SPAR,Alerta Airport,Alerta,Peru,UTC−05:00,,,797
+231,ALE,,Alpine–Casparis Municipal Airport,"Alpine, Texas",United States,UTC−06:00,30.38673,-103.6805,"4,514.4"
+232,ALF,ENAT,Alta Airport,Alta,Norway,UTC+01:00,69.97611111111111,23.371666666666666,3 m
+233,ALG,DAAG,Houari Boumediene Airport,Algiers,Algeria,UTC+01:00,36.69101388888888,3.2154083333333334,25 m
+234,ALH,YABA,Albany Airport,"Albany, Western Australia",Australia,UTC+08:00,,,285
+235,ALI,KALI,Alice International Airport,"Alice, Texas",United States,UTC−06:00,27.740833333333335,-98.02694444444444,178
+236,ALJ,FAAB,Alexander Bay Airport,Alexander Bay,South Africa,UTC+02:00,-28.573333333333334,16.534444444444446,98
+237,ALK,,Asella Airport,Asella,Ethiopia,UTC+03:00,,,
+238,ALL,LIMG,Albenga Airport,"Albenga, Liguria",Italy,UTC+01:00,,,149
+239,ALM,KALM,Alamogordo–White Sands Regional Airport,"Alamogordo, New Mexico",United States,UTC−07:00,32.84,-105.99055555555556,"4,200"
+240,ALN,KALN,St. Louis Regional Airport,"Alton, Illinois",United States,UTC−06:00,38.890277777777776,-90.0461111111111,544
+241,ALO,KALO,Waterloo Regional Airport,"Waterloo, Iowa",United States,UTC−06:00,,,873
+242,ALP,OSAP,Aleppo International Airport,Aleppo,Syria,UTC+02:00,,,"1,276"
+243,ALQ,SSLT,Alegrete Airport,"Alegrete, Rio Grande do Sul",Brazil,UTC−03:00,-29.8125,-55.89222222222222,140 m
+244,ALR,NZLX,Alexandra Aerodrome,Alexandra,New Zealand,UTC+12:00,,,752
+245,ALS,KALS,San Luis Valley Regional Airport,"Alamosa, Colorado",United States,UTC−07:00,37.434999999999995,-105.86638888888888,"7,539"
+246,ALT,,Alenquer Airport,"Alenquer, Pará",Brazil,UTC−03:00,-1.9169444444444443,-54.72277777777778,31 m
+247,ALU,HCMA,Alula Airport,Alula,Somalia,UTC+03:00,11.958333333333332,50.74861111111111,6
+248,ALW,KALW,Walla Walla Regional Airport,"Walla Walla, Washington",United States,UTC−08:00,46.09,-118.29,"1,194"
+249,ALX,KALX,Thomas C. Russell Field,"Alexander City, Alabama",United States,UTC−06:00,32.914722222222224,-85.96305555555556,686
+250,ALY,HEAX,El Nouzha Airport,Alexandria,Egypt,UTC+02:00,,,−8
+251,ALZ,,Alitak Seaplane Base,"Lazy Bay, Alaska",United States,UTC−09:00,56.89944444444444,-154.24777777777777,0
+252,AMA,KAMA,Rick Husband Amarillo International Airport,"Amarillo, Texas",United States,UTC−06:00,35.21944444444445,-101.70583333333333,"3,607"
+253,AMB,FMNE,Ambilobe Airport,Ambilobe,Madagascar,UTC+03:00,-13.188333333333334,48.98777777777778,72
+254,AMC,FTTN,Am Timan Airport,Am Timan,Chad,UTC+01:00,11.035472222222221,20.274944444444444,"1,421"
+255,AMD,VAAH,Sardar Vallabhbhai Patel International Airport,"Ahmedabad, Gujarat",India,UTC+05:30,23.077222222222222,72.63472222222222,58 m
+256,AME,,Alto Molocue Airport,Alto Molocue,Mozambique,UTC+02:00,,,
+257,AMF,AYAA,Ama Airport,Ama,Papua New Guinea,UTC+10:00,,,
+258,AMG,,Amboin Airport,Amboin,Papua New Guinea,UTC+10:00,,,
+259,AMH,HAAM,Arba Minch Airport,Arba Minch,Ethiopia,UTC+03:00,6.039722222222222,37.59027777777778,"1,187 m"
+260,AMI,WADA,"<a href=""/wiki/Selaparang_Airport"" title=""Selaparang Airport"">Selaparang Airport","<a href=""/wiki/Mataram_(city)"" title=""Mataram (city)"">Mataram",Indonesia,,,,
+261,AMJ,SNAR,Almenara Airport,"Almenara, Minas Gerais",Brazil,UTC−03:00,,,
+262,AMK,,Animas Air Park,"Durango, Colorado",United States,UTC−07:00,37.20305555555556,-107.86916666666666,"6,684"
+263,AML,,Puerto Armuelles Airport,Puerto Armuelles,Panama,UTC−05:00,,,
+264,AMM,OJAI,Queen Alia International Airport,Amman,Jordan,UTC+02:00,,,730 m
+265,AMN,KAMN,Gratiot Community Airport,"Alma, Michigan",United States,UTC−05:00,,,754
+266,AMO,FTTU,Mao Airport,Mao,Chad,UTC+01:00,14.146444444444445,15.315138888888889,"1,165"
+267,AMP,FMSY,Ampanihy Airport,Ampanihy,Madagascar,UTC+03:00,-24.6995,44.7333,758
+268,AMQ,WAPP,Pattimura Airport,Ambon,Indonesia,UTC+09:00,,,33
+269,AMS,EHAM,Amsterdam Airport Schiphol,Amsterdam,Netherlands,UTC+01:00,52.3,4.765,−11
+270,AMT,YAMT,Amata Airport,"Amata, South Australia",Australia,UTC+09:30,-26.096666666666668,131.20333333333335,"2,172"
+271,AMU,AYAM,Amanab Airport,Amanab,Papua New Guinea,UTC+10:00,,,
+272,AMV,ULDD,Amderma Airport,"Amderma, Nenets Autonomous Okrug",Russia,UTC+03:00,69.76333333333334,61.56333333333333,13
+273,AMW,KAMW,Ames Municipal Airport,"Ames, Iowa",United States,UTC−06:00,,,956
+274,AMX,,Ammaroo Airport,"Ammaroo, Northern Territory",Australia,UTC+09:30,,,
+275,AMY,,Ambatomainty Airport,Ambatomainty,Madagascar,UTC+03:00,-17.685555555555556,45.625277777777775,320 m
+276,AMZ,NZAR,Ardmore Airport,Ardmore,New Zealand,UTC+12:00,,,
+277,ANA,DNAB,Angama Mara Airport,"Angama Mara, Narok County",Kenya,UTC+03:00,,,"6,171"
+278,ANB,KANB,Anniston Regional Airport,"Anniston, Alabama",United States,UTC−06:00,33.588055555555556,-85.85805555555555,612
+279,ANC,PANC,Ted Stevens Anchorage International Airport,"Anchorage, Alaska",United States,UTC−09:00,61.174166666666665,-149.9983333333333,151
+280,AND,KAND,Anderson Regional Airport,"Anderson, South Carolina",United States,UTC−05:00,34.49472222222222,-82.70944444444444,782
+281,ANE,LFJR,Angers – Loire Airport,"Angers, Pays de la Loire",France,UTC+01:00,47.56027777777778,-0.31222222222222223,59 m
+282,ANF,SCFA,Cerro Moreno International Airport,Antofagasta,Chile,UTC−04:00,-23.444444444444446,-70.44500000000001,455
+283,ANG,LFBU,Angoulême – Cognac International Airport,"Angoulême, Poitou-Charentes",France,UTC+01:00,45.72888888888889,0.21888888888888888,133 m
+284,ANI,PANI,Aniak Airport,"Aniak, Alaska",United States,UTC−09:00,61.58166666666667,-159.54305555555555,89
+285,ANJ,FCBZ,Zanaga Airport,Zanaga,Republic of the Congo,UTC+01:00,-2.8472222222222223,13.820833333333333,"1,870"
+286,ANK,LTAD,Etimesgut Air Base,Ankara,Turkey,UTC+03:00,39.94983055555555,32.68862222222222,"2,653"
+287,ANL,,Andulo Airport,Andulo,Angola,UTC+01:00,-11.470833333333333,16.711111111111112,"5,446"
+288,ANM,FMNH,Antsirabato Airport,Antalaha,Madagascar,UTC+03:00,,,20
+289,ANN,PANT,Annette Island Airport,"Annette Island, Alaska",United States,UTC−08:00,55.0425,-131.57222222222222,119
+290,ANO,FQAG,Angoche Airport,Angoche,Mozambique,UTC+02:00,-16.181944444444447,39.94472222222222,36 m
+291,ANP,KANP,Lee Airport,"Annapolis, Maryland",United States,UTC−05:00,38.94277777777778,-76.56833333333333,34
+292,ANQ,KANQ,Tri-State Steuben County Airport,"Angola, Indiana",United States,UTC−05:00,41.63972222222222,-85.08361111111111,995
+293,ANR,EBAW,Antwerp International Airport,Antwerp,Belgium,UTC+01:00,51.18944444444444,4.460277777777778,39
+294,ANS,SPHY,Andahuaylas Airport,Andahuaylas,Peru,UTC−05:00,-13.708333333333332,-73.35138888888888,"11,300"
+295,ANU,TAPA,V. C. Bird International Airport,Antigua,Antigua and Barbuda,UTC−04:00,17.136666666666667,-61.793055555555554,62
+296,ANV,PANV,Anvik Airport,"Anvik, Alaska",United States,UTC−09:00,,,309
+297,ANW,KANW,Ainsworth Regional Airport,"Ainsworth, Nebraska",United States,UTC−06:00,42.57916666666667,-99.99305555555556,"2,589"
+298,ANX,ENAN,"Andøya Airport, Andenes",Andenes,Norway,UTC+01:00,69.2925,16.144166666666667,46
+299,ANY,KANY,Anthony Municipal Airport,"Anthony, Kansas",United States,UTC−06:00,,,"1,340"
+300,ANZ,,Angus Downs Airport,"Angus Downs, Northern Territory",Australia,UTC+09:30,,,
+301,AOA,,Aroa Airport,Aroa,Papua New Guinea,UTC+10:00,,,
+302,AOB,,Annanberg Airport,Annanberg,Papua New Guinea,UTC+10:00,,,
+303,AOC,EDAC,Leipzig–Altenburg Airport,"Altenburg, Thuringia",Germany,UTC+01:00,,,639.7
+304,AOD,,Abou-Deïa Airport,Abou-Deïa,Chad,UTC+01:00,11.466666666666667,19.283333333333335,480 m
+305,AOE,LTBY,Anadolu Airport,Eskişehir,Turkey,UTC+03:00,,,"2,588"
+306,AOG,ZYAS,Anshan Teng'ao Airport,"Anshan, Liaoning",China,UTC+08:00,41.10472222222222,122.85583333333332,
+307,AOH,KAOH,Lima Allen County Airport,"Lima, Ohio",United States,UTC−05:00,,,975
+308,AOI,LIPY,Ancona Falconara Airport,"Ancona, Marche",Italy,UTC+01:00,,,49
+309,AOJ,RJSA,Aomori Airport,"Aomori, Honshu",Japan,UTC+09:00,40.733333333333334,140.68861111111113,650
+310,AOK,LGKP,Karpathos Island National Airport,Karpathos,Greece,UTC+02:00,35.42055555555555,27.146666666666665,66
+311,AOL,SARL,Paso de los Libres Airport,"Paso de los Libres, Corrientes",Argentina,UTC−03:00,-29.689722222222223,-57.15138888888889,230
+312,AOM,,Adam Airport,Adam,Oman,UTC+04:00,22.493055555555557,57.38194444444444,"1,077"
+313,AON,,Arona Airport,Arona,Papua New Guinea,UTC+10:00,,,
+314,AOO,KAOO,Altoona–Blair County Airport,"Altoona, Pennsylvania",United States,UTC−05:00,40.296388888888885,-78.32,"1,503"
+315,AOP,,Alférez FAP Alfredo Vladimir Sara Bauer Airport,Andoas,Peru,UTC−05:00,-2.7958333333333334,-76.46666666666667,728
+316,AOR,WMKA,Sultan Abdul Halim Airport,"Alor Setar, Kedah",Malaysia,UTC+08:00,6.194444444444445,100.40083333333334,15
+317,AOS,,Amook Bay Seaplane Base,"Amook Bay, Alaska",United States,UTC−09:00,57.47138888888889,-153.8152777777778,0
+318,AOT,LIMW,Aosta Valley Airport,"Aosta, Aosta Valley",Italy,UTC+01:00,,,546 m
+319,AOU,VLAP,Attapeu International Airport,Attapeu,Laos,UTC+07:00,14.793055555555556,107.04527777777777,105 m
+320,APA,KAPA,Centennial Airport,"Denver, Colorado",United States,UTC−07:00,39.57,-104.84944444444444,"5,885"
+321,APB,SLAP,Apolo Airport,Apolo,Bolivia,UTC−04:00,-14.73611111111111,-68.41111111111111,"4,642"
+322,APC,KAPC,Napa County Airport,"Napa, California",United States,UTC−08:00,38.21319444444445,-122.28069444444445,35
+323,APF,KAPF,Naples Municipal Airport,"Naples, Florida",United States,UTC−05:00,,,8
+324,APG,KAPG,Phillips Army Airfield,"Aberdeen Proving Ground, Maryland",United States,UTC−05:00,,,57
+325,APH,KAPH,A.P. Hill Army Airfield,"Fort A.P. Hill, Virginia",United States,UTC−05:00,38.068889,-77.318333,220
+326,API,SKAP,Captain Luis F. Gómez Niño Air Base,Apiay,Colombia,UTC−05:00,,,"1,211"
+327,APK,NTGD,Apataki Airport,"Apataki, Tuamotus",French Polynesia,UTC−10:00,-15.573611111111111,-146.415,3 m
+328,APL,FQNP,Nampula Airport,Nampula,Mozambique,UTC+02:00,,,"1,444"
+329,APN,KAPN,Alpena County Regional Airport,"Alpena, Michigan",United States,UTC−05:00,45.07805555555556,-83.56027777777777,690
+330,APO,SKLC,Antonio Roldán Betancourt Airport,Apartadó,Colombia,UTC−05:00,7.8125,-76.71666666666667,52
+331,APP,,Asapa Airport,Asapa,Papua New Guinea,UTC+10:00,,,
+332,APQ,SNAL,Arapiraca Airport,"Arapiraca, Alagoas",Brazil,UTC−03:00,,,
+333,APR,AYPE,April River Airport,April River,Papua New Guinea,UTC+10:00,,,
+334,APS,SWNS,Anápolis Airport,"Anápolis, Goiás",Brazil,UTC−03:00,,,
+335,APT,KAPT,Marion County Airport,"Jasper, Tennessee",United States,UTC−06:00,,,
+336,APU,SSAP,Apucarana Airport,"Apucarana, Paraná",Brazil,UTC−03:00,-23.612222222222222,-51.385,805 m
+337,APV,KAPV,Apple Valley Airport,"Apple Valley, California",United States,UTC−08:00,,,
+338,APW,NSFA,Faleolo International Airport,"Apia, Upolu Island",Samoa,UTC+13:00,,,58
+339,APX,SSOG,Arapongas Airport,"Arapongas, Paraná",Brazil,UTC−03:00,-23.355833333333333,-51.490833333333335,792 m
+340,APY,SNAI,Alto Parnaíba Airport,"Alto Parnaíba, Maranhão",Brazil,UTC−03:00,,,
+341,APZ,SAHZ,Zapala Airport,"Zapala, Neuquén",Argentina,UTC−03:00,-38.97638888888889,-70.10972222222222,"3,330"
+342,AQA,SBAQ,Araraquara Airport,"Araraquara, São Paulo",Brazil,UTC−03:00,-21.804444444444446,-48.140277777777776,711 m
+343,AQB,MGQC,Quiché Airport,Quiché,Guatemala,UTC−06:00,15.0125,-91.15138888888889,"6,631"
+344,AQG,ZSAQ,Anqing Tianzhushan Airport,"Anqing, Anhui",China,UTC+08:00,30.58222222222222,117.05027777777778,
+345,AQI,OEPA,Al Qaisumah/Hafr Al Batin Airport,Qaisumah,Saudi Arabia,UTC+03:00,28.33522222222222,46.124944444444445,"1,174"
+346,AQJ,OJAQ,King Hussein International Airport,Aqaba,Jordan,UTC+02:00,,,173
+347,AQM,,Ariquemes Airport,"Ariquemes, Rondônia",Brazil,UTC−04:00,-9.880555555555556,-63.04722222222222,142 m
+348,AQP,SPQU,Rodríguez Ballón International Airport,Arequipa,Peru,UTC−05:00,-16.340277777777775,-71.56666666666666,"8,400"
+349,AQS,,Saqani Airport,Saqani,Fiji,UTC+12:00,,,
+350,AQY,,Girdwood Airport,"Girdwood, Alaska",United States,UTC−09:00,60.96611111111111,-149.12583333333333,150
+351,ARA,KARA,Acadiana Regional Airport,"New Iberia, Louisiana",United States,UTC−06:00,30.03777777777778,-91.88388888888889,24
+352,ARB,KARB,Ann Arbor Municipal Airport,"Ann Arbor, Michigan",United States,UTC−05:00,42.223055555555554,-83.74555555555555,839
+353,ARC,PARC,Arctic Village Airport,"Arctic Village, Alaska",United States,UTC−09:00,,,"2,092"
+354,ARD,WATM,Alor Island Airport,Alor Island,Indonesia,UTC+08:00,-8.131666666666668,124.5975,39
+355,ARE,TJAB,Antonio (Nery) Juarbe Pol Airport,"Arecibo, Puerto Rico",United States,UTC−04:00,18.45111111111111,-66.67555555555556,23
+356,ARF,,Acaricuara Airport,Acaricuara,Colombia,UTC−05:00,,,
+357,ARG,KARG,Walnut Ridge Regional Airport,"Walnut Ridge, Arkansas",United States,UTC−06:00,36.124722222222225,-90.92500000000001,279
+358,ARH,ULAA,Talagi Airport,"Arkhangelsk, Arkhangelsk Oblast",Russia,UTC+03:00,64.6,40.71666666666667,62
+359,ARI,SCAR,Chacalluta International Airport,Arica,Chile,UTC−04:00,-18.34861111111111,-70.33888888888889,51 m
+360,ARJ,WAJA,Arso Airport,Arso,Indonesia,UTC+09:00,-2.9333329,140.7833405,150
+361,ARK,HTAR,Arusha Airport,Arusha,Tanzania,UTC+03:00,-3.3666666666666667,36.621944444444445,"4,550"
+362,ARL,DFER,Arly Airport,Arly,Burkina Faso,UTC+00:00,11.597323888888889,1.4814208333333334,761
+363,ARM,YARM,Armidale Airport,"Armidale, New South Wales",Australia,UTC+10:00,-30.528333333333332,151.61666666666667,"3,556"
+364,ARN,ESSA,Stockholm Arlanda Airport,Stockholm,Sweden,UTC+01:00,59.651944444444446,17.91861111111111,137
+365,ARO,,Arboletes Airport,Arboletes,Colombia,UTC−05:00,,,
+366,ARP,,Aragip Airport,Aragip,Papua New Guinea,UTC+10:00,,,
+367,ARQ,"SKAT<sup id=""cite_ref-3"" class=""reference""><a href=""#cite_note-3"">[3]</a></sup>",El Troncal Airport,Arauquita,Colombia,UTC−05:00,7.021111111111111,-71.3888888888889,512
+368,ARR,SAVR,Alto Río Senguer Airport,"Alto Río Senguer, Chubut",Argentina,UTC−03:00,-45.013444444444445,-70.8128611111111,"2,287"
+369,ARS,SWEC,Aragarças Airport,"Aragarças, Goiás",Brazil,UTC−03:00,,,
+370,ART,KART,Watertown International Airport,"Watertown, New York",United States,UTC−05:00,43.99194444444444,-76.02055555555556,328
+371,ARU,SBAU,Araçatuba Airport,"Araçatuba, São Paulo",Brazil,UTC−03:00,-21.144166666666667,-50.42638888888889,415 m
+372,ARV,KARV,Lakeland Airport,"Minocqua, Woodruff, Wisconsin",United States,UTC−06:00,45.92777777777778,-89.73083333333334,"1,629"
+373,ARW,LRAR,Arad International Airport,Arad,Romania,UTC+02:00,46.17666666666666,21.261944444444445,352
+374,ARX,SBAC,Aracati Airport,"Aracati, Canoa Quebrada",Brazil,UTC−03:00,-4.568611111111111,-37.80472222222222,36 m
+375,ARY,YARA,Ararat Airport,"Ararat, Victoria",Australia,UTC+10:00,-37.309999999999995,142.98833333333332,"1,008"
+376,ARZ,FNZE,N'zeto Airport,N'zeto,Angola,UTC+01:00,-7.256944444444445,12.863888888888889,69
+377,ASA,HHSB,Assab International Airport,Assab,Eritrea,UTC+03:00,13.071666666666667,42.644999999999996,46
+378,ASB,UTAA,Ashgabat International Airport,Ashgabat,Turkmenistan,UTC+05:00,37.98694444444445,58.36083333333333,692
+379,ASC,SLAS,Ascención de Guarayos Airport,Ascención de Guarayos,Bolivia,UTC−04:00,-15.931944444444444,-63.15611111111111,807
+380,ASD,MYAF,Andros Town International Airport,"Andros Town, Andros Island",Bahamas,UTC−05:00,24.698333333333334,-77.79555555555555,11
+381,ASE,KASE,Aspen–Pitkin County Airport,"Aspen, Colorado",United States,UTC−07:00,,,
+382,ASF,URWA,Narimanovo Airport,"Astrakhan, Astrakhan Oblast",Russia,UTC+04:00,,,−65
+383,ASG,NZAS,Ashburton Aerodrome,Ashburton,New Zealand,UTC+12:00,,,298
+384,ASH,KASH,Nashua Airport,"Nashua, New Hampshire",United States,UTC−05:00,42.781666666666666,-71.51472222222222,199
+385,ASI,FHAW,RAF Ascension Island,"Ascension Island, British Overseas Territory, Ascension and Tristan da Cunha"">Saint Helena",Ascension and Tristan da Cunha</a>,UTC+00:00,-7.969444444444445,-14.393888888888888,78.6 metres (258
+386,ASJ,RJKA,Amami Airport,"Amami, Satsunan Islands",Japan,UTC+09:00,28.430833333333336,129.71249999999998,14
+387,ASK,DIYO,Yamoussoukro Airport,Yamoussoukro,Côte d'Ivoire,UTC+00:00,6.90317,-5.36558,699
+388,ASL,KASL,Harrison County Airport,"Marshall, Texas",United States,UTC−06:00,,,
+389,ASM,HHAS,Asmara International Airport,Asmara,Eritrea,UTC+03:00,15.291852777777777,38.910666666666664,"7,661"
+390,ASN,KASN,Talladega Municipal Airport,"Talladega, Alabama",United States,UTC−06:00,33.56944444444445,-86.05111111111111,529
+391,ASO,HASO,Asosa Airport,Asosa,Ethiopia,UTC+03:00,10.018333333333334,34.586111111111116,"1,561 m"
+392,ASP,YBAS,Alice Springs Airport,"Alice Springs, Northern Territory",Australia,UTC+09:30,-23.806944444444444,133.90222222222224,"1,789"
+393,ASQ,,Austin Airport,"Austin, Nevada",United States,UTC−08:00,,,
+394,ASR,LTAU,Erkilet International Airport,Kayseri,Turkey,UTC+03:00,38.77027777777778,35.49527777777778,"3,506"
+395,AST,KAST,Astoria Regional Airport,"Astoria, Oregon",United States,UTC−08:00,46.158055555555556,-123.8786111111111,15
+396,ASU,SGAS,Silvio Pettirossi International Airport,Asunción,Paraguay,UTC−04:00,-25.239722222222223,-57.51916666666666,89 m
+397,ASV,HKAM,Amboseli Airport,Amboseli,Kenya,UTC+03:00,-2.6422222222222222,37.25,"3,757"
+398,ASW,HESN,Aswan International Airport,Aswan,Egypt,UTC+02:00,23.964166666666667,32.819722222222225,662
+399,ASX,KASX,John F. Kennedy Memorial Airport,"Ashland, Wisconsin",United States,UTC−06:00,46.54861111111111,-90.91888888888889,827
+400,ASY,KASY,Ashley Municipal Airport,"Ashley, North Dakota",United States,UTC−06:00,46.02472222222222,-99.35166666666666,"2,032"
+401,ASZ,,Asirim Airport,Asirim,Papua New Guinea,UTC+10:00,,,
+402,ATA,SPHZ,Comandante FAP Germán Arias Graziani Airport,Huaraz,Peru,UTC−05:00,-9.347222222222223,-77.59861111111111,"9,097"
+403,ATB,HSAT,Atbara Airport,Atbara,Sudan,UTC+03:00,17.709722222222222,34.05694444444444,"1,198"
+404,ATC,MYCA,Arthur's Town Airport,"Arthur's Town, Cat Island",Bahamas,UTC−05:00,24.629444444444445,-75.6738888888889,18
+405,ATD,AGAT,Uru Harbour Airport,"Atoifi, Malaita",Solomon Islands,UTC+11:00,-8.873333333333333,161.0113888888889,24
+406,ATE,,Antlers Municipal Airport,"Antlers, Oklahoma",United States,UTC−06:00,,,575
+407,ATF,SEAM,Chachoan Airport,Ambato,Ecuador,UTC−05:00,,,"8,502"
+408,ATG,,PAF Base Minhas,Attock,Pakistan,UTC+05:00,33.86888888888889,72.40083333333334,"1,023"
+409,ATH,LGAV,Athens International Airport,Athens,Greece,UTC+02:00,37.936388888888885,23.947222222222223,308
+410,ATI,SUAG,Artigas International Airport,Artigas,Uruguay,UTC−03:00,,,
+411,ATJ,FMME,Antsirabe Airport,Antsirabe,Madagascar,UTC+03:00,,,
+412,ATK,PATQ,Atqasuk Edward Burnell Sr. Memorial Airport,"Atqasuk, Alaska",United States,UTC−09:00,70.46722222222222,-157.43555555555557,101
+413,ATL,KATL,Hartsfield–Jackson Atlanta International Airport,"Atlanta, Georgia",United States,UTC−05:00,33.63666666666666,-84.42805555555556,"1,026"
+414,ATM,SBHT,Altamira Airport,"Altamira, Pará",Brazil,UTC−03:00,-3.2508333333333335,-52.25222222222222,112 m
+415,ATN,AYNX,Namatanai Airport,Namatanai,Papua New Guinea,UTC+10:00,,,137
+416,ATO,KUNI,Ohio University Airport,"Athens, Albany, Ohio",United States,UTC−05:00,,,766
+417,ATP,AYAI,Aitape Airstrip,Aitape,Papua New Guinea,UTC+10:00,,,
+418,ATQ,VIAR,Sri Guru Ram Dass Jee International Airport,"Amritsar, Punjab",India,UTC+05:30,31.70777777777778,74.79916666666666,230 m
+419,ATR,GQPA,Atar International Airport,Atar,Mauritania,UTC+00:00,,,761
+420,ATS,KATS,Artesia Municipal Airport,"Artesia, New Mexico",United States,UTC−07:00,32.8525,-104.46777777777778,"3,541"
+421,ATT,,Atmautluak Airport,"Atmautluak, Alaska",United States,UTC−09:00,,,17
+422,ATU,PAAT,Casco Cove Coast Guard Station,"Attu Island, Alaska",United States,UTC−10:00,52.8325,173.17555555555555,88
+423,ATV,FTTI,Ati Airport,Ati,Chad,UTC+01:00,13.239722222222222,18.313583333333334,"1,096"
+424,ATW,KATW,Appleton International Airport,"Appleton, Wisconsin",United States,UTC−06:00,44.25805555555556,-88.51916666666666,
+425,ATX,,Atbasar Airport,Atbasar,Kazakhstan,UTC+06:00,51.85166666666667,68.36333333333333,308 m
+426,ATY,KATY,Watertown Regional Airport,"Watertown, South Dakota",United States,UTC−06:00,44.913888888888884,-97.15472222222223,"1,749"
+427,ATZ,HEAT,Assiut Airport,Assiut,Egypt,UTC+02:00,27.04638888888889,31.011944444444445,772
+428,AUA,TNCA,Queen Beatrix International Airport,Aruba,Kingdom of the Netherlands,UTC−04:00,12.501388888888888,-70.01527777777778,60
+429,AUC,SKUC,Santiago Pérez Quiroz Airport,Arauca,Colombia,UTC−05:00,,,423
+430,AUD,YAGD,Augustus Downs Airport,"Augustus Downs Station, Queensland",Australia,UTC+10:00,,,
+431,AUE,,Abu Rudeis Airport,Abou Redis,Egypt,UTC+02:00,28.9,33.2,39
+432,AUF,LFLA,Auxerre – Branches Aerodrome,"Auxerre, Burgundy",France,UTC+01:00,47.84638888888889,3.4966666666666666,523
+433,AUG,KAUG,Augusta State Airport,"Augusta, Maine",United States,UTC−05:00,44.32055555555556,-69.79722222222222,352
+434,AUH,OMAA,Abu Dhabi International Airport,Abu Dhabi,United Arab Emirates,UTC+04:00,24.43305555555556,54.651111111111106,88
+435,AUI,AYND,Aua Island Airport,Aua Island,Papua New Guinea,UTC+10:00,,,
+436,AUJ,AYAT,Ambunti Airport,Ambunti,Papua New Guinea,UTC+10:00,,,
+437,AUK,,Alakanuk Airport,"Alakanuk, Alaska",United States,UTC−09:00,62.683055555555555,-164.72219444444445,21.7
+438,AUL,,Aur Airport,Aur Atoll,Marshall Islands,UTC+12:00,8.302777777777779,171.16166666666666,
+439,AUM,KAUM,Austin Municipal Airport,"Austin, Minnesota",United States,UTC−06:00,43.6625,-92.93277777777779,"1,234"
+440,AUN,KAUN,Auburn Municipal Airport,"Auburn, California",United States,UTC−08:00,,,
+441,AUO,KAUO,Auburn University Regional Airport,"Auburn, Alabama",United States,UTC−06:00,32.615,-85.43388888888889,777
+442,AUP,AYAG,Agaun Airport,Agaun,Papua New Guinea,UTC+10:00,-9.930833333333334,149.38566666666668,"3,200"
+443,AUQ,NTMN,Atuona Airport,"Atuona, Marquesas Islands",French Polynesia,UTC−09:30,-9.76861111111111,-139.01097222222222,"1,481"
+444,AUR,LFLW,Aurillac – Tronquières Airport,"Aurillac, Auvergne",France,UTC+01:00,44.8975,2.4166666666666665,639 m
+445,AUS,KAUS,Austin–Bergstrom International Airport,"Austin, Texas",United States,UTC−06:00,30.194444444444446,-97.67,542
+446,AUT,WPAT,Atauro Airport,Atauro Island,East Timor,UTC+09:00,,,
+447,AUU,YAUR,Aurukun Airport,"Aurukun, Queensland",Australia,UTC+10:00,-13.356333333333334,141.72091666666668,29
+448,AUV,AYUM,Aumo Airport,Aumo,Papua New Guinea,UTC+10:00,,,
+449,AUW,KAUW,Wausau Downtown Airport,"Wausau, Wisconsin",United States,UTC−06:00,,,"1,201"
+450,AUX,SWGN,Araguaína Airport,"Araguaína, Tocantins",Brazil,UTC−03:00,-7.2283333333333335,-48.240833333333335,235 m
+451,AUY,NVVA,Anatom Airport,"Anatom Island, Tafea",Vanuatu,UTC+11:00,-20.249166666666667,169.7713888888889,7
+452,AUZ,KARR,Aurora Municipal Airport,"Aurora, Illinois",United States,UTC−06:00,41.77194444444444,-88.47555555555556,712
+453,AVA,ZUAS,Anshun Huangguoshu Airport,"Anshun, Guizhou",China,UTC+08:00,26.260555555555555,105.87305555555555,
+454,AVB,LIPA,Aviano Air Base,"Aviano, Pordenone",Italy,UTC+01:00,46.03138888888889,12.596944444444444,125.8 metres (413
+455,AVG,YAUV,Auvergne Airport,"Auvergne Station, Northern Territory",Australia,UTC+09:30,45.78583333333333,3.1625,"1,090"
+456,AVI,MUCA,Máximo Gómez Airport,Ciego de Ávila,Cuba,UTC−05:00,22.026944444444442,-78.78944444444444,102 m
+457,AVK,ZMAH,Arvaikheer Airport,Arvaikheer,Mongolia,UTC+08:00,,,"5,932"
+458,AVL,KAVL,Asheville Regional Airport,"Asheville, North Carolina",United States,UTC−05:00,35.43611111111111,-82.54166666666667,"2,164"
+459,AVN,LFMV,Avignon – Provence Airport,"Avignon, Provence-Alpes-Côte d'Azur",France,UTC+01:00,43.906666666666666,4.901944444444445,124
+460,AVO,KAVO,Avon Park Executive Airport,"Avon Park, Florida",United States,UTC−05:00,27.591388888888886,-81.52888888888889,160
+461,AVP,KAVP,Wilkes-Barre/Scranton International Airport,"Wilkes-Barre, Scranton, Pennsylvania",United States,UTC−05:00,,,962
+462,AVU,AGGJ,Avu Avu Airport,"Avu Avu, Guadalcanal",Solomon Islands,UTC+11:00,,,
+463,AVV,YMAV,Avalon Airport,"Avalon, Victoria",Australia,UTC+10:00,-38.04055555555556,144.47083333333333,35 m
+464,AVW,KAVQ,Marana Regional Airport,"Tucson, Arizona",United States,UTC−07:00,32.409555555555556,-111.2183888888889,"2,031"
+465,AVX,KAVX,Catalina Airport,"Avalon, California",United States,UTC−08:00,33.405,-118.41583333333334,"1,602"
+466,AWA,HALA,Awasa Airport,Awasa,Ethiopia,UTC+03:00,7.095,38.39833333333333,"5,604"
+467,AWB,AYAW,Awaba Airport,Awaba,Papua New Guinea,UTC+10:00,-8.014333333333333,142.751,60
+468,AWD,NVVB,Aniwa Airport,"Aniwa Island, Tafea",Vanuatu,UTC+11:00,-19.234444444444446,169.60055555555556,69
+469,AWE,,Alowe Airport,Alowe,Gabon,UTC+01:00,,,
+470,AWK,PWAK,Wake Island Airfield,Wake Island,United States Minor Outlying Islands,UTC+12:00,19.2825,166.63666666666666,7 metres (23
+471,AWM,KAWM,West Memphis Municipal Airport,"West Memphis, Arkansas",United States,UTC−06:00,35.135,-90.23444444444445,212
+472,AWN,,Alton Downs Airport,"Alton Downs, South Australia",Australia,UTC+09:30,,,95
+473,AWP,,Austral Downs Airport,"Austral Downs, Northern Territory",Australia,UTC+09:30,,,
+474,AWR,,Awar Airport,Awar,Papua New Guinea,UTC+10:00,,,
+475,AWZ,OIAW,Ahvaz International Airport,Ahvaz,Iran,UTC+03:30,31.3375,48.761944444444445,20 m
+476,AXA,TQPF,Clayton J. Lloyd International Airport,The Valley,British Overseas Territory,UTC−04:00,18.204722222222223,-63.055,127
+477,AXB,,Maxson Airfield (FAA: 89N),"Alexandria Bay, New York",United States,UTC−05:00,,,
+478,AXC,YAMC,Aramac Airport,"Aramac, Queensland",Australia,UTC+10:00,-22.95788888888889,145.2496111111111,760
+479,AXD,LGAL,Alexandroupoli Airport,Alexandroupoli,Greece,UTC+02:00,40.855869444444444,25.956263888888888,24
+480,AXE,,Xanxere Airport,"Xanxerê, Santa Catarina",Brazil,UTC−03:00,,,
+481,AXF,,Alxa Left Banner Bayanhot Airport,"Alxa Left Banner, Inner Mongolia",China,UTC+08:00,38.74831,105.58858,"1,390 m"
+482,AXG,KAXA,Algona Municipal Airport,"Algona, Iowa",United States,UTC−06:00,,,"1,219"
+483,AXJ,RJDA,Amakusa Airfield,"Amakusa, Amakusa Islands",Japan,UTC+09:00,32.48222222222223,130.1588888888889,340
+484,AXK,OYAT,Ataq Airport,Ataq,Yemen,UTC+03:00,14.551111111111112,46.82611111111112,"3,735"
+485,AXL,,Alexandria Airport,"Alexandria Station, Northern Territory",Australia,UTC+09:30,,,
+486,AXM,SKAR,El Edén International Airport,Armenia,Colombia,UTC−05:00,,,"3,990"
+487,AXN,KAXN,Alexandria Municipal Airport,"Alexandria, Minnesota",United States,UTC−06:00,,,"1,425"
+488,AXP,MYAP,Spring Point Airport,"Spring Point, Acklins Island",Bahamas,UTC−05:00,22.441944444444445,-73.97083333333333,11
+489,AXR,NTGU,Arutua Airport,"Arutua, Tuamotus",French Polynesia,UTC−10:00,-15.246388888888887,-146.62027777777777,
+490,AXS,KAXS,Altus/Quartz Mountain Regional Airport,"Altus, Oklahoma",United States,UTC−06:00,34.69880555555555,-99.33847222222222,"1,433"
+491,AXT,RJSK,Akita Airport,"Akita, Honshu",Japan,UTC+09:00,39.61555555555556,140.2186111111111,305
+492,AXU,HAAX,Axum Airport,Axum,Ethiopia,UTC+03:00,14.136944444444444,38.77611111111111,"2,108 m"
+493,AXV,KAXV,Neil Armstrong Airport,"Wapakoneta, Ohio",United States,UTC−05:00,40.493611111111115,-84.29805555555555,913
+494,AXX,KAXX,Angel Fire Airport,"Angel Fire, New Mexico",United States,UTC−07:00,36.42200027777778,-105.289905,"8,379.5"
+495,AYA,,Ayapel Airport,Ayapel,Colombia,UTC−05:00,,,120
+496,AYC,,Ayacucho Airport,Ayacucho,Colombia,UTC−05:00,-13.154166666666667,-74.20416666666667,"8,917"
+497,AYD,,Alroy Downs Airport,"Alroy Downs, Northern Territory",Australia,UTC+09:30,,,
+498,AYG,SKYA,Yaguara Airport,Yaguara,Colombia,UTC−05:00,,,
+499,AYI,,Yari Airport,Yari,Colombia,UTC−05:00,,,
+500,AYK,UAUR,Arkalyk Airport,Arkalyk,Kazakhstan,UTC+06:00,,,388 m
+501,AYL,,Anthony Lagoon Airport,"Anthony Lagoon, Northern Territory",Australia,UTC+09:30,,,
+502,AYM,,Yas Island Seaplane Base,"Yas Island, Abu Dhabi",United Arab Emirates,UTC+04:00,,,
+503,AYN,ZHAY,Anyang Airport,"Anyang, Henan",China,UTC+08:00,36.13388888888889,114.34388888888888,
+504,AYO,SGAY,Juan de Ayolas Airport,Ayolas,Paraguay,UTC−04:00,-27.370555555555555,-56.85388888888889,223
+505,AYP,SPHO,Coronel FAP Alfredo Mendívil Duarte Airport,Ayacucho,Peru,UTC−05:00,-13.154166666666667,-74.20416666666667,"8,917"
+506,AYQ,YAYE,Ayers Rock Airport,"Yulara, Northern Territory",Australia,UTC+09:30,-25.18611111111111,130.97555555555556,"1,626"
+507,AYR,YAYR,Ayr Airport,"Ayr, Queensland",Australia,UTC+10:00,,,
+508,AYS,KAYS,Waycross–Ware County Airport,"Waycross, Georgia",United States,UTC−05:00,31.249166666666667,-82.39555555555556,142
+509,AYT,LTAI,Antalya Airport,Antalya,Turkey,UTC+03:00,36.900277777777774,30.79277777777778,177
+510,AYU,AYAY,Aiyura Airport,Aiyura,Papua New Guinea,UTC+10:00,-6.337777777777777,145.9038888888889,"5,100"
+511,AYW,WASA,Ayawasi Airport,"Ayawasi, West Papua",Indonesia,UTC+08:00,-1.2,132.5,"1,800"
+512,AYX,SPAY,Tnte. Gral. Gerardo Pérez Pinedo Airport,"Atalaya Province, Department of Ucayali",Peru,UTC−05:00,,,751
+513,AYY,,Arugam Bay Seaplane Base,Pottuvil,Sri Lanka,UTC+05:30,,,
+514,AZA,KIWA,Phoenix–Mesa Gateway Airport,"Phoenix, Arizona",United States,UTC−07:00,,,"1,384"
+515,AZB,,Amazon Bay Airport,Amazon Bay,Papua New Guinea,UTC+10:00,,,
+516,AZD,OIYY,Shahid Sadooghi Airport,Yazd,Iran,UTC+03:30,,,"4,054"
+517,AZG,,Pablo L. Sidar Airport,"Apatzingán, Michoacán",Mexico,UTC−06:00,,,
+518,AZI,OMAD,Al Bateen Executive Airport,Abu Dhabi,United Arab Emirates,UTC+04:00,24.428333333333335,54.45805555555556,16
+519,AZL,"SWTU<sup id=""cite_ref-4"" class=""reference""><a href=""#cite_note-4"">[4]</a></sup>",Fazenda Tucunaré Airport,"Sapezal, Mato Grosso",Brazil,UTC−04:00,,,
+520,AZN,UTFA,Andizhan Airport,Andizhan,Uzbekistan,UTC+05:00,40.72777777777778,72.29388888888889,462 m
+521,AZO,KAZO,Kalamazoo/Battle Creek International Airport,"Kalamazoo, Michigan",United States,UTC−05:00,42.235,-85.55194444444444,874
+522,AZP,MMJC,Jorge Jiménez Cantú National Airport,"Ciudad López Mateos, State of Mexico",Mexico,UTC−06:00,,,
+523,AZR,DAUA,Touat-Cheikh Sidi Mohamed Belkebir Airport,Adrar,Algeria,UTC+01:00,27.83888888888889,-0.1861111111111111,280 m
+524,AZS,MDCY,Samaná El Catey International Airport,El Catey,Dominican Republic,UTC−04:00,19.27,-69.7375,12
+525,AZT,,Zapatoca Airport,Zapatoca,Colombia,UTC−05:00,,,
+526,AZZ,FNAM,Ambriz Airport,Ambriz,Angola,UTC+01:00,-7.8625,13.115277777777777,144

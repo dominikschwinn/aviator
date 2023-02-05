@@ -349,10 +349,13 @@ class Airports(object):
                 a = self.read_airportURL_site(airportURL=airportURL)
                 # if a != N1one:
                 lat, lon = self.get_airport_geo_details(a=a)
+                elevationUS, elevationSI = self.get_airport_elevation(a=a)
             else:
                 lat, lon = None, None
+                elevation = None
             self.Latitudes.append(lat)
             self.Longitudes.append(lon)
+            self.Elevation.append(elevationUS)
             # IATA[i] = iata
             # ICAO[i] = icao
             # AirportNames[i] = airportName
@@ -392,6 +395,7 @@ class Airports(object):
         self.UTC = []
         self.Latitudes = []
         self.Longitudes = []
+        self.Elevation = []
 
     def create_airport_dataframe(self,
                                  verbose=True):
@@ -404,6 +408,7 @@ class Airports(object):
         self.airport_DF['UTC'] = self.UTC
         self.airport_DF['Latitudes'] = self.Latitudes
         self.airport_DF['Longitudes'] = self.Longitudes
+        self.airport_DF['Elevation'] = self.Elevation
         # self.df = df
 
 
@@ -509,7 +514,39 @@ class Airports(object):
         return lat, lon
                 
 
+    def get_airport_elevation(self,
+                              a=None,
+                              verbose=True):
+        """
+        
 
+        Parameters
+        ----------
+        a : TYPE, optional
+            DESCRIPTION. The default is a.
+        verbose : TYPE, optional
+            DESCRIPTION. The default is True.
+
+        Returns
+        -------
+        None.
+
+        """
+        elevationUS, elevationSI = None, None
+        if a != None and "Elevation" in a.text:
+            try:
+                data = a.text.split('Elevation')
+                # print(data[1][:200])
+                data = data[1].split("infobox-data\">")[1]
+                # print("data:",data)
+                elevation = data.split("</td>")[0].split(' / ')
+                # print("elevation:",elevation)
+                elevationUS = elevation[0].split('\xa0ft')[0]
+                elevationSI = elevation[1].split('\xa0m')[0]
+            except:
+                pass
+
+        return elevationUS, elevationSI
 
 
 if __name__ == "__main__":
