@@ -24,6 +24,7 @@ class Airports(object):
         self.url_main_path = f"https://en.wikipedia.org/wiki/List_of_airports_by_IATA_airport_code:_"
         # self.r = requests.get(url, headers=HEADERS)
         # print(self.r.text)
+        self.HEADERS = {'User-Agent': 'Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148'}
 
 
     def set_start_time(self):
@@ -78,8 +79,7 @@ class Airports(object):
         None.
 
         """
-        HEADERS = {'User-Agent': 'Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148'}
-        self.r = requests.get(self.url, headers=HEADERS)
+        self.r = requests.get(self.url, headers=self.HEADERS)
         # print(self.r.text)
 
 
@@ -228,20 +228,18 @@ class Airports(object):
                         location += '{}'.format(elem)
                 country = '{}'.format(loc[-1])
         else:
-            print("scooby")
             if "<a" in elem[3] and "</a>" in elem[3]:
                 m = re.search('>(.+?)</a>', elem[3])
-                print(m)
+                # print(m)
                 location = m.group(1)
-                print("doo")
                 loc = elem[3].split("</a>")[-2]
                 loc = loc.split(">")[-1]
-                print("loc:", loc)
+                # print("loc:", loc)
                 location, country = location, loc
-                print("location: {}".format(location))
-                print("country: {}".format(country))
+                # print("location: {}".format(location))
+                # print("country: {}".format(country))
                 
-            print("elem[3]: ",elem[3])
+            # print("elem[3]: ",elem[3])
             # input()
 
                 
@@ -305,7 +303,9 @@ class Airports(object):
         return len_data
 
 
-    def get_airport_data(self):
+    def get_airport_data(self,
+                         details=False,
+                         verbose=True):
         """
         extracts the airport data from the Response-object
 
@@ -314,6 +314,8 @@ class Airports(object):
         None.
 
         """
+        # if details:
+        self.details = details
         data = self.r.text.split("<tr>")
         #ignoring the first two line since they are not relevant (i.e.filled with data)
         data = data[2:]
@@ -323,12 +325,14 @@ class Airports(object):
         # AirportNames = [""] * len_data
         # Locations = [""] * len_data
         # UTC = [""] * len_data
-        IATA = []
-        ICAO = []
-        AirportNames = []
-        Locations = []
-        Countries = []
-        UTC = []
+        # IATA = []
+        # ICAO = []
+        # AirportNames = []
+        # Locations = []
+        # Countries = []
+        # UTC = []
+        # Latitudes = []
+        # Longitudes = []
 
 
         for i,elem in enumerate(data):
@@ -339,6 +343,16 @@ class Airports(object):
             airportName = self.extract_airportName(elem)
             location, country = self.extract_location(elem)
             utc = self.extract_utc((elem))
+            
+            if self.details:
+                airportURL = self.create_airportURL(airport=airportName)
+                a = self.read_airportURL_site(airportURL=airportURL)
+                # if a != N1one:
+                lat, lon = self.get_airport_geo_details(a=a)
+            else:
+                lat, lon = None, None
+            self.Latitudes.append(lat)
+            self.Longitudes.append(lon)
             # IATA[i] = iata
             # ICAO[i] = icao
             # AirportNames[i] = airportName
@@ -376,6 +390,8 @@ class Airports(object):
         self.Locations = []
         self.Countries = []
         self.UTC = []
+        self.Latitudes = []
+        self.Longitudes = []
 
     def create_airport_dataframe(self,
                                  verbose=True):
@@ -386,6 +402,8 @@ class Airports(object):
         self.airport_DF['Location'] = self.Locations
         self.airport_DF['Country'] = self.Countries
         self.airport_DF['UTC'] = self.UTC
+        self.airport_DF['Latitudes'] = self.Latitudes
+        self.airport_DF['Longitudes'] = self.Longitudes
         # self.df = df
 
 
@@ -415,19 +433,99 @@ class Airports(object):
         if verbose:
             print("DataFrame \"{}\" successfully exported to {}".format(df,file_))
 
+
+    def create_airportURL(self,
+                           airport=None,
+                           verbose=True):
+        """
+        creates the wikipedia url of the specifi
+
+        Parameters
+        ----------
+        verbose : TYPE, optional
+            DESCRIPTION. The default is True.
+
+        Returns
+        -------
+        None.
+
+        """
+        
+        url = 'https://en.wikipedia.org/wiki/'
+        airportURL = url + airport.replace(' ','_')
+        if verbose:
+            print("airportURL: {}".format(airportURL))
+        return airportURL
+
+
+    def read_airportURL_site(self,
+                             airportURL=None,
+                             verbose=True):
+        try:
+            a = requests.get(airportURL, headers=self.HEADERS)
+        except:
+            a = None
+        return a 
+        
+
+    def get_airport_geo_details(self,
+                                a=None,
+                                verbose=True):
+        """
+        
+
+        Parameters
+        ----------
+        airport : TYPE
+            DESCRIPTION.
+        verbose : TYPE, optional
+            DESCRIPTION. The default is True.
+
+        Returns
+        -------
+        None.
+
+        """
+        lat, lon = None,None
+        # if verbose:
+            # print("airportURL: {}".format(airportURL))
+        # try:
+        if a != None and "Coordinates" in a.text:
+            data = a.text.split('Coordinates')
+            # print(data[1][:100])
+            m = re.search('{(.+?)}', data[1])
+            if m:
+                # print(m.group(1))
+                geo_data = m.group(1)
+                # print("geo_data:",geo_data)
+                geo = geo_data.split(',')
+                for elem in geo:
+                    if "lat" in elem:
+                        lat = elem.split(":")[1]
+                    if "lon" in elem:
+                        lon = elem.split(":")[1]
+            # except:
+            #     pass
+        return lat, lon
+                
+
+
+
+
 if __name__ == "__main__":
     a = Airports()
     a.create_empty_airport_database_columns()
-    # for letter in ["G"]:
-    for letter in ["A","B","C","D","E","F","G","H","I","J","K","L","M",
-                    "N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]:
+    for letter in ["A"]:
+    # for letter in ["A","B","C","D","E","F","G","H","I","J","K","L","M",
+    #                 "N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]:
         a.get_url_site(letter)
         a.read_url_site()
-        a.get_airport_data()
+        a.get_airport_data(details=True)
     a.create_airport_dataframe()
     print(" airport_DF ".center(80,'*'))
     print(a.airport_DF)
     a.export_dataframe_2_csv(df=a.airport_DF,file_='../data/iata_airport_list.csv')
     a.t_end = a.set_end_time()
     a.calculate_runtime(a.t_start, a.t_end)
+    
     
