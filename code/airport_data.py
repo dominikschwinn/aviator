@@ -21,7 +21,7 @@ class Airports(object):
 
         """
         self.t_start = self.set_start_time()
-        self.url = f"https://en.wikipedia.org/wiki/List_of_airports_by_IATA_airport_code:_"
+        self.url_main_path = f"https://en.wikipedia.org/wiki/List_of_airports_by_IATA_airport_code:_"
         # self.r = requests.get(url, headers=HEADERS)
         # print(self.r.text)
 
@@ -46,7 +46,9 @@ class Airports(object):
             print("Runtime: {} [s]".format(runtime))
 
 
-    def get_url_site(self, str_="A"):
+    def get_url_site(self,
+                     str_="A",
+                     verbose=True):
         """
         puts together the url that is used for data extraction / web scraping
 
@@ -60,8 +62,10 @@ class Airports(object):
         None.
 
         """
-        self.url = self.url + str_
-        print(self.url)
+        self.url = self.url_main_path + str_
+        if verbose:
+            print("self.url: {}".format(self.url))
+            # input("hit a key to continue")
 
 
     def read_url_site(self):
@@ -142,10 +146,23 @@ class Airports(object):
 
         """
         # print("elem[2]:",elem[2])
-        if "</a>" in elem[2]:
-            airport = elem[2].split("\""">")[1].split("<")[0]
-        else:
+        elem[2] = elem[2].split("<td>")[1]
+        # print("elem[2]:",elem[2])
+        # if "</a>" in elem[2]:
+        #     airport = elem[2].split("\""">")[1].split("<")[0]
+        # else:
+        #     airport = elem[2].split("<td>")[1]
+        if "<a" in elem[2] and "</a>" in elem[2]:
+            m = re.search('>(.+?)</a>', elem[2])
+            if m:
+                # print(m.group(1))
+                airport = m.group(1)
+            else:
+                airport = ''
+        elif "<td>" in elem[2]:
             airport = elem[2].split("<td>")[1]
+        else:
+            airport = elem[2]#.split("<td>")[1]
 
         if verbose:
             print("airport name: {}".format(airport))
@@ -202,13 +219,31 @@ class Airports(object):
                     # print("loc_:", loc_)
                 if loc_ != '':
                     loc.append(loc_)
-            for i, elem in enumerate(loc[:-1]):
-                # print(i,elem)
-                if i < len(loc) - 2:
-                    location += '{}, '.format(elem)
-                elif i == len(loc) - 2:
-                    location += '{}'.format(elem)
-            country = '{}'.format(loc[-1])
+            if len(loc) > 1:
+                for i, elem in enumerate(loc[:-1]):
+                    # print(i,elem)
+                    if i < len(loc) - 2:
+                        location += '{}, '.format(elem)
+                    elif i == len(loc) - 2:
+                        location += '{}'.format(elem)
+                country = '{}'.format(loc[-1])
+        else:
+            print("scooby")
+            if "<a" in elem[3] and "</a>" in elem[3]:
+                m = re.search('>(.+?)</a>', elem[3])
+                print(m)
+                location = m.group(1)
+                print("doo")
+                loc = elem[3].split("</a>")[-2]
+                loc = loc.split(">")[-1]
+                print("loc:", loc)
+                location, country = location, loc
+                print("location: {}".format(location))
+                print("country: {}".format(country))
+                
+            print("elem[3]: ",elem[3])
+            # input()
+
                 
         # print("loc: {}".format(loc))
         # print("location: {}".format(location))
@@ -310,20 +345,37 @@ class Airports(object):
             # Locations[i] = location
             # UTC[i] = utc
             # Countries[i] = country
-            IATA.append(iata)
-            ICAO.append(icao)
-            AirportNames.append(airportName)
-            Locations.append(location)
-            UTC.append(utc)
-            Countries.append(country)
+        #     IATA.append(iata)
+        #     ICAO.append(icao)
+        #     AirportNames.append(airportName)
+        #     Locations.append(location)
+        #     UTC.append(utc)
+        #     Countries.append(country)
 
-        self.IATA = IATA
-        self.ICAO = ICAO
-        self.AirportNames = AirportNames
-        self.Locations = Locations
-        self.Countries = Countries
-        self.UTC = UTC
+        # self.IATA.append(IATA)
+        # self.ICAO.append(ICAO)
+        # self.AirportNames.append(AirportNames)
+        # self.Locations.append(Locations)
+        # self.Countries.append(Countries)
+        # self.UTC.append(UTC)
 
+            self.IATA.append(iata)
+            self.ICAO.append(icao)
+            self.AirportNames.append(airportName)
+            self.Locations.append(location)
+            self.Countries.append(country)
+            self.UTC.append(utc)
+
+
+
+
+    def create_empty_airport_database_columns(self):
+        self.IATA = []
+        self.ICAO = []
+        self.AirportNames = []
+        self.Locations = []
+        self.Countries = []
+        self.UTC = []
 
     def create_airport_dataframe(self,
                                  verbose=True):
@@ -339,10 +391,16 @@ class Airports(object):
 
 if __name__ == "__main__":
     a = Airports()
-    a.get_url_site("A")
-    a.read_url_site()
-    a.get_airport_data()
+    a.create_empty_airport_database_columns()
+    # for letter in ["G"]:
+    for letter in ["A","B","C","D","E","F","G","H","I","J","K","L","M",
+                    "N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]:
+        a.get_url_site(letter)
+        a.read_url_site()
+        a.get_airport_data()
     a.create_airport_dataframe()
+    print(" airport_DF ".center(80,'*'))
+    print(a.airport_DF)
     a.t_end = a.set_end_time()
     a.calculate_runtime(a.t_start, a.t_end)
     
