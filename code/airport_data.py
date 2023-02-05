@@ -7,6 +7,7 @@ Created on Sun Feb  5 12:07:49 2023
 import requests
 import pandas as pd
 import timeit
+import re
 
 
 class Airports(object):
@@ -148,6 +149,7 @@ class Airports(object):
 
         if verbose:
             print("airport name: {}".format(airport))
+        return airport
 
 
     def extract_location(self,
@@ -167,10 +169,56 @@ class Airports(object):
             DESCRIPTION.
 
         """
-        location = elem[3].split("/td>")[0].split("\""">")[-1].split("<")[0]
+        # print("elem[3]:",elem[3])
+        elem[3] = elem[3].split("<td>")[1]
+        loc = []
+        location = ''
+        if ", " in elem[3]:
+            l = elem[3].split(", ")
+            number_of_locations = len(l)
+            # print("l:", l)
+            for i, elem in enumerate(l):
+                # print("elem:",elem)
+                if "<a" in elem and "</a>":
+                    m = re.search('>(.+?)</a>', elem)
+                    if m:
+                        # print(m.group(1))
+                        loc_ = m.group(1)
+                    else:
+                        loc_ = ''
+                    # print("loc_:", loc_)
+                elif "<a" in elem and "</a>" not in elem:
+                    pass
+                elif "<a" not in elem and "</a>" in elem:
+                    m = re.search('>(.+?)</a>', elem)
+                    if m:
+                        # print(m.group(1))
+                        loc_ = m.group(1)
+                    else:
+                        loc_ = elem
+                    # print("loc_:", loc_)
+                else:
+                    loc_ = elem
+                    # print("loc_:", loc_)
+                if loc_ != '':
+                    loc.append(loc_)
+            for i, elem in enumerate(loc[:-1]):
+                # print(i,elem)
+                if i < len(loc) - 2:
+                    location += '{}, '.format(elem)
+                elif i == len(loc) - 2:
+                    location += '{}'.format(elem)
+            country = '{}'.format(loc[-1])
+                
+        # print("loc: {}".format(loc))
+        # print("location: {}".format(location))
+        # print("country: {}".format(country))
+        # input("")
         if verbose:
             print("location: {}".format(location))
-        return location
+            print("country: {}".format(country))
+        # input("")
+        return location, country
 
 
     def extract_utc(self,
@@ -235,17 +283,58 @@ class Airports(object):
         #ignoring the first two line since they are not relevant (i.e.filled with data)
         data = data[2:]
         len_data = self.get_data_length(data)
+        # IATA = [""] * len_data
+        # ICAO = [""] * len_data
+        # AirportNames = [""] * len_data
+        # Locations = [""] * len_data
+        # UTC = [""] * len_data
+        IATA = []
+        ICAO = []
+        AirportNames = []
+        Locations = []
+        Countries = []
+        UTC = []
 
-        for i,elem in enumerate(data[2:]):
+
+        for i,elem in enumerate(data):
             print("=============")
             elem = elem.split('</td>')
             iata = self.extract_iata_code(elem)
-            icao = self.extract_iata_code(elem)
+            icao = self.extract_icao_code(elem)
             airportName = self.extract_airportName(elem)
-            location = self.extract_location(elem)
+            location, country = self.extract_location(elem)
             utc = self.extract_utc((elem))
+            # IATA[i] = iata
+            # ICAO[i] = icao
+            # AirportNames[i] = airportName
+            # Locations[i] = location
+            # UTC[i] = utc
+            # Countries[i] = country
+            IATA.append(iata)
+            ICAO.append(icao)
+            AirportNames.append(airportName)
+            Locations.append(location)
+            UTC.append(utc)
+            Countries.append(country)
+
+        self.IATA = IATA
+        self.ICAO = ICAO
+        self.AirportNames = AirportNames
+        self.Locations = Locations
+        self.Countries = Countries
+        self.UTC = UTC
 
 
+    def create_airport_dataframe(self,
+                                 verbose=True):
+        df = pd.DataFrame()
+        df['IATA'] = self.IATA
+        df['ICAO'] = self.ICAO
+        df['Airport'] = self.AirportNames
+        df['Location'] = self.Locations
+        df['Country'] = self.Countries
+        df['UTC'] = self.UTC
+        self.df = df
 
 
 if __name__ == "__main__":
@@ -253,6 +342,7 @@ if __name__ == "__main__":
     a.get_url_site("A")
     a.read_url_site()
     a.get_airport_data()
+    a.create_airport_dataframe()
     a.t_end = a.set_end_time()
     a.calculate_runtime(a.t_start, a.t_end)
     
