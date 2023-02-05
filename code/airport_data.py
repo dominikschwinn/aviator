@@ -327,14 +327,14 @@ class Airports(object):
 
     def create_airport_dataframe(self,
                                  verbose=True):
-        df = pd.DataFrame()
-        df['IATA'] = self.IATA
-        df['ICAO'] = self.ICAO
-        df['Airport'] = self.AirportNames
-        df['Location'] = self.Locations
-        df['Country'] = self.Countries
-        df['UTC'] = self.UTC
-        self.df = df
+        self.airport_DF = pd.DataFrame()
+        self.airport_DF['IATA'] = self.IATA
+        self.airport_DF['ICAO'] = self.ICAO
+        self.airport_DF['Airport'] = self.AirportNames
+        self.airport_DF['Location'] = self.Locations
+        self.airport_DF['Country'] = self.Countries
+        self.airport_DF['UTC'] = self.UTC
+        # self.df = df
 
 
 if __name__ == "__main__":
