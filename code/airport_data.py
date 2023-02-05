@@ -93,6 +93,24 @@ class Airports(object):
         return icao
 
 
+    def extract_location(self,elem):
+        """
+        extracts the location form the airport-data-list element
+
+        Parameters
+        ----------
+        elem : TYPE
+            DESCRIPTION.
+
+        Returns
+        -------
+        location : TYPE
+            DESCRIPTION.
+
+        """
+        location = elem[3].split("/td>")[0].split("\""">")[-1].split("<")[0]
+        print("location:",location)
+        return location
     def get_airport_data(self):
         """
         extracts the airport data from the Response-object
@@ -108,6 +126,9 @@ class Airports(object):
             elem = elem.split('</td>')
             iata = self.extract_iata_code(elem)
             icao = self.extract_iata_code(elem)
+            location = self.extract_location(elem)
+
+
 if __name__ == "__main__":
     a = Airports()
     a.get_url_site("A")
