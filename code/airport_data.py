@@ -25,7 +25,7 @@ class Airports(object):
 
     def get_url_site(self, str_="A"):
         """
-        puts together the url that is used for data extraction
+        puts together the url that is used for data extraction / web scraping
 
         Parameters
         ----------
@@ -42,7 +42,7 @@ class Airports(object):
 
     def read_url_site(self):
         """
-        reads the url and stores the content in an object
+        web scraping: reads the url and stores the content in an object
         (type requests.models.Response)
 
         Returns
@@ -54,6 +54,18 @@ class Airports(object):
         self.r = requests.get(self.url, headers=HEADERS)
         # print(self.r.text)
 
+    def extract_iata_code(self,elem):
+        iata = elem[0].split('<td>')[1]
+        print("iata: ",iata)
+        return iata
+
+
+    def get_airport_data(self):
+        data = self.r.text.split("<tr>")
+        for i,elem in enumerate(data[2:]):
+            print("=============")
+            elem = elem.split('</td>')
+            iata = self.extract_iata_code(elem)
 if __name__ == "__main__":
     a = Airports()
     a.get_url_site("A")
