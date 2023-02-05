@@ -5,7 +5,8 @@ Created on Sun Feb  5 12:07:49 2023
 @author: Dominik Schwinn
 """
 import requests
-# import pandas as pd
+import pandas as pd
+import timeit
 
 
 class Airports(object):
@@ -18,10 +19,30 @@ class Airports(object):
         None.
 
         """
-
+        self.t_start = self.set_start_time()
         self.url = f"https://en.wikipedia.org/wiki/List_of_airports_by_IATA_airport_code:_"
         # self.r = requests.get(url, headers=HEADERS)
         # print(self.r.text)
+
+
+    def set_start_time(self):
+        t_start = timeit.default_timer()
+        return t_start
+
+
+    def set_end_time(self):
+        t_end = timeit.default_timer()
+        return t_end
+
+
+    def calculate_runtime(self,
+                          t_start,
+                          t_end,
+                          verbose=True):
+        runtime = t_end - t_start
+        if verbose:
+            print("".center(80,'*'))
+            print("Runtime: {} [s]".format(runtime))
 
 
     def get_url_site(self, str_="A"):
@@ -232,4 +253,6 @@ if __name__ == "__main__":
     a.get_url_site("A")
     a.read_url_site()
     a.get_airport_data()
+    a.t_end = a.set_end_time()
+    a.calculate_runtime(a.t_start, a.t_end)
     
