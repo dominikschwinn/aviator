@@ -23,6 +23,7 @@ class Airports(object):
         # self.r = requests.get(url, headers=HEADERS)
         # print(self.r.text)
 
+
     def get_url_site(self, str_="A"):
         """
         puts together the url that is used for data extraction / web scraping
@@ -40,6 +41,7 @@ class Airports(object):
         self.url = self.url + str_
         print(self.url)
 
+
     def read_url_site(self):
         """
         web scraping: reads the url and stores the content in an object
@@ -53,6 +55,7 @@ class Airports(object):
         HEADERS = {'User-Agent': 'Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148'}
         self.r = requests.get(self.url, headers=HEADERS)
         # print(self.r.text)
+
 
     def extract_iata_code(self,elem):
         """
@@ -73,6 +76,7 @@ class Airports(object):
         print("iata: ",iata)
         return iata
 
+
     def extract_icao_code(self,elem):
         """
         extracts the icao code frome the airport-data-list element
@@ -91,6 +95,7 @@ class Airports(object):
         icao = elem[1].split('<td>')[1]
         print("icao:",icao)   
         return icao
+
 
     def extract_airportName(self,elem):
         """
@@ -114,6 +119,7 @@ class Airports(object):
 
         print("airport name:", airport)
 
+
     def extract_location(self,elem):
         """
         extracts the location form the airport-data-list element
@@ -134,6 +140,29 @@ class Airports(object):
         return location
 
 
+    def extract_utc(self,elem):
+        """
+        extracts the utc-time zone form the airport-data-list element
+
+        Parameters
+        ----------
+        elem : TYPE
+            DESCRIPTION.
+
+        Returns
+        -------
+        utc : TYPE
+            DESCRIPTION.
+
+        """
+        try:
+            utc = elem[4].split("\""">")[1].split("</a>")[0]
+        except:
+            utc = ""
+        print("utc:", utc)
+        return utc
+
+
     def get_airport_data(self):
         """
         extracts the airport data from the Response-object
@@ -151,7 +180,7 @@ class Airports(object):
             icao = self.extract_iata_code(elem)
             airportName = self.extract_airportName(elem)
             location = self.extract_location(elem)
-
+            utc = self.extract_utc((elem))
 
 if __name__ == "__main__":
     a = Airports()
