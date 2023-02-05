@@ -57,7 +57,9 @@ class Airports(object):
         # print(self.r.text)
 
 
-    def extract_iata_code(self,elem):
+    def extract_iata_code(self,
+                          elem,
+                          verbose=True):
         """
         extracts the iata code frome the airport-data-list element
 
@@ -73,11 +75,14 @@ class Airports(object):
 
         """
         iata = elem[0].split('<td>')[1]
-        print("iata: ",iata)
+        if verbose:
+            print("iata: {}".format(iata))
         return iata
 
 
-    def extract_icao_code(self,elem):
+    def extract_icao_code(self,
+                          elem,
+                          verbose=True):
         """
         extracts the icao code frome the airport-data-list element
 
@@ -93,11 +98,14 @@ class Airports(object):
 
         """
         icao = elem[1].split('<td>')[1]
-        print("icao:",icao)   
+        if verbose:
+            print("icao:",icao)   
         return icao
 
 
-    def extract_airportName(self,elem):
+    def extract_airportName(self,
+                            elem,
+                            verbose=True):
         """
         extracts the airport name form the airport-data-list element
 
@@ -117,10 +125,13 @@ class Airports(object):
         else:
             airport = elem[2].split("<td>")[1]
 
-        print("airport name:", airport)
+        if verbose:
+            print("airport name: {}".format(airport))
 
 
-    def extract_location(self,elem):
+    def extract_location(self,
+                         elem,
+                         verbose=True):
         """
         extracts the location form the airport-data-list element
 
@@ -136,11 +147,14 @@ class Airports(object):
 
         """
         location = elem[3].split("/td>")[0].split("\""">")[-1].split("<")[0]
-        print("location:",location)
+        if verbose:
+            print("location: {}".format(location))
         return location
 
 
-    def extract_utc(self,elem):
+    def extract_utc(self,
+                    elem,
+                    verbose=True):
         """
         extracts the utc-time zone form the airport-data-list element
 
@@ -159,8 +173,32 @@ class Airports(object):
             utc = elem[4].split("\""">")[1].split("</a>")[0]
         except:
             utc = ""
-        print("utc:", utc)
+        if verbose:
+            print("utc: {}".format(utc))
         return utc
+
+
+    def get_data_length(self,
+                        data,
+                        verbose=True):
+        """
+        get the length of the data array, i.e. how many airport entries are available
+        in the Response-object
+
+        Parameters
+        ----------
+        data : TYPE
+            DESCRIPTION.
+
+        Returns
+        -------
+        None.
+
+        """
+        len_data = len(data)
+        if verbose:
+            print("The Response-object has {} entries".format(len_data))
+        return len_data
 
 
     def get_airport_data(self):
@@ -173,6 +211,10 @@ class Airports(object):
 
         """
         data = self.r.text.split("<tr>")
+        #ignoring the first two line since they are not relevant (i.e.filled with data)
+        data = data[2:]
+        len_data = self.get_data_length(data)
+
         for i,elem in enumerate(data[2:]):
             print("=============")
             elem = elem.split('</td>')
@@ -181,6 +223,9 @@ class Airports(object):
             airportName = self.extract_airportName(elem)
             location = self.extract_location(elem)
             utc = self.extract_utc((elem))
+
+
+
 
 if __name__ == "__main__":
     a = Airports()
