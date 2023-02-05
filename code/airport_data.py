@@ -2,7 +2,7 @@
 """
 Created on Sun Feb  5 12:07:49 2023
 
-@author: domin
+@author: Dominik Schwinn
 """
 import requests
 # import pandas as pd
