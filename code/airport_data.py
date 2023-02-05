@@ -55,19 +55,62 @@ class Airports(object):
         # print(self.r.text)
 
     def extract_iata_code(self,elem):
+        """
+        extracts the iata code frome the airport-data-list element
+
+        Parameters
+        ----------
+        elem : TYPE
+            DESCRIPTION.
+
+        Returns
+        -------
+        iata : TYPE
+            DESCRIPTION.
+
+        """
         iata = elem[0].split('<td>')[1]
         print("iata: ",iata)
         return iata
 
+    def extract_icao_code(self,elem):
+        """
+        extracts the icao code frome the airport-data-list element
+
+        Parameters
+        ----------
+        elem : TYPE
+            DESCRIPTION.
+
+        Returns
+        -------
+        icao : TYPE
+            DESCRIPTION.
+
+        """
+        icao = elem[1].split('<td>')[1]
+        print("icao:",icao)   
+        return icao
+
 
     def get_airport_data(self):
+        """
+        extracts the airport data from the Response-object
+
+        Returns
+        -------
+        None.
+
+        """
         data = self.r.text.split("<tr>")
         for i,elem in enumerate(data[2:]):
             print("=============")
             elem = elem.split('</td>')
             iata = self.extract_iata_code(elem)
+            icao = self.extract_iata_code(elem)
 if __name__ == "__main__":
     a = Airports()
     a.get_url_site("A")
     a.read_url_site()
+    a.get_airport_data()
     
