@@ -2,7 +2,7 @@
 """
 Created on Tue Feb  7 22:20:54 2023
 
-@author: domin
+@author: Dominik Schwinn
 """
 
 import geopandas as gpd
