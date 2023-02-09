@@ -23,4 +23,5 @@ ax = world.plot()
 gdf.plot(ax=ax, color='red', markersize=.1)
 fig = plt.gcf()
 plt.show()
-fig.savefig('airports.png',dpi=300)
+
+fig.savefig('../visualization/airport_world_map.png',dpi=300)
