@@ -27,10 +27,11 @@ class Visualization():
             if len(airports) != 0: only the specified airports are plotted on the map
             entries in airports must be IATA-code
             e.g. airports = [] or airports = ['AAA','AAZ']
+        #
         savefig : TYPE boolean, optional
+            DESCRIPTION. The default is True.
         savefig == False: map is only plotted but not saved
         savefig == True: map is plotted and saved as *.png
-            DESCRIPTION. The default is True.
 
         Returns
         -------
