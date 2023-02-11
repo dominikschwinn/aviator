@@ -90,5 +90,5 @@ if __name__ == "__main__":
     x = Visualization()
     x.plot_airports_world_map(airports=[],
                               savefig=True)
-    x.plot_airports_world_map_interactive(airports=['AMS','ATL'],
+    x.plot_airports_world_map_interactive(airports=['AMS','ATL','ADL','ASU','AUH','ABZ','ANC','AKL'],
                                           savefig=True)
