@@ -347,16 +347,25 @@ class Airports(object):
             if self.details:
                 airportURL = self.create_airportURL(airport=airportName)
                 a = self.read_airportURL_site(airportURL=airportURL)
+                if a != None:
+                    self.AirportURL.append(airportURL)
+                else:
+                    self.AirportURL.append(None)
                 # if a != N1one:
                 lat, lon = self.get_airport_geo_details(a=a)
                 elevationUS, elevationSI = self.get_airport_elevation(a=a)
-                self.get_airport_statistics(a=a)
+                pax, operations, cargo, year = self.get_airport_statistics(a=a)
             else:
                 lat, lon = None, None
                 elevation = None
             self.Latitudes.append(lat)
             self.Longitudes.append(lon)
             self.Elevation.append(elevationUS)
+            #
+            self.PAX.append(pax)
+            self.Operations.append(operations)
+            self.Cargo.append(cargo)
+            self.Year.append(year)
             # IATA[i] = iata
             # ICAO[i] = icao
             # AirportNames[i] = airportName
@@ -397,6 +406,13 @@ class Airports(object):
         self.Latitudes = []
         self.Longitudes = []
         self.Elevation = []
+        self.AirportURL = []
+        #
+        self.PAX = []
+        self.Operations = []
+        self.Cargo = []
+        self.Year = []
+        
 
     def create_airport_dataframe(self,
                                  verbose=True):
@@ -410,7 +426,14 @@ class Airports(object):
         self.airport_DF['Latitudes'] = self.Latitudes
         self.airport_DF['Longitudes'] = self.Longitudes
         self.airport_DF['Elevation'] = self.Elevation
+        self.airport_DF['URL'] = self.AirportURL
         # self.df = df
+        self.airport_stats_DF = pd.DataFrame()
+        self.airport_stats_DF['IATA'] = self.IATA
+        self.airport_stats_DF['PAX'] = self.PAX
+        self.airport_stats_DF['OPs'] = self.Operations
+        self.airport_stats_DF['Cargo'] = self.Cargo
+        self.airport_stats_DF['Year'] = self.Year
 
 
     def export_dataframe_2_csv(self,
@@ -615,7 +638,7 @@ class Airports(object):
                         cargo = cargo.replace(',','')
                     cargo = int(cargo)
                     print("cargo:",cargo)
-                input("found some statistics")
+                # input("found some statistics")
             except:
                 pass
         return pax, am, cargo, year
@@ -624,16 +647,17 @@ class Airports(object):
 if __name__ == "__main__":
     a = Airports()
     a.create_empty_airport_database_columns()
-    for letter in ["A"]:
-    # for letter in ["A","B","C","D","E","F","G","H","I","J","K","L","M",
-    #                 "N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]:
+    # for letter in ["A"]:
+    for letter in ["A","B","C","D","E","F","G","H","I","J","K","L","M",
+                    "N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]:
         a.get_url_site(letter)
         a.read_url_site()
         a.get_airport_data(details=True)
     a.create_airport_dataframe()
-    print(" airport_DF ".center(80,'*'))
-    print(a.airport_DF)
+    # print(" airport_DF ".center(80,'*'))
+    # print(a.airport_DF)
     a.export_dataframe_2_csv(df=a.airport_DF,file_='../data/iata_airport_list_new.csv')
+    a.export_dataframe_2_csv(df=a.airport_stats_DF,file_='../data/iata_airport_stats_list_new.csv')
     a.t_end = a.set_end_time()
     a.calculate_runtime(a.t_start, a.t_end)
     
