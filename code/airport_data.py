@@ -350,6 +350,7 @@ class Airports(object):
                 # if a != N1one:
                 lat, lon = self.get_airport_geo_details(a=a)
                 elevationUS, elevationSI = self.get_airport_elevation(a=a)
+                self.get_airport_statistics(a=a)
             else:
                 lat, lon = None, None
                 elevation = None
@@ -547,6 +548,77 @@ class Airports(object):
                 pass
 
         return elevationUS, elevationSI
+
+
+
+    def get_airport_statistics(self,
+                               a=None):
+        pax, am, cargo, year = None, None, None, None
+        if a != None and 'Statistics' in a.text:
+            try:
+                data = a.text.split('Statistics (')
+                year = data[1][:4]#.split(')')[0]
+                year = int(year)
+                print("statistics from year: ",year)
+                # print(data[1][:300])
+                if 'Passengers' in data[1]:
+                    pax = data[1].split('Passengers')
+                    pax = pax[1][:300]
+                    pax = re.search('<td class="infobox-data">(.+?)</td>', pax)
+                    pax = pax.group(1)
+                    if ',' in pax:
+                        pax = pax.replace(',','')
+                    pax = int(pax)
+                    print("pax:", pax)
+                if 'Passenger volume' in data[1]:
+                    pax = data[1].split('Passenger volume')
+                    pax = pax[1][:300]
+                    pax = re.search('<td class="infobox-data">(.+?)</td>', pax)
+                    pax = pax.group(1)
+                    if ',' in pax:
+                        pax = pax.replace(',','')
+                    pax = int(pax)
+                    print("pax:", pax)
+                if 'Aircraft Movements' in data[1]:
+                    am = data[1].split('Aircraft Movements')
+                    am = am[1][:300]
+                    am = re.search('<td class="infobox-data">(.+?)</td>', am)
+                    am = am.group(1)
+                    if ',' in am:
+                        am = am.replace(',','')
+                    am = int(am)
+                    print("aircraft movements:", am)
+                if 'Movements' in data[1]:
+                    am = data[1].split('Movements')
+                    am = am[1][:300]
+                    am = re.search('<td class="infobox-data">(.+?)</td>', am)
+                    am = am.group(1)
+                    if ',' in am:
+                        am = am.replace(',','')
+                    am = int(am)
+                    print("(aircraft) movements:", am)
+                if 'Aircraft operations' in data[1]:
+                    am = data[1].split('Aircraft operations')
+                    am = am[1][:300]
+                    am = re.search('<td class="infobox-data">(.+?)</td>', am)
+                    am = am.group(1)
+                    if ',' in am:
+                        am = am.replace(',','')
+                    am = int(am)
+                    print("aircraft movements (operations):", am)
+                if 'Cargo' in data[1]:
+                    cargo = data[1].split('Cargo')
+                    cargo = cargo[1][:300]
+                    cargo = re.search('<td class="infobox-data">(.+?)</td>', cargo)
+                    cargo = cargo.group(1)      
+                    if ',' in cargo:
+                        cargo = cargo.replace(',','')
+                    cargo = int(cargo)
+                    print("cargo:",cargo)
+                input("found some statistics")
+            except:
+                pass
+        return pax, am, cargo, year
 
 
 if __name__ == "__main__":
