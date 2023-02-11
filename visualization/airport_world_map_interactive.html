@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_637f006ede4d60128b91103752d55a58 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_637f006ede4d60128b91103752d55a58" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_637f006ede4d60128b91103752d55a58 = L.map(
+                "map_637f006ede4d60128b91103752d55a58",
+                {
+                    center: [31.113024691358024, 16.025246913580247],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_637f006ede4d60128b91103752d55a58);
+
+            
+
+        
+    
+            var tile_layer_90e8c554135bcd4bd6f7d14cebd10b18 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_637f006ede4d60128b91103752d55a58);
+        
+    
+            var marker_bf6c12ec09f99e4ac11e6050506f5c97 = L.marker(
+                [52.3, 4.765],
+                {}
+            ).addTo(map_637f006ede4d60128b91103752d55a58);
+        
+    
+            marker_bf6c12ec09f99e4ac11e6050506f5c97.bindTooltip(
+                `<div>
+                     Amsterdam Airport Schiphol
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7fa3b63af6b9b6c0616b7e5c4c64a269 = L.marker(
+                [33.63666666666666, -84.42805555555556],
+                {}
+            ).addTo(map_637f006ede4d60128b91103752d55a58);
+        
+    
+            marker_7fa3b63af6b9b6c0616b7e5c4c64a269.bindTooltip(
+                `<div>
+                     Hartsfield–Jackson Atlanta International Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e431c18aa15fa664bb71bbcb971312b3 = L.marker(
+                [24.43305555555556, 54.65111111111111],
+                {}
+            ).addTo(map_637f006ede4d60128b91103752d55a58);
+        
+    
+            marker_e431c18aa15fa664bb71bbcb971312b3.bindTooltip(
+                `<div>
+                     Abu Dhabi International Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2adaaaad47e46551b67e930526ca6091 = L.marker(
+                [13.6925, 100.75],
+                {}
+            ).addTo(map_637f006ede4d60128b91103752d55a58);
+        
+    
+            marker_2adaaaad47e46551b67e930526ca6091.bindTooltip(
+                `<div>
+                     Suvarnabhumi Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8655add854197f6fc4c3f0b32ba3923c = L.marker(
+                [49.00972222222222, 2.5477777777777777],
+                {}
+            ).addTo(map_637f006ede4d60128b91103752d55a58);
+        
+    
+            marker_8655add854197f6fc4c3f0b32ba3923c.bindTooltip(
+                `<div>
+                     Charles de Gaulle Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_04866cf5f7471c6d7105cd3d360cb539 = L.marker(
+                [7.181111111111111, 79.88361111111112],
+                {}
+            ).addTo(map_637f006ede4d60128b91103752d55a58);
+        
+    
+            marker_04866cf5f7471c6d7105cd3d360cb539.bindTooltip(
+                `<div>
+                     Bandaranaike International Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_de04408a19a09cd5a72b60977bbc84d7 = L.marker(
+                [25.273055555555555, 51.60805555555556],
+                {}
+            ).addTo(map_637f006ede4d60128b91103752d55a58);
+        
+    
+            marker_de04408a19a09cd5a72b60977bbc84d7.bindTooltip(
+                `<div>
+                     Hamad International Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0ef9aeb248719c794bcc2ab8c01a0221 = L.marker(
+                [-8.748055555555554, 115.1675],
+                {}
+            ).addTo(map_637f006ede4d60128b91103752d55a58);
+        
+    
+            marker_0ef9aeb248719c794bcc2ab8c01a0221.bindTooltip(
+                `<div>
+                     Ngurah Rai International Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0344005239d81b8b78697ec89d811f7a = L.marker(
+                [25.252777777777776, 55.364444444444445],
+                {}
+            ).addTo(map_637f006ede4d60128b91103752d55a58);
+        
+    
+            marker_0344005239d81b8b78697ec89d811f7a.bindTooltip(
+                `<div>
+                     Dubai International Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2d099819c891d4d81e67fc7089151c79 = L.marker(
+                [50.03333333333333, 8.570555555555556],
+                {}
+            ).addTo(map_637f006ede4d60128b91103752d55a58);
+        
+    
+            marker_2d099819c891d4d81e67fc7089151c79.bindTooltip(
+                `<div>
+                     Frankfurt Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f1b0b0b9f3fa719c2d455e7b7424abbe = L.marker(
+                [-22.81, -43.25055555555556],
+                {}
+            ).addTo(map_637f006ede4d60128b91103752d55a58);
+        
+    
+            marker_f1b0b0b9f3fa719c2d455e7b7424abbe.bindTooltip(
+                `<div>
+                     Rio de Janeiro–Galeão International Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9603f4423422df457e0c9c961787d97d = L.marker(
+                [22.30888888888889, 113.91444444444446],
+                {}
+            ).addTo(map_637f006ede4d60128b91103752d55a58);
+        
+    
+            marker_9603f4423422df457e0c9c961787d97d.bindTooltip(
+                `<div>
+                     Hong Kong International Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b0fb020ffe7ff29f7055dbb8958a9cf2 = L.marker(
+                [35.55333333333333, 139.78111111111113],
+                {}
+            ).addTo(map_637f006ede4d60128b91103752d55a58);
+        
+    
+            marker_b0fb020ffe7ff29f7055dbb8958a9cf2.bindTooltip(
+                `<div>
+                     Haneda Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_772957ced267393d06a9e1fa8c5db8b5 = L.marker(
+                [40.63972222222222, -73.77888888888889],
+                {}
+            ).addTo(map_637f006ede4d60128b91103752d55a58);
+        
+    
+            marker_772957ced267393d06a9e1fa8c5db8b5.bindTooltip(
+                `<div>
+                     John F. Kennedy International Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_71513a3e3c2ebc8b11db425c86d161db = L.marker(
+                [33.942499999999995, -118.40805555555556],
+                {}
+            ).addTo(map_637f006ede4d60128b91103752d55a58);
+        
+    
+            marker_71513a3e3c2ebc8b11db425c86d161db.bindTooltip(
+                `<div>
+                     Los Angeles International Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0e7a3bb79565a165da05950b1a3ca576 = L.marker(
+                [51.4775, -0.4613888888888889],
+                {}
+            ).addTo(map_637f006ede4d60128b91103752d55a58);
+        
+    
+            marker_0e7a3bb79565a165da05950b1a3ca576.bindTooltip(
+                `<div>
+                     Heathrow Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2b2c7b1ea5f31640724106c5345ae001 = L.marker(
+                [40.47222222222222, -3.560833333333333],
+                {}
+            ).addTo(map_637f006ede4d60128b91103752d55a58);
+        
+    
+            marker_2b2c7b1ea5f31640724106c5345ae001.bindTooltip(
+                `<div>
+                     Adolfo Suárez Madrid–Barajas Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_399e35656e9e64f39568d24ac9dc070a = L.marker(
+                [48.35388888888889, 11.786111111111111],
+                {}
+            ).addTo(map_637f006ede4d60128b91103752d55a58);
+        
+    
+            marker_399e35656e9e64f39568d24ac9dc070a.bindTooltip(
+                `<div>
+                     Munich Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a60bae22b1ff2703ad346f907990529c = L.marker(
+                [41.97861111111112, -87.90472222222223],
+                {}
+            ).addTo(map_637f006ede4d60128b91103752d55a58);
+        
+    
+            marker_a60bae22b1ff2703ad346f907990529c.bindTooltip(
+                `<div>
+                     O'Hare International Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_98612959da2197769856a543664ad2b6 = L.marker(
+                [31.14333333333333, 121.80527777777776],
+                {}
+            ).addTo(map_637f006ede4d60128b91103752d55a58);
+        
+    
+            marker_98612959da2197769856a543664ad2b6.bindTooltip(
+                `<div>
+                     Shanghai Pudong International Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_260c8df855557f91b46034ff86993af6 = L.marker(
+                [37.61888888888889, -122.375],
+                {}
+            ).addTo(map_637f006ede4d60128b91103752d55a58);
+        
+    
+            marker_260c8df855557f91b46034ff86993af6.bindTooltip(
+                `<div>
+                     San Francisco International Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3ac87615e1581b35e5ac0566b0415b7b = L.marker(
+                [10.818888888888887, 106.65194444444444],
+                {}
+            ).addTo(map_637f006ede4d60128b91103752d55a58);
+        
+    
+            marker_3ac87615e1581b35e5ac0566b0415b7b.bindTooltip(
+                `<div>
+                     Tan Son Nhat International Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d23862f78a2cd3670c27c374b636f645 = L.marker(
+                [1.3591666666666669, 103.98944444444444],
+                {}
+            ).addTo(map_637f006ede4d60128b91103752d55a58);
+        
+    
+            marker_d23862f78a2cd3670c27c374b636f645.bindTooltip(
+                `<div>
+                     Singapore Changi Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_63b8d3264af13f3e61f13ca693ea4917 = L.marker(
+                [48.69, 9.221944444444444],
+                {}
+            ).addTo(map_637f006ede4d60128b91103752d55a58);
+        
+    
+            marker_63b8d3264af13f3e61f13ca693ea4917.bindTooltip(
+                `<div>
+                     Stuttgart Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_09dcb341614af3b04c76ef8e68522dea = L.marker(
+                [55.97277777777778, 37.414722222222224],
+                {}
+            ).addTo(map_637f006ede4d60128b91103752d55a58);
+        
+    
+            marker_09dcb341614af3b04c76ef8e68522dea.bindTooltip(
+                `<div>
+                     Sheremetyevo International Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5efaff302ea44a051501fbb86f885522 = L.marker(
+                [46.79111111111111, -71.39333333333335],
+                {}
+            ).addTo(map_637f006ede4d60128b91103752d55a58);
+        
+    
+            marker_5efaff302ea44a051501fbb86f885522.bindTooltip(
+                `<div>
+                     Québec City Jean Lesage International Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cbed1492dbf6190f444c4ed2c1494c6a = L.marker(
+                [43.67666666666666, -79.63055555555555],
+                {}
+            ).addTo(map_637f006ede4d60128b91103752d55a58);
+        
+    
+            marker_cbed1492dbf6190f444c4ed2c1494c6a.bindTooltip(
+                `<div>
+                     Toronto Pearson International Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
