@@ -656,8 +656,8 @@ if __name__ == "__main__":
     a.create_airport_dataframe()
     # print(" airport_DF ".center(80,'*'))
     # print(a.airport_DF)
-    a.export_dataframe_2_csv(df=a.airport_DF,file_='../data/iata_airport_list_new.csv')
-    a.export_dataframe_2_csv(df=a.airport_stats_DF,file_='../data/iata_airport_stats_list_new.csv')
+    a.export_dataframe_2_csv(df=a.airport_DF,file_='../data/iata_airport_list.csv')
+    a.export_dataframe_2_csv(df=a.airport_stats_DF,file_='../data/iata_airport_stats_list.csv')
     a.t_end = a.set_end_time()
     a.calculate_runtime(a.t_start, a.t_end)
     
