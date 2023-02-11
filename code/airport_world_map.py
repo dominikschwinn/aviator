@@ -49,7 +49,7 @@ class Visualization():
         if len(airports) == 0:
             pass
         if len(airports) > 0:
-            self.airports = self.airports.loc[self.airports['IATA'].isin(airports), ['IATA','Airport','Location','Latitudes','Longitudes']]
+            self.airports = self.airports.loc[self.airports['IATA'].isin(airports), ['IATA','Airport','Location','Country','Latitudes','Longitudes']]
 
         world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))
         world.explore()
@@ -71,14 +71,18 @@ class Visualization():
         if len(airports) == 0:
             airport_df = self.airports
         if len(airports) > 0:
-            airport_df = self.airports.loc[self.airports['IATA'].isin(airports), ['IATA','Airport','Location','Latitudes','Longitudes']]
+            airport_df = self.airports.loc[self.airports['IATA'].isin(airports), ['IATA','Airport','Location','Country','Latitudes','Longitudes']]
 
         airport_df = airport_df.loc[~airport_df.Latitudes.isna()]
         map = folium.Map(location=[airport_df.Latitudes.mean(), airport_df.Longitudes.mean()], 
                          zoom_start=3, control_scale=True)
         
         for i,row in airport_df.iterrows():
-            folium.Marker(location=[row['Latitudes'],row['Longitudes']]).add_to(map)
+            # folium.Marker(location=[row['Latitudes'],row['Longitudes']]).add_to(map)
+            folium.Marker(location=[row['Latitudes'],row['Longitudes']],
+                          tooltip=row['Airport'],
+                          # popup='{}\n{}'.format(row['Location'],row['Country'])
+                          ).add_to(map)
 
         # map.show_in_browser()
         if savefig:
@@ -90,5 +94,8 @@ if __name__ == "__main__":
     x = Visualization()
     x.plot_airports_world_map(airports=[],
                               savefig=True)
-    x.plot_airports_world_map_interactive(airports=['AMS','ATL','ADL','ASU','AUH','ABZ','ANC','AKL'],
+    # x.plot_airports_world_map_interactive(airports=['AMS','ATL','ADL','ASU','AUH','ABZ','ANC','AKL'],
+                                          # savefig=True)
+    x.plot_airports_world_map_interactive(airports=['ATL','SIN','FRA','GIG','LAX','AUH','AMS','DXB','HKG','HND','LHR','JFK','SFO','CDG','SVO','SGN','BKK','DPS',
+                                                    'ORD','MAD','CMB','PVG','YYZ','YQB','STR','MUC','DOH'],
                                           savefig=True)
