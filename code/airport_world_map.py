@@ -6,12 +6,16 @@ Created on Tue Feb  7 22:20:54 2023
 """
 
 import geopandas as gpd
+import folium
 import pandas as pd
 import matplotlib.pyplot as plt
 
 class Visualization():
     def __init__(self):
         print(">>> initializing Visualization")
+        # self.airports = pd.read_csv('../data/iata_airports_new.csv')
+        self.airports = pd.read_csv('../data/iata_airport_list.csv')
+
 
     def plot_airports_world_map(self,
                                 airports=[],
@@ -40,7 +44,7 @@ class Visualization():
         """
         # assert type(airports)==list
         
-        self.airports = pd.read_csv('../data/iata_airports_new.csv')
+
         
         if len(airports) == 0:
             pass
@@ -61,7 +65,30 @@ class Visualization():
             fig.savefig('../visualization/airport_world_map.png',dpi=300)
 
 
+    def plot_airports_world_map_interactive(self,
+                                            airports=[],
+                                            savefig=True):
+        if len(airports) == 0:
+            airport_df = self.airports
+        if len(airports) > 0:
+            airport_df = self.airports.loc[self.airports['IATA'].isin(airports), ['IATA','Airport','Location','Latitudes','Longitudes']]
+
+        airport_df = airport_df.loc[~airport_df.Latitudes.isna()]
+        map = folium.Map(location=[airport_df.Latitudes.mean(), airport_df.Longitudes.mean()], 
+                         zoom_start=3, control_scale=True)
+        
+        for i,row in airport_df.iterrows():
+            folium.Marker(location=[row['Latitudes'],row['Longitudes']]).add_to(map)
+
+        # map.show_in_browser()
+        if savefig:
+            map.save('../visualization/airports_interactive.html', close_file=True)
+
+
+
 if __name__ == "__main__":
     x = Visualization()
     x.plot_airports_world_map(airports=[],
                               savefig=True)
+    x.plot_airports_world_map_interactive(airports=['AMS','ATL'],
+                                          savefig=True)
