@@ -97,6 +97,7 @@ class FlightRadar(object):
         self.fr_api = FlightRadar24API()
         #
         self.flights = self.get_flights()
+        self.flights_2_df(flights=self.flights)
         #
     def get_flights(self,
                     verbose=False):
@@ -119,6 +120,34 @@ class FlightRadar(object):
             print(" current flights ".center(80,'*'))
             print(flights)
         return flights
+
+    def flights_2_df(self,
+                     flights=None,
+                     verbose=False):
+
+        for f in flights:
+            self.icao.append(f.icao_24bit)
+            self.operator.append(f.airline_iata)
+            self.aircraft.append(f.aircraft_code)
+            self.origin.append(f.origin_airport_iata)
+            self.destination.append(f.destination_airport_iata)
+            self.callsign.append(f.callsign)
+            self.latitude.append(f.latitude)
+            self.longitude.append(f.longitude)
+            self.altitude.append(f.altitude)
+            self.heading.append(f.heading)
+            
+
+        self.ac_df['icao'] = self.icao
+        self.ac_df['operator'] = self.operator
+        self.ac_df['aircraft'] = self.aircraft
+        self.ac_df['origin'] = self.origin
+        self.ac_df['destination'] = self.destination
+        self.ac_df['callsign'] = self.callsign
+        self.ac_df['latitude'] = self.latitude
+        self.ac_df['longitude'] = self.longitude
+        self.ac_df['altitude'] = self.altitude
+        self.ac_df['heading'] = self.heading
 
 ###############################################################################
 
