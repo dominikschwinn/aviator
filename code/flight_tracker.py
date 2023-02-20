@@ -12,7 +12,8 @@ import numpy as np
 ###############################################################################
 class Tracker(object):
     def __init__(self,
-                 api='flightradar'):
+                 api='flightradar',
+                 verbose=False):
         """
         
 
@@ -53,6 +54,7 @@ class Tracker(object):
                                    altitude=self.altitude,
                                    category=self.category,
                                    heading=self.heading,
+                                   verbose=verbose,
                                    )
 
 ###############################################################################  
@@ -77,11 +79,50 @@ class FlightRadar(object):
         - https://github.com/JeanExtreme002/FlightRadarAPI
         """
 
+        self.ac_df=ac_df
+        self.icao=icao
+        self.operator=operator
+        self.aircraft=aircraft
+        self.origin=origin
+        self.destination=destination
+        self.callsign=callsign
+        self.latitude=latitude
+        self.longitude=longitude
+        self.altitude=altitude
+        self.category=category
+        self.heading=heading
+        self.verbose=verbose
+        #
         from FlightRadar24.api import FlightRadar24API
         self.fr_api = FlightRadar24API()
         #
+        self.flights = self.get_flights()
+        #
+    def get_flights(self,
+                    verbose=False):
+        """
+        get the flights from Flightradar API
+
+        Parameters
+        ----------
+        verbose : TYPE (boolean), optional
+            DESCRIPTION. The default is False.
+
+        Returns
+        -------
+        flights : TYPE (object)
+            DESCRIPTION.
+
+        """
+        flights = self.fr_api.get_flights()
+        if verbose:
+            print(" current flights ".center(80,'*'))
+            print(flights)
+        return flights
+
 ###############################################################################
 
 if __name__ == "__main__":
     api = 'flightradar'
-    x = Tracker(api)
+    x = Tracker(api,
+                verbose=False)
