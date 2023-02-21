@@ -8,6 +8,7 @@ Created on Mon Feb 13 19:54:56 2023
 import pandas as pd
 import numpy as np
 #
+from bokeh.plotting import figure, ColumnDataSource
 #
 ###############################################################################
 class Tracker(object):
@@ -65,6 +66,24 @@ class Tracker(object):
                                    heading=self.heading,
                                    verbose=verbose,
                                    )
+
+    def flight_tracking(self,
+                        doc):
+
+        #flight column data source
+        flight_cds = ColumnDataSource({'icao':[],
+                                       'longitude':[],
+                                       'latitude':[],
+                                       'operator':[],
+                                       'aircraft':[],
+                                       'origin':[],'destination':[],
+                                       'altitude':[],
+                                       'x':[],'y':[],
+                                       'callsign':[],
+                                       'groundSpeed':[],
+                                       'heading':[],
+                                       'orientation':[],
+                                       })
 
 ###############################################################################  
 class FlightRadar(object):
