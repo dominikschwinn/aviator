@@ -15,6 +15,8 @@ class Visualization():
         print(">>> initializing Visualization")
         # self.airports = pd.read_csv('../data/iata_airports_new.csv')
         self.airports = pd.read_csv('../data/iata_airport_list.csv')
+        # print(" self.airports ".center(80,'*'))
+        # print(self.airports)
 
 
     def plot_airports_world_map(self,
@@ -68,6 +70,21 @@ class Visualization():
     def plot_airports_world_map_interactive(self,
                                             airports=[],
                                             savefig=True):
+        """
+        
+
+        Parameters
+        ----------
+        airports : TYPE, optional
+            DESCRIPTION. The default is [].
+        savefig : TYPE, optional
+            DESCRIPTION. The default is True.
+
+        Returns
+        -------
+        None.
+
+        """
         if len(airports) == 0:
             airport_df = self.airports
         if len(airports) > 0:
@@ -92,10 +109,18 @@ class Visualization():
 
 if __name__ == "__main__":
     x = Visualization()
-    x.plot_airports_world_map(airports=[],
-                              savefig=True)
-    # x.plot_airports_world_map_interactive(airports=['AMS','ATL','ADL','ASU','AUH','ABZ','ANC','AKL'],
-                                          # savefig=True)
-    x.plot_airports_world_map_interactive(airports=['ATL','SIN','FRA','GIG','LAX','AUH','AMS','DXB','HKG','HND','LHR','JFK','SFO','CDG','SVO','SGN','BKK','DPS',
-                                                    'ORD','MAD','CMB','PVG','YYZ','YQB','STR','MUC','DOH'],
-                                          savefig=True)
+    airport_list_01 = ['AMS','ATL','ADL','ASU','AUH','ABZ','ANC','AKL']
+    airport_list_02 = ['ATL','SIN','FRA','GIG','LAX','AUH','AMS','DXB','HKG','HND','LHR','JFK','SFO','CDG',
+                       'SVO','SGN','BKK','DPS','ORD','MAD','CMB','PVG','YYZ','YQB','STR','MUC','DOH']
+
+    # x.plot_airports_world_map(airports=[],
+    #                           savefig=True)
+    # x.plot_airports_world_map(airports=airport_list_02,
+    #                           savefig=True)
+    # x.plot_airports_world_map_interactive(airports=[],
+    #                                        savefig=True)
+    x.plot_airports_world_map_interactive(airports=airport_list_02,
+                                           savefig=True)
+    # x.plot_airports_world_map_interactive(airports=['ATL','SIN','FRA','GIG','LAX','AUH','AMS','DXB','HKG','HND','LHR','JFK','SFO','CDG','SVO','SGN','BKK','DPS',
+    #                                                 'ORD','MAD','CMB','PVG','YYZ','YQB','STR','MUC','DOH'],
+    #                                       savefig=True)
