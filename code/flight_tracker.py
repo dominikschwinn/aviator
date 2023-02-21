@@ -13,6 +13,7 @@ import numpy as np
 class Tracker(object):
     def __init__(self,
                  api='flightradar',
+                 dt=1000,
                  verbose=False):
         """
         
@@ -21,6 +22,10 @@ class Tracker(object):
         ----------
         api : TYPE (string), optional
             DESCRIPTION. The default is 'flightradar'.
+        dt : TYPE (int), optional
+            DESCRIPTION. The default is 1000.
+        verbose : TYPE (boolean), optional
+            DESCRIPTION. The default is False.
 
         Returns
         -------
@@ -28,6 +33,7 @@ class Tracker(object):
 
         """
 
+        self.dt = dt #delta t (update interval in milliseconds)
         self.ac_df = pd.DataFrame()
         self.icao = []
         self.operator = []
@@ -35,11 +41,13 @@ class Tracker(object):
         self.origin = []
         self.destination = []
         self.callsign =[]
+        self.groundSpeed = []
         self.latitude = []
         self.longitude = []
         self.altitude = []
         self.category = []
         self.heading = []
+        self.api = api.lower()
 
         if api.lower() == 'flightradar':
             self.API = FlightRadar(ac_df=self.ac_df,
@@ -49,6 +57,7 @@ class Tracker(object):
                                    origin=self.origin,
                                    destination=self.destination,
                                    callsign=self.callsign,
+                                   groundSpeed=self.groundSpeed,
                                    latitude=self.latitude,
                                    longitude=self.longitude,
                                    altitude=self.altitude,
@@ -67,6 +76,7 @@ class FlightRadar(object):
                  origin=None,
                  destination=None,
                  callsign=None,
+                 groundSpeed=None,
                  latitude=None,
                  longitude=None,
                  altitude=None,
@@ -86,6 +96,7 @@ class FlightRadar(object):
         self.origin=origin
         self.destination=destination
         self.callsign=callsign
+        self.groundSpeed=groundSpeed
         self.latitude=latitude
         self.longitude=longitude
         self.altitude=altitude
@@ -132,6 +143,7 @@ class FlightRadar(object):
             self.origin.append(f.origin_airport_iata)
             self.destination.append(f.destination_airport_iata)
             self.callsign.append(f.callsign)
+            self.groundSpeed.append(f.ground_speed)
             self.latitude.append(f.latitude)
             self.longitude.append(f.longitude)
             self.altitude.append(f.altitude)
@@ -144,6 +156,7 @@ class FlightRadar(object):
         self.ac_df['origin'] = self.origin
         self.ac_df['destination'] = self.destination
         self.ac_df['callsign'] = self.callsign
+        self.ac_df['groundSpeed'] = self.groundSpeed
         self.ac_df['latitude'] = self.latitude
         self.ac_df['longitude'] = self.longitude
         self.ac_df['altitude'] = self.altitude
@@ -152,6 +165,11 @@ class FlightRadar(object):
 ###############################################################################
 
 if __name__ == "__main__":
-    api = 'flightradar'
+    # INPUT variables:
+    api = 'flightradar' # API to use
+    dt = 5000 # update interval of flight data in milliseconds
+    #
     x = Tracker(api,
+                dt,
                 verbose=False)
+    #
