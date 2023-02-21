@@ -107,6 +107,43 @@ class Tracker(object):
             df['y'] = np.log(np.tan(np.pi / 4 + np.deg2rad(df['latitude']) / 2)) * r
             return df
 
+        def calculate_orientation(df):
+            """
+            heading is given in degrees (0-360) using icao definition (clockwise):
+                North = 0
+                East = 90
+                South = 180
+                West = 270
+            The orientation of the AC in the map later is oriented in mathematical sense (counter-clockwise)
+            This function turns the icao-heading into the mathematical orientation
+
+            Parameters
+            ----------
+            df : TYPE
+                DESCRIPTION.
+
+            Returns
+            -------
+            df : TYPE
+                DESCRIPTION.
+
+            """
+            df['orientation'] = 360-df['heading']
+            # print(" df[:,['heading','orientation']] ".center(80,'*'))
+            # print(df.loc[:,['heading','orientation']])
+            return df
+
+
+        def refresh_flight_data():
+            self.x = Tracker(self.api,self.dt)
+            df = self.x.ac_df
+            df = convert_geo_coordinates(df)
+            df = calculate_orientation(df)
+            # flight_cds.stream(df.to_dict(orient='list'))
+            # len(df) has to be added as inout parameters, otherwise the aircraft's trace will be plotted,
+            # i.e. every new position of an AC will be added to the plot --> trace is generated
+            flight_cds.stream(df.to_dict(orient='list'),len(df))
+
 ###############################################################################  
 class FlightRadar(object):
     def __init__(self,
