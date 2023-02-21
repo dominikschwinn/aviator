@@ -60,6 +60,10 @@ class Visualization():
         # ax = world[world.continent == 'South America'].plot(color='white', edgecolor='black')
         ax = world.plot()
         gdf.plot(ax=ax, color='red', markersize=.1)
+        plt.title("Airport map",fontsize=10)
+        plt.xlabel("Longitude [°]")
+        plt.ylabel("Latitude [°]")
+        plt.grid(True,ls='dotted',lw=0.25)
         fig = plt.gcf()
         plt.show()
         
@@ -115,12 +119,12 @@ if __name__ == "__main__":
 
     # x.plot_airports_world_map(airports=[],
     #                           savefig=True)
-    # x.plot_airports_world_map(airports=airport_list_02,
-    #                           savefig=True)
+    x.plot_airports_world_map(airports=airport_list_02,
+                              savefig=True)
     # x.plot_airports_world_map_interactive(airports=[],
     #                                        savefig=True)
-    x.plot_airports_world_map_interactive(airports=airport_list_02,
-                                           savefig=True)
+    # x.plot_airports_world_map_interactive(airports=airport_list_02,
+    #                                        savefig=True)
     # x.plot_airports_world_map_interactive(airports=['ATL','SIN','FRA','GIG','LAX','AUH','AMS','DXB','HKG','HND','LHR','JFK','SFO','CDG','SVO','SGN','BKK','DPS',
     #                                                 'ORD','MAD','CMB','PVG','YYZ','YQB','STR','MUC','DOH'],
     #                                       savefig=True)
