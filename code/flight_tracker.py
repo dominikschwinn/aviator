@@ -85,6 +85,28 @@ class Tracker(object):
                                        'orientation':[],
                                        })
 
+        def convert_geo_coordinates(df):
+            """
+            converting longitude/latitude coordinates to mercator projection coordinates.
+            calculation from: https://wiki.openstreetmap.org/wiki/Mercator
+
+            Parameters
+            ----------
+            df : TYPE
+                DESCRIPTION.
+
+            Returns
+            -------
+            df : TYPE
+                DESCRIPTION.
+
+            """
+
+            r = 6378137 #earth radius
+            df['x'] = np.deg2rad(df['longitude']) * r
+            df['y'] = np.log(np.tan(np.pi / 4 + np.deg2rad(df['latitude']) / 2)) * r
+            return df
+
 ###############################################################################  
 class FlightRadar(object):
     def __init__(self,
