@@ -19,7 +19,7 @@ class Visualization():
         # print(self.airports)
 
 
-    def plot_airports_world_map(self,
+    def plot_airport_map(self,
                                 airports=[],
                                 savefig=True):
         """
@@ -71,7 +71,7 @@ class Visualization():
             fig.savefig('../visualization/airport_map.png',dpi=300)
 
 
-    def plot_airports_world_map_interactive(self,
+    def plot_airport_map_interactive(self,
                                             airports=[],
                                             savefig=True):
         """
@@ -117,14 +117,14 @@ if __name__ == "__main__":
     airport_list_02 = ['ATL','SIN','FRA','GIG','LAX','AUH','AMS','DXB','HKG','HND','LHR','JFK','SFO','CDG',
                        'SVO','SGN','BKK','DPS','ORD','MAD','CMB','PVG','YYZ','YQB','STR','MUC','DOH']
 
-    # x.plot_airports_world_map(airports=[],
+    # x.plot_airport_map(airports=[],
     #                           savefig=True)
-    x.plot_airports_world_map(airports=airport_list_02,
+    x.plot_airport_map(airports=airport_list_02,
                               savefig=True)
-    # x.plot_airports_world_map_interactive(airports=[],
+    # x.plot_airport_map_interactive(airports=[],
     #                                        savefig=True)
-    # x.plot_airports_world_map_interactive(airports=airport_list_02,
-    #                                        savefig=True)
-    # x.plot_airports_world_map_interactive(airports=['ATL','SIN','FRA','GIG','LAX','AUH','AMS','DXB','HKG','HND','LHR','JFK','SFO','CDG','SVO','SGN','BKK','DPS',
+    x.plot_airport_map_interactive(airports=airport_list_02,
+                                            savefig=True)
+    # x.plot_airport_map_interactive(airports=['ATL','SIN','FRA','GIG','LAX','AUH','AMS','DXB','HKG','HND','LHR','JFK','SFO','CDG','SVO','SGN','BKK','DPS',
     #                                                 'ORD','MAD','CMB','PVG','YYZ','YQB','STR','MUC','DOH'],
     #                                       savefig=True)
