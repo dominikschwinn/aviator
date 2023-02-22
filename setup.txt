@@ -1,0 +1,12 @@
+1) create environment "AVIATOR":
+	conda create -n AVIATOR
+2) activate environment:
+	conda activate AVIATOR
+3) install packages:
+	conda install -c conda-forge spyder=5.3.3
+	conda install -c conda-forge numpy
+	conda install -c conda-forge pandas
+	conda install -c conda-forge matplotlib
+	conda install -c conda-forge geopandas
+	conda install -c conda-forge bokeh
+	pip install FlightRadarAPI
