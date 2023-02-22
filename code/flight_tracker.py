@@ -9,6 +9,7 @@ import pandas as pd
 import numpy as np
 #
 from bokeh.plotting import figure, ColumnDataSource
+from bokeh.models import HoverTool
 from bokeh.server.server import Server
 from bokeh.application import Application
 from bokeh.application.handlers.function import FunctionHandler
@@ -141,6 +142,14 @@ class Tracker(object):
 
 
         def refresh_flight_data():
+            """
+            calls the Tracker class/instance and gets new data which will then be streamed to bokeh
+
+            Returns
+            -------
+            None.
+
+            """
             self.x = Tracker(self.api,self.dt)
             df = self.x.ac_df
             df = convert_geo_coordinates(df)
@@ -154,14 +163,25 @@ class Tracker(object):
         doc.add_periodic_callback(refresh_flight_data, self.dt)
         x_range,y_range=([-18924313.434856508, 18924313.434856508], [-12932243.11199202, 12932243.11199202]) #bounding box
         p=figure(x_range=x_range,y_range=y_range,x_axis_type='mercator',y_axis_type='mercator',sizing_mode='scale_width',height=300)
+        doc.title='aviator flight tracking (development)'
         # p.add_tile(xyz.OpenStreetMap.Mapnik)
         # p.add_tile(xyz.NASAGIBS.ViirsEarthAtNight2012)
         p.add_tile(xyz.Esri.WorldImagery)
-        p.triangle('x','y',source=flight_cds,fill_color='blue',hover_color='yellow',size=10,fill_alpha=0.8,line_width=0.5,
-                    angle='orientation',angle_units='deg'
-                    )
-        doc.title='aviator flight tracking (development)'
+        p.triangle('x','y',source=flight_cds,fill_color='blue',hover_color='red',size=12,#fill_alpha=0.8,line_width=0.1,
+                   angle='orientation',angle_units='deg',
+                   )
+
+        hover=HoverTool()
+        hover.tooltips=[('operator','@operator'),
+                        ('aircraft','@aircraft'),
+                        # ('origin','@origin'),('destination','@destination'),
+                        ('route','{}-{}'.format('@origin','@destination')),
+                        ('ground speed','@groundSpeed [kts]'),
+                        ('altitude','@altitude [ft]'),
+                        ('heading','@heading')]
+        p.add_tools(hover)
         doc.add_root(p)
+
 
 ###############################################################################  
 class FlightRadar(object):
