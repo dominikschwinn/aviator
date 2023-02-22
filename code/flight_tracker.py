@@ -9,6 +9,12 @@ import pandas as pd
 import numpy as np
 #
 from bokeh.plotting import figure, ColumnDataSource
+from bokeh.server.server import Server
+from bokeh.application import Application
+from bokeh.application.handlers.function import FunctionHandler
+import xyzservices.providers as xyz
+import subprocess
+import webbrowser
 #
 ###############################################################################
 class Tracker(object):
@@ -107,7 +113,7 @@ class Tracker(object):
             df['y'] = np.log(np.tan(np.pi / 4 + np.deg2rad(df['latitude']) / 2)) * r
             return df
 
-        def calculate_orientation(df):
+        def calculate_ac_orientation(df):
             """
             heading is given in degrees (0-360) using icao definition (clockwise):
                 North = 0
@@ -138,11 +144,24 @@ class Tracker(object):
             self.x = Tracker(self.api,self.dt)
             df = self.x.ac_df
             df = convert_geo_coordinates(df)
-            df = calculate_orientation(df)
+            df = calculate_ac_orientation(df)
             # flight_cds.stream(df.to_dict(orient='list'))
             # len(df) has to be added as inout parameters, otherwise the aircraft's trace will be plotted,
             # i.e. every new position of an AC will be added to the plot --> trace is generated
             flight_cds.stream(df.to_dict(orient='list'),len(df))
+
+
+        doc.add_periodic_callback(refresh_flight_data, self.dt)
+        x_range,y_range=([-18924313.434856508, 18924313.434856508], [-12932243.11199202, 12932243.11199202]) #bounding box
+        p=figure(x_range=x_range,y_range=y_range,x_axis_type='mercator',y_axis_type='mercator',sizing_mode='scale_width',height=300)
+        # p.add_tile(xyz.OpenStreetMap.Mapnik)
+        # p.add_tile(xyz.NASAGIBS.ViirsEarthAtNight2012)
+        p.add_tile(xyz.Esri.WorldImagery)
+        p.triangle('x','y',source=flight_cds,fill_color='blue',hover_color='yellow',size=10,fill_alpha=0.8,line_width=0.5,
+                    angle='orientation',angle_units='deg'
+                    )
+        doc.title='aviator flight tracking (development)'
+        doc.add_root(p)
 
 ###############################################################################  
 class FlightRadar(object):
@@ -246,8 +265,15 @@ if __name__ == "__main__":
     # INPUT variables:
     api = 'flightradar' # API to use
     dt = 5000 # update interval of flight data in milliseconds
+    port = 9999 # port to use for localhost-application
     #
     x = Tracker(api,
                 dt,
                 verbose=False)
     #
+    apps = {'/': Application(FunctionHandler(x.flight_tracking))}
+    server = Server(apps, port=port) #define an unused port
+    server.start()
+
+    subprocess.Popen(['python', '-m', 'SimpleHTTPServer', '{}'.format(port)])
+    webbrowser.open_new_tab('http://localhost:{}'.format(port))
