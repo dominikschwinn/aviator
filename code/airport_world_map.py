@@ -68,7 +68,7 @@ class Visualization():
         plt.show()
         
         if savefig:
-            fig.savefig('../visualization/airport_world_map.png',dpi=300)
+            fig.savefig('../visualization/airport_map.png',dpi=300)
 
 
     def plot_airports_world_map_interactive(self,
@@ -107,7 +107,7 @@ class Visualization():
 
         # map.show_in_browser()
         if savefig:
-            map.save('../visualization/airports_interactive.html', close_file=True)
+            map.save('../visualization/airport_map_interactive.html', close_file=True)
 
 
 
