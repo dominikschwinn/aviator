@@ -22,6 +22,7 @@ class Tracker(object):
     def __init__(self,
                  api='flightradar',
                  dt=1000,
+                 worldmap='esri',
                  verbose=False):
         """
         
@@ -164,9 +165,12 @@ class Tracker(object):
         x_range,y_range=([-18924313.434856508, 18924313.434856508], [-12932243.11199202, 12932243.11199202]) #bounding box
         p=figure(x_range=x_range,y_range=y_range,x_axis_type='mercator',y_axis_type='mercator',sizing_mode='scale_width',height=300)
         doc.title='aviator flight tracking (development)'
-        # p.add_tile(xyz.OpenStreetMap.Mapnik)
-        # p.add_tile(xyz.NASAGIBS.ViirsEarthAtNight2012)
-        p.add_tile(xyz.Esri.WorldImagery)
+        if worldmap == 'osm':
+            p.add_tile(xyz.OpenStreetMap.Mapnik)
+        if worldmap == 'nasa':
+            p.add_tile(xyz.NASAGIBS.ViirsEarthAtNight2012)
+        if worldmap == 'esri':
+            p.add_tile(xyz.Esri.WorldImagery)
         p.triangle('x','y',source=flight_cds,fill_color='blue',hover_color='red',size=12,#fill_alpha=0.8,line_width=0.1,
                    angle='orientation',angle_units='deg',
                    )
@@ -286,9 +290,11 @@ if __name__ == "__main__":
     api = 'flightradar' # API to use
     dt = 5000 # update interval of flight data in milliseconds
     port = 9999 # port to use for localhost-application
+    worldmap = 'osm' #['osm','esri','nasa']
     #
     x = Tracker(api,
                 dt,
+                worldmap,
                 verbose=False)
     #
     apps = {'/': Application(FunctionHandler(x.flight_tracking))}
