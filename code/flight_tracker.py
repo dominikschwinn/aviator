@@ -41,7 +41,7 @@ class Tracker(object):
         None.
 
         """
-        assert worldmap in ['osm','nasa','esri'], "THe specified worldmap \'{}\' is not implemented. Please use one of the following ['osm','nasa','esri']".format(worldmap)
+        assert worldmap in ['osm','nasa','esri'], "The specified worldmap \'{}\' is not implemented. Please use one of the following ['osm','nasa','esri']".format(worldmap)
 
         self.dt = dt #delta t (update interval in milliseconds)
         self.ac_df = pd.DataFrame()
