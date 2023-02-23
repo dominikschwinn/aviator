@@ -41,6 +41,7 @@ class Tracker(object):
         None.
 
         """
+        assert worldmap in ['osm','nasa','esri'], "THe specified worldmap \'{}\' is not implemented. Please use one of the following ['osm','nasa','esri']".format(worldmap)
 
         self.dt = dt #delta t (update interval in milliseconds)
         self.ac_df = pd.DataFrame()
@@ -290,7 +291,7 @@ if __name__ == "__main__":
     api = 'flightradar' # API to use
     dt = 5000 # update interval of flight data in milliseconds
     port = 9999 # port to use for localhost-application
-    worldmap = 'osm' #['osm','esri','nasa']
+    worldmap = 'esri' #['osm','esri','nasa']
     #
     x = Tracker(api,
                 dt,
