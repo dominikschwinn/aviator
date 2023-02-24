@@ -186,7 +186,6 @@ class Airports(object):
             DESCRIPTION.
 
         """
-        # print("elem[3]:",elem[3])
         elem[3] = elem[3].split("<td>")[1]
         loc = []
         location = ''
@@ -236,21 +235,11 @@ class Airports(object):
                 loc = loc.split(">")[-1]
                 # print("loc:", loc)
                 location, country = location, loc
-                # print("location: {}".format(location))
-                # print("country: {}".format(country))
-                
-            # print("elem[3]: ",elem[3])
-            # input()
 
-                
-        # print("loc: {}".format(loc))
-        # print("location: {}".format(location))
-        # print("country: {}".format(country))
-        # input("")
         if verbose:
             print("location: {}".format(location))
             print("country: {}".format(country))
-        # input("")
+
         return location, country
 
 
@@ -320,19 +309,7 @@ class Airports(object):
         #ignoring the first two line since they are not relevant (i.e.filled with data)
         data = data[2:]
         len_data = self.get_data_length(data)
-        # IATA = [""] * len_data
-        # ICAO = [""] * len_data
-        # AirportNames = [""] * len_data
-        # Locations = [""] * len_data
-        # UTC = [""] * len_data
-        # IATA = []
-        # ICAO = []
-        # AirportNames = []
-        # Locations = []
-        # Countries = []
-        # UTC = []
-        # Latitudes = []
-        # Longitudes = []
+
 
 
         for i,elem in enumerate(data):
@@ -366,25 +343,6 @@ class Airports(object):
             self.Operations.append(operations)
             self.Cargo.append(cargo)
             self.Year.append(year)
-            # IATA[i] = iata
-            # ICAO[i] = icao
-            # AirportNames[i] = airportName
-            # Locations[i] = location
-            # UTC[i] = utc
-            # Countries[i] = country
-        #     IATA.append(iata)
-        #     ICAO.append(icao)
-        #     AirportNames.append(airportName)
-        #     Locations.append(location)
-        #     UTC.append(utc)
-        #     Countries.append(country)
-
-        # self.IATA.append(IATA)
-        # self.ICAO.append(ICAO)
-        # self.AirportNames.append(AirportNames)
-        # self.Locations.append(Locations)
-        # self.Countries.append(Countries)
-        # self.UTC.append(UTC)
 
             self.IATA.append(iata)
             self.ICAO.append(icao)
@@ -647,17 +605,17 @@ class Airports(object):
 if __name__ == "__main__":
     a = Airports()
     a.create_empty_airport_database_columns()
-    # for letter in ["A"]:
-    for letter in ["A","B","C","D","E","F","G","H","I","J","K","L","M",
-                    "N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]:
+    for letter in ["A"]:
+    # for letter in ["A","B","C","D","E","F","G","H","I","J","K","L","M",
+    #                 "N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]:
         a.get_url_site(letter)
         a.read_url_site()
         a.get_airport_data(details=True)
     a.create_airport_dataframe()
     # print(" airport_DF ".center(80,'*'))
     # print(a.airport_DF)
-    a.export_dataframe_2_csv(df=a.airport_DF,file_='../data/iata_airport_list.csv')
-    a.export_dataframe_2_csv(df=a.airport_stats_DF,file_='../data/iata_airport_stats_list.csv')
+    # a.export_dataframe_2_csv(df=a.airport_DF,file_='../data/iata_airport_list.csv')
+    # a.export_dataframe_2_csv(df=a.airport_stats_DF,file_='../data/iata_airport_stats_list.csv')
     a.t_end = a.set_end_time()
     a.calculate_runtime(a.t_start, a.t_end)
     
