@@ -78,6 +78,20 @@ class Tracker(object):
 
     def flight_tracking(self,
                         doc):
+        """
+        
+
+        Parameters
+        ----------
+        doc : TYPE
+            DESCRIPTION.
+
+        Returns
+        -------
+        df : TYPE
+            DESCRIPTION.
+
+        """
 
         #flight column data source
         flight_cds = ColumnDataSource({'icao':[],
@@ -257,6 +271,21 @@ class FlightRadar(object):
     def flights_2_df(self,
                      flights=None,
                      verbose=False):
+        """
+        
+
+        Parameters
+        ----------
+        flights : TYPE, optional
+            DESCRIPTION. The default is None.
+        verbose : TYPE, optional
+            DESCRIPTION. The default is False.
+
+        Returns
+        -------
+        None.
+
+        """
 
         for f in flights:
             self.icao.append(f.icao_24bit)
@@ -283,6 +312,27 @@ class FlightRadar(object):
         self.ac_df['longitude'] = self.longitude
         self.ac_df['altitude'] = self.altitude
         self.ac_df['heading'] = self.heading
+
+
+###############################################################################  
+class OpenSky(object):
+    def __init__(self,
+                 ac_df=None,
+                 icao=None,
+                 operator=None,
+                 aircraft=None,
+                 origin=None,
+                 destination=None,
+                 callsign=None,
+                 groundSpeed=None,
+                 latitude=None,
+                 longitude=None,
+                 altitude=None,
+                 category=None,
+                 heading=None,
+                 verbose=False):
+        print(">>> initializing OpenSky API")
+
 
 ###############################################################################
 
