@@ -189,52 +189,56 @@ class Airports(object):
         elem[3] = elem[3].split("<td>")[1]
         loc = []
         location = ''
-        if ", " in elem[3]:
-            l = elem[3].split(", ")
-            number_of_locations = len(l)
-            # print("l:", l)
-            for i, elem in enumerate(l):
-                # print("elem:",elem)
-                if "<a" in elem and "</a>":
-                    m = re.search('>(.+?)</a>', elem)
-                    if m:
-                        # print(m.group(1))
-                        loc_ = m.group(1)
-                    else:
-                        loc_ = ''
-                    # print("loc_:", loc_)
-                elif "<a" in elem and "</a>" not in elem:
-                    pass
-                elif "<a" not in elem and "</a>" in elem:
-                    m = re.search('>(.+?)</a>', elem)
-                    if m:
-                        # print(m.group(1))
-                        loc_ = m.group(1)
+        country = ''
+        try:
+            if ", " in elem[3]:
+                l = elem[3].split(", ")
+                number_of_locations = len(l)
+                # print("l:", l)
+                for i, elem in enumerate(l):
+                    # print("elem:",elem)
+                    if "<a" in elem and "</a>":
+                        m = re.search('>(.+?)</a>', elem)
+                        if m:
+                            print(m.group(1))
+                            loc_ = m.group(1)
+                        else:
+                            loc_ = ''
+                        # print("loc_:", loc_)
+                    elif "<a" in elem and "</a>" not in elem:
+                        pass
+                    elif "<a" not in elem and "</a>" in elem:
+                        m = re.search('>(.+?)</a>', elem)
+                        if m:
+                            print(m.group(1))
+                            loc_ = m.group(1)
+                        else:
+                            loc_ = elem
+                        # print("loc_:", loc_)
                     else:
                         loc_ = elem
-                    # print("loc_:", loc_)
-                else:
-                    loc_ = elem
-                    # print("loc_:", loc_)
-                if loc_ != '':
-                    loc.append(loc_)
-            if len(loc) > 1:
-                for i, elem in enumerate(loc[:-1]):
-                    # print(i,elem)
-                    if i < len(loc) - 2:
-                        location += '{}, '.format(elem)
-                    elif i == len(loc) - 2:
-                        location += '{}'.format(elem)
-                country = '{}'.format(loc[-1])
-        else:
-            if "<a" in elem[3] and "</a>" in elem[3]:
-                m = re.search('>(.+?)</a>', elem[3])
-                # print(m)
-                location = m.group(1)
-                loc = elem[3].split("</a>")[-2]
-                loc = loc.split(">")[-1]
-                # print("loc:", loc)
-                location, country = location, loc
+                        # print("loc_:", loc_)
+                    if loc_ != '':
+                        loc.append(loc_)
+                if len(loc) > 1:
+                    for i, elem in enumerate(loc[:-1]):
+                        # print(i,elem)
+                        if i < len(loc) - 2:
+                            location += '{}, '.format(elem)
+                        elif i == len(loc) - 2:
+                            location += '{}'.format(elem)
+                    country = '{}'.format(loc[-1])
+            else:
+                if "<a" in elem[3] and "</a>" in elem[3]:
+                    m = re.search('>(.+?)</a>', elem[3])
+                    # print(m)
+                    location = m.group(1)
+                    loc = elem[3].split("</a>")[-2]
+                    loc = loc.split(">")[-1]
+                    # print("loc:", loc)
+                    location, country = location, loc
+        except:
+            pass
 
         if verbose:
             print("location: {}".format(location))
@@ -372,7 +376,7 @@ class Airports(object):
         self.Year = []
         
 
-    def create_airport_dataframe(self,
+    def create_airport_dataframes(self,
                                  verbose=True):
         self.airport_DF = pd.DataFrame()
         self.airport_DF['IATA'] = self.IATA
@@ -605,13 +609,13 @@ class Airports(object):
 if __name__ == "__main__":
     a = Airports()
     a.create_empty_airport_database_columns()
-    for letter in ["A"]:
-    # for letter in ["A","B","C","D","E","F","G","H","I","J","K","L","M",
-    #                 "N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]:
+    # for letter in ["Z"]:
+    for letter in ["A","B","C","D","E","F","G","H","I","J","K","L","M",
+                    "N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]:
         a.get_url_site(letter)
         a.read_url_site()
         a.get_airport_data(details=True)
-    a.create_airport_dataframe()
+    a.create_airport_dataframes()
     # print(" airport_DF ".center(80,'*'))
     # print(a.airport_DF)
     # a.export_dataframe_2_csv(df=a.airport_DF,file_='../data/iata_airport_list.csv')
