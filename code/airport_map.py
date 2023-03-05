@@ -14,12 +14,15 @@ class Visualization():
     def __init__(self):
         print(">>> initializing Visualization")
         # self.airports = pd.read_csv('../data/iata_airports_new.csv')
-        self.airports = pd.read_csv('../data/iata_airport_list.csv')
+        # basic plots:
+        # self.airports = pd.read_csv('../data/iata_airport_list.csv')
+        #enhanced plots:
+        self.airports = pd.read_csv('../data/aiport_list_with_stats_merged.csv')
         # print(" self.airports ".center(80,'*'))
         # print(self.airports)
 
 
-    def plot_airport_map(self,
+    def plot_airport_map_basic(self,
                                 airports=[],
                                 savefig=True):
         """
@@ -71,7 +74,57 @@ class Visualization():
             fig.savefig('../visualization/airport_map.png',dpi=300)
 
 
-    def plot_airport_map_interactive(self,
+    def plot_airport_map_enhanced(self,
+                         airports=[],
+                         type_='PAX',
+                         savefig=True):
+
+        assert type_ in  ['PAX','OPs','Cargo']
+
+        if len(airports) == 0:
+            pass
+        if len(airports) > 0:
+            self.airports = self.airports.loc[self.airports['IATA'].isin(airports), ['IATA','Airport','Location','Country','Latitudes','Longitudes','PAX','OPs','Cargo','Year']]
+
+
+        world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))
+        world.explore()
+
+        # gdf = gpd.GeoDataFrame(self.airports, geometry=gpd.points_from_xy(self.airports.Longitudes, self.airports.Latitudes))
+
+        airport_detailed = self.airports.loc[self.airports[type_].notna()]#.values
+
+        gdf = gpd.GeoDataFrame(airport_detailed, geometry=gpd.points_from_xy(airport_detailed.Longitudes, airport_detailed.Latitudes))
+
+        print(" airport_detailed ({}) ".format(type_))
+        print(airport_detailed)
+        # pax = airport_pax['PAX'].values.astype(int)
+        # print("pax")
+        # print(pax)
+        # pax_min, pax_max = pax.min(), pax.max()
+        # #normalizing pax
+        # marker_size = (pax - pax_min) / (pax_max - pax_min)
+        # print("marker_size")
+        # print(marker_size)
+        gdf = gpd.GeoDataFrame(airport_detailed, geometry=gpd.points_from_xy(airport_detailed.Longitudes, airport_detailed.Latitudes))
+
+
+
+        ax = world.plot()
+        gdf.plot(ax=ax, color='red', markersize=airport_detailed[type_].values.astype(int)/(5*1e6),
+                 facecolor='None')
+        plt.title("Airport map ({})".format(type_),fontsize=10)
+        plt.xlabel("Longitude [°]")
+        plt.ylabel("Latitude [°]")
+        plt.grid(True,ls='dotted',lw=0.25)
+        fig = plt.gcf()
+        plt.show()
+        
+        if savefig:
+            fig.savefig('../visualization/airport_map_enhanced_{}.png'.format(type_),dpi=300)        
+
+
+    def plot_airport_map_basic_interactive(self,
                                             airports=[],
                                             savefig=True):
         """
@@ -119,12 +172,16 @@ if __name__ == "__main__":
 
     # x.plot_airport_map(airports=[],
     #                           savefig=True)
-    x.plot_airport_map(airports=airport_list_02,
-                              savefig=True)
+    # x.plot_airport_map_basic(airports=airport_list_02,
+    #                          savefig=False)
+    x.plot_airport_map_enhanced(airports=airport_list_02,
+                                type_='Cargo',
+                                savefig=True)
+
     # x.plot_airport_map_interactive(airports=[],
     #                                        savefig=True)
-    x.plot_airport_map_interactive(airports=airport_list_02,
-                                            savefig=True)
+    # x.plot_airport_map_basic_interactive(airports=airport_list_02,
+    #                                      savefig=True)
     # x.plot_airport_map_interactive(airports=['ATL','SIN','FRA','GIG','LAX','AUH','AMS','DXB','HKG','HND','LHR','JFK','SFO','CDG','SVO','SGN','BKK','DPS',
     #                                                 'ORD','MAD','CMB','PVG','YYZ','YQB','STR','MUC','DOH'],
     #                                       savefig=True)
