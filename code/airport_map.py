@@ -17,7 +17,7 @@ class Visualization():
         # basic plots:
         # self.airports = pd.read_csv('../data/iata_airport_list.csv')
         #enhanced plots:
-        self.airports = pd.read_csv('../data/aiport_list_with_stats_merged.csv')
+        self.airports = pd.read_csv('../data/airport_list_with_stats.csv')
         # print(" self.airports ".center(80,'*'))
         # print(self.airports)
 
@@ -32,7 +32,7 @@ class Visualization():
         ----------
         airports : TYPE list, optional
             DESCRIPTION. The default is [].
-            if airports == []: all airports from 'iata_airports_new.csv' are used (preconditioned they have lat and lon)
+            if airports == []: all airports from 'airport_list_with_stats.csv' are used (preconditioned they have lat and lon)
             if len(airports) != 0: only the specified airports are plotted on the map
             entries in airports must be IATA-code
             e.g. airports = [] or airports = ['AAA','AAZ']
