@@ -606,6 +606,13 @@ class Airports(object):
         return pax, am, cargo, year
 
 
+    def clean_data(self,
+                   df=None,
+                   columns=[],
+                   verbose=True):
+        print(">>> cleaning columns {} of dataFrame {}".format(columns,df))
+
+
 if __name__ == "__main__":
     a = Airports()
     a.create_empty_airport_database_columns()
