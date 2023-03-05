@@ -10,3 +10,8 @@
 	conda install -c conda-forge geopandas
 	conda install -c conda-forge bokeh
 	pip install FlightRadarAPI
+4) make sure that the "main-path" is listed in sys.path (only required - by now - if you want to use testing methods):
+	- as example: If you're using a anaconda environment, add conda.pth in the environment (set the environment as developing environment)
+	instructions:
+		- https://docs.conda.io/projects/conda-build/en/latest/resources/commands/conda-develop.html
+		- https://datacomy.com/python/anaconda/add_folder_to_path/
