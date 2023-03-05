@@ -6,6 +6,8 @@ AVIATOR is (or one day will be) an open-source app related to aviation. It consi
 ### Flight-tracker using ESRI satellite map (screenshot)
 ![Flight-tracker using ESRI satellite map](/visualization/aviator_esri.png)
 
+### Flight-tracker using OpenStreetMap (screenshot)
+![Flight-tracker using OpenStreetMap](/visualization/aviator_osm.png)
 
 ## Visualization tools
 
