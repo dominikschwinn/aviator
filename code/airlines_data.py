@@ -65,14 +65,24 @@ class Airlines():
             columns = row.find_all('td')
             
             if(columns != []):
+
+                # print("....................")
+                # print(len(columns))
                 iata = columns[0].text.strip()
                 # print("iata:",iata)
                 # print("type(iata):",type(iata))
                 icao = columns[1].text.strip()
+                # print(icao)
                 airline = columns[2].text.strip()#columns[2].span.contents[0].strip('&0.')
+                # print(airline)
+                # if airline == 'Akasa Air':
+                # print(columns)
                 callSign = columns[3].text.strip()#columns[3].span.contents[0].strip('&0.')
                 country = columns[4].text.strip()#columns[4].span.contents[0].strip('&0.')
-                comment = columns[5].text.strip()#columns[5].span.contents[0].strip('&0.')
+                try:
+                    comment = columns[5].text.strip()#columns[5].span.contents[0].strip('&0.')
+                except:
+                    comment = ''
         
                 # self.airlines_DF = self.airlines_DF.append({'IATA': iata,
                 #                                             'ICAO': icao,
@@ -107,9 +117,9 @@ if __name__ == "__main__":
     print("Airlines")
     a = Airlines()
     a.create_airlines_df()
-    for letter in ['Y','Z']:
-    # for letter in ["A","B","C","D","E","F","G","H","I","J","K","L","M",
-                    # "N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]:
+    # for letter in ['Y','Z']:
+    for letter in ["A","B","C","D","E","F","G","H","I","J","K","L","M",
+                    "N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]:
         airlines_url = a.create_url(letter=letter)
         p = a.read_url(airlines_url)
         soup = a.create_bs_object(page=p)
