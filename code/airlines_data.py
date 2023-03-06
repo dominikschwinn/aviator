@@ -20,7 +20,7 @@ class Airlines():
 
     def create_airlines_df(self,
                            verbose=True):
-        self.airlines_DF = pd.DataFrame(columns=['IATA','ICAO','Airline','CallSign','Country','Comments'])
+        self.airlines_DF = pd.DataFrame(columns=['IATA','ICAO','Airline','CallSign','Country','Comment'])
         self.IATA = []
         self.ICAO = []
         self.Airline = []
