@@ -43,6 +43,9 @@ class Tracker(object):
         """
         assert worldmap in ['osm','nasa','esri'], "The specified worldmap \'{}\' is not implemented. Please use one of the following ['osm','nasa','esri']".format(worldmap)
 
+
+        self.airlines_DF = pd.read_csv(r'../data/airlines.csv')
+
         self.dt = dt #delta t (update interval in milliseconds)
         self.ac_df = pd.DataFrame()
         self.icao = []
