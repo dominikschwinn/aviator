@@ -60,6 +60,8 @@ class Tracker(object):
         self.altitude = []
         self.category = []
         self.heading = []
+        self.airlineICAO = []
+        self.airline = []
         self.api = api.lower()
 
         if api.lower() == 'flightradar':
@@ -76,6 +78,7 @@ class Tracker(object):
                                    altitude=self.altitude,
                                    category=self.category,
                                    heading=self.heading,
+                                   airlineICAO=self.airlineICAO,
                                    verbose=verbose,
                                    )
 
@@ -109,6 +112,8 @@ class Tracker(object):
                                        'groundSpeed':[],
                                        'heading':[],
                                        'orientation':[],
+                                       'airlineICAO':[],
+                                       'airline':[],
                                        })
 
         def convert_geo_coordinates(df):
@@ -171,6 +176,11 @@ class Tracker(object):
             """
             self.x = Tracker(self.api,self.dt)
             df = self.x.ac_df
+            print(df)
+            df = pd.merge(df,self.airlines_DF[['ICAO','Airline']],how='left',left_on='airlineICAO',right_on='ICAO')
+            print(df)
+            df=df.drop(columns=['ICAO'])
+            df=df.rename(columns={'Airline':'airline'})
             df = convert_geo_coordinates(df)
             df = calculate_ac_orientation(df)
             # flight_cds.stream(df.to_dict(orient='list'))
@@ -196,6 +206,8 @@ class Tracker(object):
         hover=HoverTool()
         hover.tooltips=[('operator','@operator'),
                         ('aircraft','@aircraft'),
+                        ('airlineICAO','@airlineICAO'),
+                        ('airline','@airline'),
                         # ('origin','@origin'),('destination','@destination'),
                         ('route','{}-{}'.format('@origin','@destination')),
                         ('ground speed','@groundSpeed [kts]'),
@@ -221,6 +233,7 @@ class FlightRadar(object):
                  altitude=None,
                  category=None,
                  heading=None,
+                 airlineICAO=None,
                  verbose=False):
         """
         (Unofficial) flight tracking API
@@ -241,6 +254,7 @@ class FlightRadar(object):
         self.altitude=altitude
         self.category=category
         self.heading=heading
+        self.airlineICAO=airlineICAO
         self.verbose=verbose
         #
         from FlightRadar24.api import FlightRadar24API
@@ -302,6 +316,7 @@ class FlightRadar(object):
             self.longitude.append(f.longitude)
             self.altitude.append(f.altitude)
             self.heading.append(f.heading)
+            self.airlineICAO.append(f.airline_icao)
             
 
         self.ac_df['icao'] = self.icao
@@ -315,6 +330,7 @@ class FlightRadar(object):
         self.ac_df['longitude'] = self.longitude
         self.ac_df['altitude'] = self.altitude
         self.ac_df['heading'] = self.heading
+        self.ac_df['airlineICAO'] = self.airlineICAO
 
 
 ###############################################################################  
