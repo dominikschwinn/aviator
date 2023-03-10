@@ -15,3 +15,11 @@
 	instructions:
 		- https://docs.conda.io/projects/conda-build/en/latest/resources/commands/conda-develop.html
 		- https://datacomy.com/python/anaconda/add_folder_to_path/
+
+   in Anaconda: how to add AVIATOR to the path-variables:
+	(in order to import all AVIATOR modules as e.g. from aviator.code import xyz):
+	- add the file "conda.pth" to the folder where the AVIATOR environment is saved
+	(e.g. "C:\Anaconda\envs\AVIATOR\Lib\site-packages")
+	- add the path of the parent directory of the path where you installed AVIATOR
+	(e.g. "C:\software" <-- if AVIATOR is located at "C:\software\AVIATOR")
+	NOTE: using conda.pth you are not adding this path to sys.path!
