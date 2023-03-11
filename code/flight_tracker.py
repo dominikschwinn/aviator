@@ -176,9 +176,9 @@ class Tracker(object):
             """
             self.x = Tracker(self.api,self.dt)
             df = self.x.ac_df
-            print(df)
+            # print(df)
             df = pd.merge(df,self.airlines_DF[['ICAO','Airline']],how='left',left_on='airlineICAO',right_on='ICAO')
-            print(df)
+            # print(df)
             df=df.drop(columns=['ICAO'])
             df=df.rename(columns={'Airline':'airline'})
             df = convert_geo_coordinates(df)
@@ -219,6 +219,12 @@ class Tracker(object):
 
 ###############################################################################  
 class FlightRadar(object):
+    """
+    (Unofficial) flight tracking API
+    - https://pypi.org/project/FlightRadarAPI/
+    - https://github.com/JeanExtreme002/FlightRadarAPI
+    """
+
     def __init__(self,
                  ac_df=None,
                  icao=None,
@@ -235,11 +241,7 @@ class FlightRadar(object):
                  heading=None,
                  airlineICAO=None,
                  verbose=False):
-        """
-        (Unofficial) flight tracking API
-        - https://pypi.org/project/FlightRadarAPI/
-        - https://github.com/JeanExtreme002/FlightRadarAPI
-        """
+
 
         self.ac_df=ac_df
         self.icao=icao
@@ -335,6 +337,11 @@ class FlightRadar(object):
 
 ###############################################################################  
 class OpenSky(object):
+    """
+    https://github.com/openskynetwork/opensky-api
+    https://openskynetwork.github.io/opensky-api/python.html
+    """
+
     def __init__(self,
                  ac_df=None,
                  icao=None,
