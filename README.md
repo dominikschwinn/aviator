@@ -10,6 +10,8 @@ Hovering over a triangle highlights the flight in red, showing some flight data.
 ![Flight-tracker using ESRI satellite map](/visualization/aviator_esri_detailed_BOM-JFK.png)
 ### Flight-tracker using OpenStreetMap (screenshot)
 ![Flight-tracker using OpenStreetMap](/visualization/aviator_osm.png)
+### Flight-tracker using NASAGIBS(ViirsEarthAtNight2012) - Map (screenshot)
+![Flight-tracker using NASAGIBSMap](/visualization/aviator_nasa.png)
 
 ## Visualization tools
 
