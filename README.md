@@ -1,5 +1,7 @@
 # AVIATOR
-AVIATOR is (or one day will be) an open-source app related to aviation. It consists of various statistics and visualization tools, based on web scraping (mainly) wikipedia.com. Additionally, it features a simple flight-tracker that runs on a local host.
+AVIATOR is an open-source app related to aviation. It consists of various statistics and visualization tools, based on web scraping (mainly) wikipedia.com. Additionally, it features a simple flight-tracker that runs on a local host.
+
+Currently AVIATOR is under development.
 
 ## Flight-tracker
 
@@ -10,6 +12,8 @@ Hovering over a triangle highlights the flight in red, showing some flight data.
 ![Flight-tracker using ESRI satellite map](/visualization/aviator_esri_detailed_BOM-JFK.png)
 ### Flight-tracker using OpenStreetMap (screenshot)
 ![Flight-tracker using OpenStreetMap](/visualization/aviator_osm.png)
+### Flight-tracker using NASAGIBS(ViirsEarthAtNight2012) - Map (screenshot)
+![Flight-tracker using NASAGIBSMap](/visualization/aviator_nasa.png)
 
 ## Visualization tools
 
