@@ -26,10 +26,6 @@ jobs:
         conda config --add channels anaconda
         conda config --add channels defaults
         conda install -c conda-forge numpy=1.24.2
-        # conda install -c conda-forge pandas=1.5.3
-        # conda install -c conda-forge matplotlib=3.7.0
-        # conda install -c conda-forge geopandas=0.12.2
-        # conda install -c conda-forge bokeh=3.0.3
     - name: Lint with flake8
       run: |
         conda install flake8
