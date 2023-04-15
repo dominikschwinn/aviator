@@ -25,14 +25,21 @@ jobs:
         conda create -n AVIATOR python=3.10
         # source ~/anaconda3/etc/profile.d/conda.sh
         # conda activate AVIATOR
-        conda config --add channels conda-forge
-        conda config --add channels anaconda
-        conda config --add channels defaults
-        conda install -c conda-forge numpy=1.24.2
-        conda install -c conda-forge pandas=1.5.3
-        conda install -c conda-forge matplotlib=3.7.0
-        conda install -c conda-forge geopandas=0.12.2
-        conda install -c conda-forge bokeh=3.0.3
+        # conda config --add channels conda-forge
+        # conda config --add channels anaconda
+        # conda config --add channels defaults
+        # conda install -c conda-forge numpy=1.24.2
+        # conda install -c conda-forge pandas=1.5.3
+        # conda install -c conda-forge matplotlib=3.7.0
+        # conda install -c conda-forge geopandas=0.12.2
+        # conda install -c conda-forge bokeh=3.0.3
+        conda install numpy=1.24.2
+        conda install pandas=1.5.3
+        conda install matplotlib=3.7.0
+        conda install geopandas=0.12.2
+        conda install bokeh=3.0.3
+        # in order to use conda develop: install conda-build
+        conda install conda-build
         pip install FlightRadarAPI
         #
         #    
