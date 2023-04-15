@@ -33,9 +33,6 @@ jobs:
         echo "current path"
         pwd
         ls -a
-        cd /home/runner/work/aviator
-        pwd
-        ls -a
         conda env create -f environment.yml
     #    conda activate AVIATOR
     #    conda config --add channels conda-forge
