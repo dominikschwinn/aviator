@@ -23,6 +23,7 @@ jobs:
     - name: Setting up (empty) environment
       run: |
         conda create -n AVIATOR python=3.10
+        conda init bash
         conda activate AVIATOR
         conda config --add channels conda-forge
         conda config --add channels anaconda
