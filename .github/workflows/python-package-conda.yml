@@ -14,31 +14,33 @@ jobs:
     #  uses: actions/setup-python@v3
     #  with:
     #    python-version: '3.10'
-    #- name: Add conda to system path
-    #  run: |
-    #    # $CONDA is an environment variable pointing to the root of the miniconda directory
-    #    echo $CONDA/bin >> $GITHUB_PATH
     - name: Set up miniconda
       uses: conda-incubator/setup-miniconda@v2
-    #- name: Setting up (empty) environment
-    #  run: |
-    #    conda create -n AVIATOR python=3.10
-    #    conda install -c conda-forge numpy=1.24.2
-    #    conda install -c conda-forge pandas=1.5.3
-    #    conda install -c conda-forge matplotlib=3.7.0
-    #    conda install -c conda-forge geopandas=0.12.2
-    #    conda install -c conda-forge bokeh=3.0.3
-    - name: Setting up environment from file
+    - name: Add conda to system path
       run: |
-        echo "current path"
-        pwd
-        ls -a
-        conda env create -f environment.yml
+        # $CONDA is an environment variable pointing to the root of the miniconda directory
+        echo $CONDA/bin >> $GITHUB_PATH
+    - name: Setting up (empty) environment
+      run: |
+        conda create -n AVIATOR python=3.10
+        conda config --add channels conda-forge
+        conda config --add channels anaconda
+        conda config --add channels defaults
+        conda install -c conda-forge numpy=1.24.2
+        conda install -c conda-forge pandas=1.5.3
+        conda install -c conda-forge matplotlib=3.7.0
+        conda install -c conda-forge geopandas=0.12.2
+        conda install -c conda-forge bokeh=3.0.3
+        pip install FlightRadarAPI
+    #- name: Setting up environment from file
+    #  run: |
+    #    echo "current path"
+    #    pwd
+    #    ls -a
+    #    conda env create -f environment.yml
     #    conda activate AVIATOR
-    #    conda config --add channels conda-forge
-    #    conda config --add channels anaconda
-    #    conda config --add channels defaults
-    #    conda install numpy
+
+
     - name: Lint with flake8
       run: |
         conda install flake8
