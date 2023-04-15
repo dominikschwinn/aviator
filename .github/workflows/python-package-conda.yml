@@ -23,6 +23,7 @@ jobs:
     - name: Setting up (empty) environment
       run: |
         conda create -n AVIATOR python=3.10
+        conda activate AVIATOR
         conda config --add channels conda-forge
         conda config --add channels anaconda
         conda config --add channels defaults
@@ -32,6 +33,22 @@ jobs:
         conda install -c conda-forge geopandas=0.12.2
         conda install -c conda-forge bokeh=3.0.3
         pip install FlightRadarAPI
+        #
+        #    
+        cd /home/runner/work/aviator
+        conda develop /home/runner/work/aviator
+        #
+        echo "exporting environment files:"
+        conda list --explicit > AVIATOR_env_CICD_specifications_explicit.txt
+        conda env export > AVIATOR_env_CICD.yml
+        conda env export --no-builds > AVIATOR_env_CICD_noBuilds.yml
+        conda env export --from-history > AVIATOR_env_CICD_history.yml
+
+    - name: download artifacts
+      uses: actions/download-artifact@v3
+      with:
+        path: AVIATOR_env_CICD.yml
+
     #- name: Setting up environment from file
     #  run: |
     #    echo "current path"
