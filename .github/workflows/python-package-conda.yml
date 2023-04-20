@@ -73,7 +73,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with: 
         name: assets-for-download
-        path: artifacts
+        path: /home/runner/work/aviator/artifacts
 
     #- name: download artifacts
     #  uses: actions/download-artifact@v3
