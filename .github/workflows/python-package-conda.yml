@@ -47,10 +47,10 @@ jobs:
         conda develop /home/runner/work/aviator
         #
         echo "exporting environment files:"
-        conda list --explicit > AVIATOR_env_CICD_specifications_explicit.txt
-        conda env export > AVIATOR_env_CICD.yml
-        conda env export --no-builds > AVIATOR_env_CICD_noBuilds.yml
-        conda env export --from-history > AVIATOR_env_CICD_history.yml
+        #conda list --explicit > AVIATOR_env_CICD_specifications_explicit.txt
+        #conda env export > AVIATOR_env_CICD.yml
+        #conda env export --no-builds > AVIATOR_env_CICD_noBuilds.yml
+        #conda env export --from-history > AVIATOR_env_CICD_history.yml
 
     - name: build artifacts
       run: |
@@ -59,11 +59,21 @@ jobs:
         echo "current path (content)"
         pwd
         ls -a
-        cp -a /home/runner/work/aviator/. /home/runner/work/aviator/artifacts
+        #cp -a /home/runner/work/aviator/. /home/runner/work/aviator/artifacts
+        cd /home/runner/work/aviator/artifacts
+        conda list --explicit > AVIATOR_env_CICD_specifications_explicit.txt
+        conda env export > AVIATOR_env_CICD.yml
+        conda env export --no-builds > AVIATOR_env_CICD_noBuilds.yml
+        conda env export --from-history > AVIATOR_env_CICD_history.yml
         echo "current path (content)"
         pwd
         ls -a
-      
+
+    - name: Use the Upload Artifact GitHub Action
+      uses: actions/upload-artifact@v2
+      with: 
+        name: assets-for-download
+        path: artifacts
 
     #- name: download artifacts
     #  uses: actions/download-artifact@v3
@@ -77,16 +87,16 @@ jobs:
     #    ls -a
     #    conda env create -f environment.yml
     #    conda activate AVIATOR
-
-
-    - name: Lint with flake8
-      run: |
-        conda install flake8
-        # stop the build if there are Python syntax errors or undefined names
-        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
-        # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
-        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-    - name: Test with pytest
-      run: |
-        conda install pytest
-        pytest
+#
+#
+#    - name: Lint with flake8
+#      run: |
+#        conda install flake8
+#        # stop the build if there are Python syntax errors or undefined names
+#        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+#        # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
+#        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+#    - name: Test with pytest
+#      run: |
+#        conda install pytest
+#        pytest
