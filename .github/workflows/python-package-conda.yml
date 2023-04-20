@@ -56,11 +56,11 @@ jobs:
       run: |
         cd /home/runner/work/aviator
         mkdir artifacts
-        echo "current path (content)
+        echo "current path (content)"
         pwd
         ls -a
         cp -a /home/runner/work/aviator/. /home/runner/work/aviator/artifacts
-        echo "current path (content)
+        echo "current path (content)"
         pwd
         ls -a
       
