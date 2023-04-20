@@ -52,10 +52,23 @@ jobs:
         conda env export --no-builds > AVIATOR_env_CICD_noBuilds.yml
         conda env export --from-history > AVIATOR_env_CICD_history.yml
 
-    - name: download artifacts
-      uses: actions/download-artifact@v3
-      with:
-        path: AVIATOR_env_CICD.yml
+    - name: build artifacts
+      run: |
+        cd /home/runner/work/aviator
+        mkdir artifacts
+        echo "current path (content)
+        pwd
+        ls -a
+        cp -a /home/runner/work/aviator/. /home/runner/work/aviator/artifacts
+        echo "current path (content)
+        pwd
+        ls -a
+      
+
+    #- name: download artifacts
+    #  uses: actions/download-artifact@v3
+    #  with:
+    #    path: AVIATOR_env_CICD.yml
 
     #- name: Setting up environment from file
     #  run: |
