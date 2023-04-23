@@ -16,6 +16,8 @@ jobs:
     #    python-version: '3.10'
     - name: Set up miniconda
       uses: conda-incubator/setup-miniconda@v2
+      with:
+          activate-environment: AVIATOR
     - name: Add conda to system path
       run: |
         # $CONDA is an environment variable pointing to the root of the miniconda directory
@@ -24,7 +26,7 @@ jobs:
       run: |
         conda create -n AVIATOR python=3.10
         # source ~/anaconda3/etc/profile.d/conda.sh
-        conda activate AVIATOR
+        # conda activate AVIATOR
         conda config --add channels conda-forge
         conda config --add channels anaconda
         conda config --add channels defaults
