@@ -39,7 +39,7 @@ jobs:
         conda install pandas=1.5.3
         conda install matplotlib=3.7.0
         conda install geopandas=0.12.2
-        conda install bokeh=3.0.3
+        #conda install bokeh=3.0.3
         # in order to use conda develop: install conda-build
         conda install conda-build
         pip install FlightRadarAPI
