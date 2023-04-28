@@ -40,6 +40,7 @@ jobs:
         conda install -c conda-forge numpy=1.24.2
         conda install -c conda-forge pandas=1.5.3
         conda install -c conda-forge matplotlib=3.7.0
+        conda install -c conda-forge geopandas=0.12.2
         #conda install numpy=1.24.2
         #conda install pandas=1.5.3
         #conda install matplotlib=3.7.0
