@@ -44,7 +44,7 @@ jobs:
         #
         #    
         cd /home/runner/work/aviator
-        conda develop /home/runner/work/aviator
+        #conda develop /home/runner/work/aviator
         #
         echo "exporting environment files:"
         #conda list --explicit > AVIATOR_env_CICD_specifications_explicit.txt
