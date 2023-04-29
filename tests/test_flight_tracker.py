@@ -12,14 +12,15 @@ import numpy as np
 from aviator.src import flight_tracker
 
 
-class Tests:
+class TestClass:
     print("Tests")
     def setup_method(self):
         pass
 
-    def test_get_flights():
+    def test_get_flights(self):
         pass
 
-    def test_flights_2_df():
-        origin = pickle.load(open('./test_files/flights_flightradar.p','rb'))
+    def test_flights_2_df(self):
+        # origin = pickle.load(open('./test_files/flights_flightradar.p','rb'))
         # result = 
+        pass
