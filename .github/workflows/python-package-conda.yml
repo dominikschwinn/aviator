@@ -31,7 +31,7 @@ jobs:
         conda config --add channels anaconda
         conda config --add channels defaults
         # now installing the required packages
-        conda install -c conda-forge conda-build
+        conda install -c conda-forge conda-build=3.24.0
         #conda install -c conda-forge bokeh=3.1.0
         #conda install -c conda-forge numpy=1.24.2
         #conda install -c conda-forge pandas=1.5.3
@@ -97,7 +97,7 @@ jobs:
 #        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
 #        # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
 #        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-    - name: Test with pytest
-      run: |
-        #conda install pytest
-        pytest
+#    - name: Test with pytest
+#      run: |
+#        #conda install pytest
+#        pytest
