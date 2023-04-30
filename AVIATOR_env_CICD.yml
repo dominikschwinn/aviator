@@ -1,4 +1,4 @@
-name: AVIATOR_env_CICD
+name: AVIATOR
 channels:
   - defaults
   - anaconda
@@ -261,4 +261,4 @@ dependencies:
       - deprecated==1.2.13
       - flightradarapi==1.2.7
       - wrapt==1.15.0
-prefix: /usr/share/miniconda/AVIATOR_env_CICD
+#prefix: /usr/share/miniconda/AVIATOR_env_CICD
