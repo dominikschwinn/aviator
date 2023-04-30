@@ -47,7 +47,7 @@ jobs:
         #######################################################
         # option B: create environment from AVIATOR_env-CICD.yml
         conda env create -f AVIATOR_env_CICD.yml
-        conda activate AVIATOR_env_CICD
+        conda activate AVIATOR
         #######################################################
         #######################################################
         #######################################################
