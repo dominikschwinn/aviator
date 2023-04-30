@@ -61,6 +61,8 @@ jobs:
       run: |
         conda env create -f AVIATOR_env_CICD.yml
         #conda activate AVIATOR
+        source ~/anaconda3/etc/profile.d/conda.sh
+        conda activate AVIATOR
         cd /home/runner/work/aviator
         conda develop /home/runner/work/aviator
 
