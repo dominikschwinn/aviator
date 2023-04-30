@@ -14,6 +14,7 @@ jobs:
     #  uses: actions/setup-python@v3
     #  with:
     #    python-version: '3.10'
+    # OPTION A:
     - name: Set up miniconda
       uses: conda-incubator/setup-miniconda@v2
       with:
@@ -43,23 +44,26 @@ jobs:
         ##
         #pip install FlightRadarAPI
         ##
-        #######################################################
-        #######################################################
-        # option B: create environment from AVIATOR_env-CICD.yml
-        conda env create -f AVIATOR_env_CICD.yml
-        #conda activate AVIATOR
-        #######################################################
-        #######################################################
-        #######################################################
-        #######################################################
         cd /home/runner/work/aviator
         conda develop /home/runner/work/aviator
-        #
-        echo "exporting environment files:"
-        #conda list --explicit > AVIATOR_env_CICD_specifications_explicit.txt
-        #conda env export > AVIATOR_env_CICD.yml
-        #conda env export --no-builds > AVIATOR_env_CICD_noBuilds.yml
-        #conda env export --from-history > AVIATOR_env_CICD_history.yml
+        #######################################################
+        #######################################################
+        #######################################################
+        #######################################################
+    # OPTION B:
+    - name: Set up miniconda
+      uses: conda-incubator/setup-miniconda@v2
+    - name: Add conda to system path
+      run: |
+        # $CONDA is an environment variable pointing to the root of the miniconda directory
+        echo $CONDA/bin >> $GITHUB_PATH
+    - name: Setting up environment from file
+      run: |
+        conda env create -f AVIATOR_env_CICD.yml
+        #conda activate AVIATOR
+        cd /home/runner/work/aviator
+        conda develop /home/runner/work/aviator
+
 
     - name: build artifacts
       run: |
