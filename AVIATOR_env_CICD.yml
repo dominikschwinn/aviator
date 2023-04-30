@@ -1,4 +1,4 @@
-name: AVIATOR
+name: AVIATOR_env_CICD
 channels:
   - defaults
   - anaconda
