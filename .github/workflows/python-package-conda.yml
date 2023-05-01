@@ -131,5 +131,7 @@ jobs:
       #with:
       # activate-environment: AVIATOR
       run: |
+        cd /home/runner/work/aviator/aviator/tests
+        pwd
         #conda install pytest
-        pytest
+        pytest test_flight_tracker.py
