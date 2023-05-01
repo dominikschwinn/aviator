@@ -135,7 +135,8 @@ jobs:
         pwd
         ls -a
         conda info | grep -i 'base environment'
-        conda info | grep -i 'AVIATOR environment'
+        #conda info | grep -i 'AVIATOR environment'
+        conda env list
         #conda install pytest
         /usr/share/miniconda/condabin/conda init bash
         source /usr/share/miniconda/etc/profile.d/conda.sh
