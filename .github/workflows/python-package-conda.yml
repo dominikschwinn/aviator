@@ -133,5 +133,6 @@ jobs:
       run: |
         cd /home/runner/work/aviator/aviator/tests
         pwd
+        ls -a
         #conda install pytest
         pytest test_flight_tracker.py
