@@ -51,28 +51,35 @@ jobs:
         #######################################################
         #######################################################
     # OPTION B:
-    - name: Set up miniconda
+    - name: Set up miniconda from file
       uses: conda-incubator/setup-miniconda@v2
-    - name: Add conda to system path
-      run: |
-        # $CONDA is an environment variable pointing to the root of the miniconda directory
-        echo $CONDA/bin >> $GITHUB_PATH
-    - name: Setting up environment from file
-      run: |
-        conda env create -f AVIATOR_env_CICD.yml
-        #conda activate AVIATOR
-        #conda info | grep -i 'AVIATOR environment'
-        #source ~/anaconda3/etc/profile.d/conda.sh
-        #source /usr/share/miniconda/envs/AVIATOR/etc/profile.d/conda.sh
-        cd /usr/share/miniconda
-        ls -a
-        echo "which shell am i using:"
-        ps -p $$
-        conda init fish
-        conda deactivate base
-        conda activate AVIATOR
-        cd /home/runner/work/aviator
-        conda develop /home/runner/work/aviator
+      with:
+        activate-environment: AVIATOR
+        environment-file: etc/AVIATOR_env_CICD.yml
+        auto-activate-base: false
+    #- name: Set up miniconda
+    #  uses: conda-incubator/setup-miniconda@v2
+    #- name: Add conda to system path
+    #  run: |
+    #    # $CONDA is an environment variable pointing to the root of the miniconda directory
+    #    echo $CONDA/bin >> $GITHUB_PATH
+    #- name: Setting up environment from file
+    #  run: |
+    #    conda env create -f AVIATOR_env_CICD.yml
+    #    #conda activate AVIATOR
+    #    #conda info | grep -i 'AVIATOR environment'
+    #    #source ~/anaconda3/etc/profile.d/conda.sh
+    #    #source /usr/share/miniconda/envs/AVIATOR/etc/profile.d/conda.sh
+    #    cd /usr/share/miniconda
+    #    ls -a
+    #    echo "which shell am i using:"
+    #    ps -p $$
+    #    conda init --help
+    #    conda init fish
+    #    conda deactivate base
+    #    conda activate AVIATOR
+    #    cd /home/runner/work/aviator
+    #    conda develop /home/runner/work/aviator
 
 
     - name: build artifacts
