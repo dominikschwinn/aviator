@@ -55,7 +55,7 @@ jobs:
       uses: conda-incubator/setup-miniconda@v2
       with:
         activate-environment: AVIATOR
-        environment-file: etc/AVIATOR_env_CICD.yml
+        environment-file: AVIATOR_env_CICD.yml
         auto-activate-base: false
     #- name: Set up miniconda
     #  uses: conda-incubator/setup-miniconda@v2
