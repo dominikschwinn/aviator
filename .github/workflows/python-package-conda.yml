@@ -127,14 +127,18 @@ jobs:
 #        # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
 #        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
-      shell: /usr/bin/bash -e {0}
+      #shell: /usr/bin/bash -e {0}
       #with:
       # activate-environment: AVIATOR
       run: |
         cd /home/runner/work/aviator/aviator/tests
         pwd
         ls -a
+        conda info | grep -i 'base environment'
+        conda info | grep -i 'AVIATOR environment'
         #conda install pytest
-        /usr/share/miniconda/condabin/conda init --all
+        /usr/share/miniconda/condabin/conda init bash
+        source /usr/share/miniconda/etc/profile.d/conda.sh
+        
         conda activate AVIATOR
         pytest test_flight_tracker.py
