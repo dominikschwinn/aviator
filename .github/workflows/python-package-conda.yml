@@ -135,5 +135,6 @@ jobs:
         pwd
         ls -a
         #conda install pytest
-        conda activate "AVIATOR"
+        /usr/share/miniconda/condabin/conda init --all
+        conda activate AVIATOR
         pytest test_flight_tracker.py
