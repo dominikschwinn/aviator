@@ -66,6 +66,7 @@ jobs:
         #source /usr/share/miniconda/envs/AVIATOR/etc/profile.d/conda.sh
         cd /usr/share/miniconda
         ls -a
+        conda init bash
         conda activate AVIATOR
         cd /home/runner/work/aviator
         conda develop /home/runner/work/aviator
