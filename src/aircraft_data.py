@@ -40,29 +40,104 @@ class Aircraft():
         self.create_AC_df()
 
     def create_AC_df(self):
+        """
+        creates the dataframe self.acDF with the columns:
+        'ICAO','IATA','manufacturer','model'
+
+        Returns
+        -------
+        None.
+
+        """
         self.acDF = pd.DataFrame(columns=['ICAO','IATA','manufacturer','model'])
 
     def read_url(self,
                  url='',
                  verbose=True):
+        """
+        
+
+        Parameters
+        ----------
+        url : TYPE, optional
+            DESCRIPTION. The default is ''.
+        verbose : TYPE, optional
+            DESCRIPTION. The default is True.
+
+        Returns
+        -------
+        p : TYPE
+            DESCRIPTION.
+
+        """
         p = requests.get(url)
         return p
 
     def create_bs_object(self,
                          page='',
                          verbose=True):
+        """
+        
+
+        Parameters
+        ----------
+        page : TYPE, optional
+            DESCRIPTION. The default is ''.
+        verbose : TYPE, optional
+            DESCRIPTION. The default is True.
+
+        Returns
+        -------
+        soup : TYPE
+            DESCRIPTION.
+
+        """
         soup = bs(page.content, "html.parser")
         return soup
 
     def extract_table(self,
                       soup='',
                       verbose=True):
+        """
+        
+
+        Parameters
+        ----------
+        soup : TYPE, optional
+            DESCRIPTION. The default is ''.
+        verbose : TYPE, optional
+            DESCRIPTION. The default is True.
+
+        Returns
+        -------
+        table : TYPE
+            DESCRIPTION.
+
+        """
         table = soup.find('table', class_='wikitable sortable')
         return table
 
     def get_manufacturer_from_model(self,
                                     model=None,
                                     verbose=False):
+        """
+        
+
+        Parameters
+        ----------
+        model : TYPE, optional
+            DESCRIPTION. The default is None.
+        verbose : TYPE, optional
+            DESCRIPTION. The default is False.
+
+        Returns
+        -------
+        TYPE
+            DESCRIPTION.
+        model : TYPE
+            DESCRIPTION.
+
+        """
         manufacturer = ''
         for elem in self.manufacturers_list:
             if elem in model:
