@@ -150,6 +150,25 @@ class Aircraft():
                      model=None,
                      manufacturer=None,
                      verbose=False):
+        """
+        
+
+        Parameters
+        ----------
+        model : TYPE, optional
+            DESCRIPTION. The default is None.
+        manufacturer : TYPE, optional
+            DESCRIPTION. The default is None.
+        verbose : TYPE, optional
+            DESCRIPTION. The default is False.
+
+        Returns
+        -------
+        model : TYPE
+            DESCRIPTION.
+
+        """
+        
         try:
             model = model.split('{} '.format(manufacturer))[1]
         except:
@@ -160,6 +179,22 @@ class Aircraft():
     def fill_aircraft_df_columns(self,
                                  table=None,
                                  verbose=True):
+        """
+        
+
+        Parameters
+        ----------
+        table : TYPE, optional
+            DESCRIPTION. The default is None.
+        verbose : TYPE, optional
+            DESCRIPTION. The default is True.
+
+        Returns
+        -------
+        None.
+
+        """
+
         for row in table.tbody.find_all('tr'):    
             # Find all data for each column
             columns = row.find_all('td')
@@ -186,6 +221,20 @@ class Aircraft():
 
     def fill_aircraft_df(self,
                          verbose=False):
+        """
+        
+
+        Parameters
+        ----------
+        verbose : TYPE, optional
+            DESCRIPTION. The default is False.
+
+        Returns
+        -------
+        None.
+
+        """
+        
         self.acDF['ICAO'] = self.ICAO#
         self.acDF['IATA'] = self.IATA
         self.acDF['manufacturer'] = self.MANUFACTURER
