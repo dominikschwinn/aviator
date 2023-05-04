@@ -19,6 +19,7 @@ class Aircraft():
         self.IATA = []
         self.MANUFACTURER = []
         self.MODEL = []
+        self.WIKIPEDIAURL = []
         
         self.manufacturers_list = ['Airbus','Antonov','Aerospatiale','Avro',
                                    'Boeing','Bombardier','Bell','Beechcraft','British Aerospace',
@@ -49,7 +50,7 @@ class Aircraft():
         None.
 
         """
-        self.acDF = pd.DataFrame(columns=['ICAO','IATA','manufacturer','model'])
+        self.acDF = pd.DataFrame(columns=['ICAO','IATA','manufacturer','model','wikipediaURL'])
 
     def read_url(self,
                  url='',
@@ -207,6 +208,18 @@ class Aircraft():
                 iata = columns[1].text.strip()
                 # print("iata:",iata)
                 model = columns[2].text.strip()#columns[2].span.contents[0].strip('&0.')
+                # print("-------")
+                # x = str(columns[2])
+                # print("x:",x)
+                if "href" in str(columns[2]):
+                    url = str(columns[2]).split('href="')[1].split('"')[0]
+                    # print("url:",url)
+                    url = "https://en.wikipedia.org" + url
+                    # print("url:",url)
+
+                # print(columns[2])
+                # print(type(columns[2]))
+                
                 # print(model)
                 # manufacturer, model = self.get_manufacturer_from_model(model=model)
                 manufacturer = self.get_manufacturer_from_model(model=model)
@@ -217,6 +230,7 @@ class Aircraft():
                 self.IATA.append(iata)
                 self.MODEL.append(model)
                 self.MANUFACTURER.append(manufacturer)
+                self.WIKIPEDIAURL.append(url)
 
 
     def fill_aircraft_df(self,
@@ -239,6 +253,7 @@ class Aircraft():
         self.acDF['IATA'] = self.IATA
         self.acDF['manufacturer'] = self.MANUFACTURER
         self.acDF['model'] = self.MODEL
+        self.acDF['wikipediaURL'] = self.WIKIPEDIAURL
 
     def export_df_2_csv(self,
                         df=None,
