@@ -10,6 +10,7 @@ import numpy as np
 from bs4 import BeautifulSoup as bs
 import requests
 
+
 class Airlines():
     def __init__(self):
         print(">>> initializing Airlines class")
@@ -18,8 +19,22 @@ class Airlines():
         # self.airlines_url_base = "https://en.wikipedia.org/wiki/List_of_airline_codes_(Z)"
         self.airlines_url_base = "https://en.wikipedia.org/wiki/List_of_airline_codes_"
 
+
     def create_airlines_df(self,
                            verbose=True):
+        """
+        
+
+        Parameters
+        ----------
+        verbose : TYPE, optional
+            DESCRIPTION. The default is True.
+
+        Returns
+        -------
+        None.
+
+        """
         self.airlines_DF = pd.DataFrame(columns=['IATA','ICAO','Airline','CallSign','Country','Comment'])
         self.IATA = []
         self.ICAO = []
@@ -28,28 +43,96 @@ class Airlines():
         self.Country = []
         self.Comment = []
 
+
     def create_url(self,
                    letter='',
                    verbose=True):
+        """
+        
+
+        Parameters
+        ----------
+        letter : TYPE, optional
+            DESCRIPTION. The default is ''.
+        verbose : TYPE, optional
+            DESCRIPTION. The default is True.
+
+        Returns
+        -------
+        airlines_url : TYPE
+            DESCRIPTION.
+
+        """
         # self.airlines_url = self.airlines_url_base + '({})'.format(letter)
         airlines_url = self.airlines_url_base + '({})'.format(letter)
         return airlines_url
 
+
     def read_url(self,
                  url='',
                  verbose=True):
+        """
+        
+
+        Parameters
+        ----------
+        url : TYPE, optional
+            DESCRIPTION. The default is ''.
+        verbose : TYPE, optional
+            DESCRIPTION. The default is True.
+
+        Returns
+        -------
+        p : TYPE
+            DESCRIPTION.
+
+        """
         p = requests.get(url)
         return p
+
 
     def create_bs_object(self,
                          page='',
                          verbose=True):
+        """
+        
+
+        Parameters
+        ----------
+        page : TYPE, optional
+            DESCRIPTION. The default is ''.
+        verbose : TYPE, optional
+            DESCRIPTION. The default is True.
+
+        Returns
+        -------
+        soup : TYPE
+            DESCRIPTION.
+
+        """
         soup = bs(page.content, "html.parser")
         return soup
+
 
     def extract_table(self,
                       soup='',
                       verbose=True):
+        """
+        
+
+        Parameters
+        ----------
+        soup : TYPE, optional
+            DESCRIPTION. The default is ''.
+        verbose : TYPE, optional
+            DESCRIPTION. The default is True.
+
+        Returns
+        -------
+        table : TYPE
+            DESCRIPTION.
+
+        """
         table = soup.find('table', class_='wikitable sortable')
         return table
 
@@ -57,9 +140,25 @@ class Airlines():
     # for table in soup.find_all('table'):
     #     print(table.get('class'))
 
+
     def fill_airlines_df_columns(self,
                                  table=None,
                                  verbose=True):
+        """
+        
+
+        Parameters
+        ----------
+        table : TYPE, optional
+            DESCRIPTION. The default is None.
+        verbose : TYPE, optional
+            DESCRIPTION. The default is True.
+
+        Returns
+        -------
+        None.
+
+        """
         for row in table.tbody.find_all('tr'):    
             # Find all data for each column
             columns = row.find_all('td')
@@ -97,8 +196,22 @@ class Airlines():
                 self.Country.append(country)
                 self.Comment.append(comment)
 
+
     def fill_airlines_df(self,
                          verbose=True):
+        """
+        
+
+        Parameters
+        ----------
+        verbose : TYPE, optional
+            DESCRIPTION. The default is True.
+
+        Returns
+        -------
+        None.
+
+        """
         self.airlines_DF['IATA'] = self.IATA
         self.airlines_DF['ICAO'] = self.ICAO
         self.airlines_DF['Airline'] = self.Airline
@@ -111,7 +224,25 @@ class Airlines():
                         df=None,
                         filename='',
                         verbose=True):
+        """
+        
+
+        Parameters
+        ----------
+        df : TYPE, optional
+            DESCRIPTION. The default is None.
+        filename : TYPE, optional
+            DESCRIPTION. The default is ''.
+        verbose : TYPE, optional
+            DESCRIPTION. The default is True.
+
+        Returns
+        -------
+        None.
+
+        """
         df.to_csv(filename,index=False)
+
 
 if __name__ == "__main__":
     print("Airlines")
