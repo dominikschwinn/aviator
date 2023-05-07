@@ -78,6 +78,23 @@ class Visualization():
                          airports=[],
                          type_='PAX',
                          savefig=True):
+        """
+        
+
+        Parameters
+        ----------
+        airports : TYPE, optional
+            DESCRIPTION. The default is [].
+        type_ : TYPE, optional
+            DESCRIPTION. The default is 'PAX'.
+        savefig : TYPE, optional
+            DESCRIPTION. The default is True.
+
+        Returns
+        -------
+        None.
+
+        """
 
         assert type_ in  ['PAX','OPs','Cargo']
 
