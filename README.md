@@ -4,6 +4,13 @@ AVIATOR is an open-source app related to aviation. It consists of various statis
 Currently AVIATOR is under development.
 
 ## Flight-tracker
+In order to run the flight-tracking app, run the module 'flight_tracker.py' (e.g. in your console) and select the following input parameters at the end of the file:
+- api = 'flightradar' (the API which is used to get the airplane data, currently only flightradar is implemented)
+- dt = 5000 (the time delta that is used to update the API data)
+- port = 9999 (any unused port will do)
+- worldmap = 'esri' (alternatively you can use 'osm' or 'nasa', examples see below)
+
+Then your default browser should open automatically showing the corresponding worldmap and the airplanes' movements.
 
 ### Flight-tracker using ESRI satellite map (screenshot)
 ![Flight-tracker using ESRI satellite map](/visualization/aviator_esri.png)
