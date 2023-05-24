@@ -38,7 +38,8 @@ jobs:
         conda install -c conda-forge pytest=7.1.2
         conda install -c conda-forge numpy=1.24.2
         conda install -c conda-forge pandas=1.5.3
-        conda install -c conda-forge bokeh=3.1.0
+        #conda install -c conda-forge bokeh=3.1.0
+        conda install -c conda-forge bokeh=3.1.1
         conda install -c conda-forge geopandas=0.12.2
         conda install -c conda-forge matplotlib=3.7.0
         ##
