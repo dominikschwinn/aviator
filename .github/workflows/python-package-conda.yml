@@ -10,53 +10,53 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    #- name: Set up Python 3.10
-    #  uses: actions/setup-python@v3
-    #  with:
-    #    python-version: '3.10'
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
+      with:
+        python-version: '3.10'
     # OPTION A:
-    #- name: Set up miniconda
-    #  uses: conda-incubator/setup-miniconda@v2
-    #  with:
-    #      activate-environment: AVIATOR
-    #- name: Add conda to system path
-    #  run: |
-    #    # $CONDA is an environment variable pointing to the root of the miniconda directory
-    #    echo $CONDA/bin >> $GITHUB_PATH
-    #- name: Setting up (empty) environment
-    #  run: |
-    #    ## option A: creating new (empty) environment:
-    #    #conda create -n AVIATOR python=3.10
-    #    ## source ~/anaconda3/etc/profile.d/conda.sh
-    #    ## conda activate AVIATOR
-    #    #conda config --add channels conda-forge
-    #    #conda config --add channels anaconda
-    #    #conda config --add channels defaults
-    #    ## now installing the required packages
-    #    ## in order to use conda develop: install conda-build
-    #    #conda install -c conda-forge conda-build=3.24.0
-    #    #conda install -c conda-forge pytest=7.1.2
-    #    #conda install -c conda-forge numpy=1.24.2
-    #    #conda install -c conda-forge pandas=1.5.3
-    #    #conda install -c conda-forge bokeh=3.1.0
-    #    #conda install -c conda-forge geopandas=0.12.2
-    #    #conda install -c conda-forge matplotlib=3.7.0
-    #    ##
-    #    #pip install FlightRadarAPI
-    #    ##
-    #    #cd /home/runner/work/aviator
-    #    #conda develop /home/runner/work/aviator
+    - name: Set up miniconda
+      uses: conda-incubator/setup-miniconda@v2
+      with:
+          activate-environment: AVIATOR
+    - name: Add conda to system path
+      run: |
+        # $CONDA is an environment variable pointing to the root of the miniconda directory
+        echo $CONDA/bin >> $GITHUB_PATH
+    - name: Setting up (empty) environment
+      run: |
+        ## option A: creating new (empty) environment:
+        conda create -n AVIATOR python=3.10
+        ## source ~/anaconda3/etc/profile.d/conda.sh
+        ## conda activate AVIATOR
+        conda config --add channels conda-forge
+        conda config --add channels anaconda
+        conda config --add channels defaults
+        ## now installing the required packages
+        ## in order to use conda develop: install conda-build
+        conda install -c conda-forge conda-build=3.24.0
+        conda install -c conda-forge pytest=7.1.2
+        conda install -c conda-forge numpy=1.24.2
+        conda install -c conda-forge pandas=1.5.3
+        conda install -c conda-forge bokeh=3.1.0
+        conda install -c conda-forge geopandas=0.12.2
+        conda install -c conda-forge matplotlib=3.7.0
+        ##
+        pip install FlightRadarAPI
+        ##
+        cd /home/runner/work/aviator
+        conda develop /home/runner/work/aviator
         #######################################################
         #######################################################
         #######################################################
         #######################################################
     # OPTION B:
-    - name: Set up miniconda from file
-      uses: conda-incubator/setup-miniconda@v2
-      with:
-        activate-environment: AVIATOR
-        environment-file: AVIATOR_env_CICD.yml
-        auto-activate-base: false
+    #- name: Set up miniconda from file
+    #  uses: conda-incubator/setup-miniconda@v2
+    #  with:
+    #    activate-environment: AVIATOR
+    #    environment-file: AVIATOR_env_CICD.yml
+    #    auto-activate-base: false
     #- name: Set up miniconda
     #  uses: conda-incubator/setup-miniconda@v2
     #- name: Add conda to system path
