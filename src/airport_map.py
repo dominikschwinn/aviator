@@ -16,7 +16,7 @@ class Visualization():
         # self.airports = pd.read_csv('../data/iata_airports_new.csv')
         # basic plots:
         # self.airports = pd.read_csv('../data/iata_airport_list.csv')
-        #enhanced plots:
+
         self.airports = pd.read_csv('../data/airport_list_with_stats.csv')
         # print(" self.airports ".center(80,'*'))
         # print(self.airports)
